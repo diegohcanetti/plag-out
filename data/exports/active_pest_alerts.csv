@@ -1,0 +1,2 @@
+species,locality,province,latitude,longitude,biofix_date,accumulated_gdd,days_active,biological_stage,recommendation,threat_level
+Spodoptera frugiperda,Rosario,Santa Fe,-32.9468,-60.6393,2025-05-02,3430.2100000000005,387,Subsequent Generation Emergence,ALERT: Second generation larval wave beginning. Re-evaluate monitoring protocols.,Warning

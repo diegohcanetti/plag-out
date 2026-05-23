@@ -1,0 +1,1394 @@
+{
+    "pergamino_buenos aires": [
+        -33.8899,
+        -60.5696
+    ],
+    "pozo de toba_santiago del estero": [
+        -27.4667,
+        -62.3167
+    ],
+    "weisburd_santiago del estero": [
+        -27.2833,
+        -62.6167
+    ],
+    "tolloche_salta": [
+        -25.55,
+        -63.95
+    ],
+    "el carmen_jujuy": [
+        -24.3833,
+        -65.25
+    ],
+    "arroyo ceibal_santa fe": [
+        -29.0167,
+        -59.7167
+    ],
+    "las lomitas_formosa": [
+        -24.7081,
+        -60.5931
+    ],
+    "concepcion del bermejo_chaco": [
+        -26.6,
+        -60.95
+    ],
+    "pampa del infierno_chaco": [
+        -26.5052,
+        -61.1744
+    ],
+    "las breñas_chaco": [
+        -27.0863,
+        -61.0805
+    ],
+    "juan josé castelli_chaco": [
+        -25.9427,
+        -60.6195
+    ],
+    "tres isletas_chaco": [
+        -26.34,
+        -60.4319
+    ],
+    "gral. pinedo_chaco": [
+        -27.3167,
+        -61.2833
+    ],
+    "fraile pintado_jujuy": [
+        -23.9425671,
+        -64.8023369
+    ],
+    "santa clara_jujuy": [
+        -24.3100735,
+        -64.6619555
+    ],
+    "el bananal_jujuy": [
+        -24.2780584,
+        -65.2230287
+    ],
+    "agua sucia_salta": [
+        -24.4245161,
+        -63.897824
+    ],
+    "rio piedras_salta": [
+        -25.3142011,
+        -64.9103052
+    ],
+    "rivadavia_salta": [
+        -23.6194992,
+        -62.8101767
+    ],
+    "piquete cabado 1_salta": [
+        -24.8199213,
+        -64.1779238
+    ],
+    "antilla_salta": [
+        -26.119575,
+        -64.5934507
+    ],
+    "ceibalito_salta": [
+        -25.1101879,
+        -64.2752752
+    ],
+    "el bordo_salta": [
+        -24.6606733,
+        -65.1055563
+    ],
+    "el galpón_salta": [
+        -25.3806631,
+        -64.6515946
+    ],
+    "el tunal_salta": [
+        -25.253895,
+        -64.395205
+    ],
+    "embarcación_salta": [
+        -23.2101359,
+        -64.0973737
+    ],
+    "horcones_salta": [
+        -25.7199736,
+        -64.9040735
+    ],
+    "las lajitas t3_salta": [
+        -24.7269289,
+        -64.1953709
+    ],
+    "metan 1_salta": [
+        -25.4969744,
+        -64.971005
+    ],
+    "metan 2_salta": [
+        -25.4969744,
+        -64.971005
+    ],
+    "mosconi_salta": [
+        -25.4939916,
+        -64.9812953
+    ],
+    "_salta": [
+        -25.2269908,
+        -64.5911956
+    ],
+    "piquete cabado 2_salta": [
+        -24.8199213,
+        -64.1779238
+    ],
+    "santo domingo_salta": [
+        -24.6528628,
+        -64.0272386
+    ],
+    "saravia_salta": [
+        -24.5444364,
+        -64.3121457
+    ],
+    "metán_salta": [
+        -25.4969744,
+        -64.971005
+    ],
+    "alto verde_tucumán": [
+        -27.1176529,
+        -65.4838827
+    ],
+    "burruyacu_tucumán": [
+        -26.4995747,
+        -64.7434868
+    ],
+    "garmendia_tucumán": [
+        -26.8383727,
+        -65.1800307
+    ],
+    "huasa pampa_tucumán": [
+        -27.2416098,
+        -65.4845131
+    ],
+    "la cocha 1_tucumán": [
+        -27.7700082,
+        -65.5883539
+    ],
+    "la cruz_tucumán": [
+        -26.6322766,
+        -64.8817717
+    ],
+    "la invernada_tucumán": [
+        -27.631565,
+        -65.5768528
+    ],
+    "la virginia_tucumán": [
+        -26.745486,
+        -64.7867557
+    ],
+    "laguna de robles_tucumán": [
+        -26.2561581,
+        -64.6494651
+    ],
+    "las cejas_tucumán": [
+        -26.8884593,
+        -64.7411658
+    ],
+    "los pereyra_tucumán": [
+        -26.9462385,
+        -64.8820143
+    ],
+    "los puestos_tucumán": [
+        -27.2808347,
+        -65.0175023
+    ],
+    "piedrabuena_tucumán": [
+        -26.8184342,
+        -65.183807
+    ],
+    "río colorado_tucumán": [
+        -27.1503766,
+        -65.3557946
+    ],
+    "rumi punco_tucumán": [
+        -27.9848359,
+        -65.5739654
+    ],
+    "san agustín_tucumán": [
+        -26.8369326,
+        -64.8504348
+    ],
+    "tacanas_tucumán": [
+        -27.1383027,
+        -64.8100112
+    ],
+    "taco ralo_tucumán": [
+        -27.8357346,
+        -65.1959141
+    ],
+    "timbo viejo_tucumán": [
+        -26.6640852,
+        -65.1309335
+    ],
+    "trancas_tucumán": [
+        -26.230956,
+        -65.2835347
+    ],
+    "viclos_tucumán": [
+        -27.1922739,
+        -64.9137221
+    ],
+    "leales_tucumán": [
+        -27.1937478,
+        -65.310329
+    ],
+    "tala pozo_tucumán": [
+        -26.7352494,
+        -64.831831
+    ],
+    "bobadal_santiago del estero": [
+        -26.7223111,
+        -64.3987974
+    ],
+    "el charco_santiago del estero": [
+        -27.2272489,
+        -64.6991261
+    ],
+    "el palomar_santiago del estero": [
+        -26.8850922,
+        -64.6014054
+    ],
+    "frias_santiago del estero": [
+        -28.6377023,
+        -65.1288391
+    ],
+    "isca yacu 2_santiago del estero": [
+        -27.0261757,
+        -64.6117067
+    ],
+    "pozo hondo_santiago del estero": [
+        -27.1670114,
+        -64.4908677
+    ],
+    "termas r. hondo_santiago del estero": [
+        -27.4959255,
+        -64.8640783
+    ],
+    "vinará_santiago del estero": [
+        -27.3762449,
+        -64.7961142
+    ],
+    "_santiago del estero": [
+        -27.6431016,
+        -63.5408542
+    ],
+    "el abra_catamarca": [
+        -28.0819035,
+        -65.4294044
+    ],
+    "los altos_catamarca": [
+        -28.0468719,
+        -65.4997332
+    ],
+    "frias_catamarca": [
+        -27.5113574,
+        -68.3859089
+    ],
+    "las piedritas_chaco": [
+        -26.8236989,
+        -61.5657582
+    ],
+    "sylvina_chaco": [
+        -27.8315753,
+        -61.1360183
+    ],
+    "basail_chaco": [
+        -27.887641,
+        -59.2816402
+    ],
+    "la maría_santa fe": [
+        -33.1656751,
+        -60.734132
+    ],
+    "margarita_santa fe": [
+        -29.6875707,
+        -60.2532273
+    ],
+    "ramayón_santa fe": [
+        -30.6725959,
+        -60.5035744
+    ],
+    "soledad_santa fe": [
+        -30.6196133,
+        -60.9144282
+    ],
+    "hersilia_santa fe": [
+        -30.0039552,
+        -61.8391618
+    ],
+    "la penca y caraguatá_santa fe": [
+        -30.3458382,
+        -60.5206908
+    ],
+    "tomás young_santiago del estero": [
+        -28.6,
+        -62.183333
+    ],
+    "isla baja_santiago del estero": [
+        -29.0178961,
+        -62.3133464
+    ],
+    "vera y pintado_santa fe": [
+        -30.1432165,
+        -60.3368778
+    ],
+    "malabrigo_santa fe": [
+        -29.3489728,
+        -59.9700883
+    ],
+    "el colorado_formosa": [
+        -26.3083815,
+        -59.3720661
+    ],
+    "comandante fontana_formosa": [
+        -25.3335851,
+        -59.6848511
+    ],
+    "villa minetti_santa fe": [
+        -28.6227503,
+        -61.6266091
+    ],
+    "santa margarita_santa fe": [
+        -32.0209423,
+        -61.2152688
+    ],
+    "reconquista_santa fe": [
+        -29.1443478,
+        -59.6437728
+    ],
+    "calchaquí_santa fe": [
+        -29.8878656,
+        -60.2832099
+    ],
+    "logroño_santa fe": [
+        -29.5038105,
+        -61.6961816
+    ],
+    "san javier_santa fe": [
+        -30.5815988,
+        -59.9280841
+    ],
+    "la sarita_santa fe": [
+        -28.973039,
+        -59.8504271
+    ],
+    "emilia_santa fe": [
+        -31.0589655,
+        -60.745031
+    ],
+    "ambrosetti_santa fe": [
+        -30.0148049,
+        -61.5743553
+    ],
+    "la pelada_santa fe": [
+        -30.8663481,
+        -60.9683813
+    ],
+    "san bernardo_chaco": [
+        -27.2867286,
+        -60.7128954
+    ],
+    "colonia esther_santa fe": [
+        -31.0412201,
+        -60.6448978
+    ],
+    "colonia alpina_santiago del estero": [
+        -30.0598238,
+        -62.1059232
+    ],
+    "la montenegrina_chaco": [
+        -26.9940795,
+        -60.7779551
+    ],
+    "puna_santiago del estero": [
+        -27.7980544,
+        -62.5224391
+    ],
+    "perin_formosa": [
+        -25.5671358,
+        -59.9655158
+    ],
+    "campo del cielo_santiago del estero": [
+        -27.8703526,
+        -61.8047772
+    ],
+    "lilo viejo_santiago del estero": [
+        -26.9368803,
+        -62.9504737
+    ],
+    "bandera_santiago del estero": [
+        -28.8878546,
+        -62.2688764
+    ],
+    "col. mackinlay_santiago del estero": [
+        -30.366667,
+        -62.116667
+    ],
+    "arbol blanco_santiago del estero": [
+        -26.8372055,
+        -61.9629214
+    ],
+    "roversi_santiago del estero": [
+        -27.5911418,
+        -61.945006
+    ],
+    "tacañitas_santiago del estero": [
+        -28.6233155,
+        -62.6050617
+    ],
+    "sachayoj_santiago del estero": [
+        -26.6749136,
+        -61.8153369
+    ],
+    "campo gallo_santiago del estero": [
+        -26.5838748,
+        -62.8470969
+    ],
+    "charata_chaco": [
+        -27.2178115,
+        -61.1873712
+    ],
+    "quimilí_santiago del estero": [
+        -27.6446881,
+        -62.4174351
+    ],
+    "añatuya_santiago del estero": [
+        -28.4593692,
+        -62.8359481
+    ],
+    "malbran_santiago del estero": [
+        -29.3461528,
+        -62.4393427
+    ],
+    "pampa de los guanacos_santiago del estero": [
+        -26.2315682,
+        -61.8345299
+    ],
+    "la rosita_santiago del estero": [
+        -27.7377285,
+        -64.2607721
+    ],
+    "gancedo_chaco": [
+        -27.4907695,
+        -61.6764798
+    ],
+    "girardet_santiago del estero": [
+        -27.6184067,
+        -62.1681422
+    ],
+    "cejolao_santiago del estero": [
+        -27.491194,
+        -62.3064706
+    ],
+    "desvío la paloma_santiago del estero": [
+        -27.564955,
+        -61.8532774
+    ],
+    "coronel rico_santiago del estero": [
+        -26.3833358,
+        -61.8114796
+    ],
+    "las piedras_chaco": [
+        -27.2280684,
+        -61.1815185
+    ],
+    "otumpa_santiago del estero": [
+        -27.3282875,
+        -62.2249069
+    ],
+    "ahí veremos_santiago del estero": [
+        -25.7290753,
+        -63.4656697
+    ],
+    "mercedes_corrientes": [
+        -29.1835645,
+        -58.0799951
+    ],
+    "ambrosio_corrientes": [
+        -28.2266753,
+        -58.7750307
+    ],
+    "corrientes_corrientes": [
+        -27.5246618,
+        -58.7662564
+    ],
+    "bella vista_corrientes": [
+        -28.5073653,
+        -59.0452284
+    ],
+    "sauce_corrientes": [
+        -30.085376,
+        -58.7872808
+    ],
+    "virasoro_corrientes": [
+        -27.456452,
+        -58.6585875
+    ],
+    "goya_corrientes": [
+        -29.1444046,
+        -59.2649825
+    ],
+    "curuzú_corrientes": [
+        -27.9133623,
+        -55.8244311
+    ],
+    "esquina_corrientes": [
+        -30.0170807,
+        -59.5340904
+    ],
+    "monte caseros_corrientes": [
+        -30.2496832,
+        -57.6294418
+    ],
+    "don cristobal_entre ríos": [
+        -32.0713166,
+        -59.9951248
+    ],
+    "isletas_entre ríos": [
+        -32.1977701,
+        -60.2894315
+    ],
+    "san salvador_entre ríos": [
+        -31.6247717,
+        -58.5051869
+    ],
+    "hinojal_entre ríos": [
+        -32.3429428,
+        -60.1215972
+    ],
+    "viale_entre ríos": [
+        -31.8720895,
+        -60.0129648
+    ],
+    "colonia celina_entre ríos": [
+        -31.6127841,
+        -60.2736401
+    ],
+    "gualeguay_entre ríos": [
+        -33.1504259,
+        -59.3106789
+    ],
+    "paso de las piedras_entre ríos": [
+        -31.701249,
+        -60.0932579
+    ],
+    "villa hernandarias_entre ríos": [
+        -31.772746,
+        -60.49784
+    ],
+    "crespo_entre ríos": [
+        -32.0307826,
+        -60.3062469
+    ],
+    "las garzas_entre ríos": [
+        -31.4253413,
+        -59.7433538
+    ],
+    "santa elena_entre ríos": [
+        -30.9478684,
+        -59.7844127
+    ],
+    "la paz_entre ríos": [
+        -30.7422896,
+        -59.6439325
+    ],
+    "feliciano_entre ríos": [
+        -31.7456578,
+        -60.5230575
+    ],
+    "molino doll_entre ríos": [
+        -32.3069907,
+        -60.4218419
+    ],
+    "gualeguaychu_entre ríos": [
+        -33.0078908,
+        -58.5109859
+    ],
+    "victoria_entre ríos": [
+        -32.6217981,
+        -60.1576895
+    ],
+    "arroyo barú_entre ríos": [
+        -31.8661139,
+        -58.4463106
+    ],
+    "nogoya_entre ríos": [
+        -32.3985574,
+        -59.787777
+    ],
+    "urdinarrain_entre ríos": [
+        -32.6910946,
+        -58.8885673
+    ],
+    "uruguay_entre ríos": [
+        -31.7305236,
+        -60.528555
+    ],
+    "diamante_entre ríos": [
+        -32.0670391,
+        -60.6426494
+    ],
+    "parana_entre ríos": [
+        -31.7330145,
+        -60.5298511
+    ],
+    "villa mantero_entre ríos": [
+        -32.3984177,
+        -58.7459122
+    ],
+    "corralito_córdoba": [
+        -32.0236774,
+        -64.192075
+    ],
+    "el fortín_córdoba": [
+        -31.9697703,
+        -62.3003476
+    ],
+    "freyre_córdoba": [
+        -31.1645209,
+        -62.0963059
+    ],
+    "morteros_córdoba": [
+        -30.7107038,
+        -62.0067058
+    ],
+    "rayo cortado_córdoba": [
+        -30.0762926,
+        -63.8251324
+    ],
+    "jesus maría_córdoba": [
+        -30.9764132,
+        -64.0957082
+    ],
+    "cañada de luque_córdoba": [
+        -30.7352678,
+        -63.7240686
+    ],
+    "río ceballos_córdoba": [
+        -31.1709088,
+        -64.3160951
+    ],
+    "villa maría_córdoba": [
+        -32.4106245,
+        -63.2435809
+    ],
+    "carrilobo_córdoba": [
+        -31.8715895,
+        -63.1157318
+    ],
+    "capilla de sitón_córdoba": [
+        -30.5720747,
+        -63.6521477
+    ],
+    "devoto_córdoba": [
+        -31.4015972,
+        -62.3060014
+    ],
+    "san francisco_córdoba": [
+        -31.4249815,
+        -62.0840299
+    ],
+    "eufrasio loza_córdoba": [
+        -29.9257056,
+        -63.5896591
+    ],
+    "laguna larga_córdoba": [
+        -31.7757039,
+        -63.800346
+    ],
+    "las bajadas_córdoba": [
+        -32.0971007,
+        -64.3307876
+    ],
+    "monte del rosario_córdoba": [
+        -30.9822469,
+        -63.6019485
+    ],
+    "montecristo_córdoba": [
+        -31.3886599,
+        -64.1396496
+    ],
+    "río segundo- t1_córdoba": [
+        -31.6501467,
+        -63.9116179
+    ],
+    "arroyito_córdoba": [
+        -31.4192409,
+        -63.0509405
+    ],
+    "santa catalina_córdoba": [
+        -33.2053017,
+        -64.437917
+    ],
+    "tancacha_córdoba": [
+        -32.2374827,
+        -63.9798348
+    ],
+    "villa de maria_córdoba": [
+        -29.9065473,
+        -63.7226242
+    ],
+    "villa sta. rosa_córdoba": [
+        -31.1534891,
+        -63.3993819
+    ],
+    "hernando_córdoba": [
+        -32.4279251,
+        -63.7343423
+    ],
+    "colonia tirolesa_córdoba": [
+        -31.2372536,
+        -64.0666039
+    ],
+    "piquillín_córdoba": [
+        -31.300212,
+        -63.7586562
+    ],
+    "las chilcas_córdoba": [
+        -30.0673866,
+        -64.3263432
+    ],
+    "sebastián elcano_córdoba": [
+        -30.1603346,
+        -63.5927172
+    ],
+    "el tío_córdoba": [
+        -31.3854384,
+        -62.828133
+    ],
+    "las astillas_córdoba": [
+        -30.9064179,
+        -63.8807881
+    ],
+    "tala norte_córdoba": [
+        -31.1166205,
+        -63.6001301
+    ],
+    "mi granja_córdoba": [
+        -31.3504301,
+        -64.0002537
+    ],
+    "sacanta_córdoba": [
+        -31.6634501,
+        -63.0479142
+    ],
+    "sinsacate_córdoba": [
+        -30.942822,
+        -64.0939374
+    ],
+    "manfredi_córdoba": [
+        -31.8457855,
+        -63.747563
+    ],
+    "brinkmann_córdoba": [
+        -30.8664858,
+        -62.0431198
+    ],
+    "la toma_san luis": [
+        -33.0534553,
+        -65.6214721
+    ],
+    "ceres_santa fe": [
+        -29.8819399,
+        -61.9451954
+    ],
+    "gálvez_santa fe": [
+        -32.0253403,
+        -61.2196794
+    ],
+    "humboldt_santa fe": [
+        -31.4008645,
+        -61.0820117
+    ],
+    "landeta_santa fe": [
+        -32.0128821,
+        -62.0621223
+    ],
+    "piamonte_santa fe": [
+        -32.1439613,
+        -61.980515
+    ],
+    "san vicente_santa fe": [
+        -31.6990379,
+        -61.5675521
+    ],
+    "pilar_santa fe": [
+        -31.4400806,
+        -61.2598298
+    ],
+    "san guillermo_santa fe": [
+        -30.3583009,
+        -61.9176721
+    ],
+    "san jorge_santa fe": [
+        -31.8962813,
+        -61.8597235
+    ],
+    "santa clara de saguier_santa fe": [
+        -31.335615,
+        -61.8181197
+    ],
+    "vila_santa fe": [
+        -31.1903062,
+        -61.8325798
+    ],
+    "lópez_santa fe": [
+        -31.9037969,
+        -61.2770597
+    ],
+    "campo piaggio_santa fe": [
+        -31.9666741,
+        -61.3296663
+    ],
+    "san carlos norte_santa fe": [
+        -31.6734613,
+        -61.0747934
+    ],
+    "el trébol_santa fe": [
+        -32.1972868,
+        -61.7099311
+    ],
+    "aldao_santa fe": [
+        -32.7046372,
+        -60.8159601
+    ],
+    "maria juana_santa fe": [
+        -31.6755638,
+        -61.7516598
+    ],
+    "progreso_santa fe": [
+        -31.1378938,
+        -60.9896847
+    ],
+    "sastre_santa fe": [
+        -31.7675113,
+        -61.8288888
+    ],
+    "san bernardo_santa fe": [
+        -30.889253,
+        -60.5740394
+    ],
+    "san jerónimo norte_santa fe": [
+        -31.5525222,
+        -61.0777138
+    ],
+    "ataliva_santa fe": [
+        -30.996178,
+        -61.4318393
+    ],
+    "bernardo de irigoyen_santa fe": [
+        -32.1679854,
+        -61.1574104
+    ],
+    "crispi_santa fe": [
+        -31.7398619,
+        -62.037608
+    ],
+    "esperanza_santa fe": [
+        -31.448994,
+        -60.9304048
+    ],
+    "moisés ville_santa fe": [
+        -30.7155114,
+        -61.469608
+    ],
+    "cañada rosquín_santa fe": [
+        -32.0544559,
+        -61.6018824
+    ],
+    "rincón de ávila_santa fe": [
+        -31.3238541,
+        -60.8673227
+    ],
+    "san fabián_santa fe": [
+        -32.1382161,
+        -60.9844823
+    ],
+    "_santa fe": [
+        -30.3154739,
+        -61.1645076
+    ],
+    "clucellas_santa fe": [
+        -31.4526309,
+        -61.706928
+    ],
+    "centeno_santa fe": [
+        -32.2959681,
+        -61.4080671
+    ],
+    "rafaela_santa fe": [
+        -31.2526923,
+        -61.4916758
+    ],
+    "san justo_santa fe": [
+        -32.0001305,
+        -60.9254825
+    ],
+    "la violeta_buenos aires": [
+        -33.7330396,
+        -60.1685881
+    ],
+    "américa_buenos aires": [
+        -35.4891187,
+        -62.9756868
+    ],
+    "chacabuco_buenos aires": [
+        -34.6297043,
+        -60.470185
+    ],
+    "cnel. dorrego_buenos aires": [
+        -33.9008159,
+        -60.5581167
+    ],
+    "coronel suarez_buenos aires": [
+        -37.4585755,
+        -61.9329038
+    ],
+    "cura malal_buenos aires": [
+        -37.4838787,
+        -62.1044832
+    ],
+    "germania_buenos aires": [
+        -34.5768249,
+        -62.0480101
+    ],
+    "gobernador castro_buenos aires": [
+        -33.6585733,
+        -59.8675097
+    ],
+    "gonzález moreno_buenos aires": [
+        -35.5551806,
+        -63.3799806
+    ],
+    "guaminí_buenos aires": [
+        -37.0109187,
+        -62.422215
+    ],
+    "leandro n. alem_buenos aires": [
+        -34.6029769,
+        -58.3697268
+    ],
+    "los toldos_buenos aires": [
+        -35.0002026,
+        -61.0384006
+    ],
+    "morse_buenos aires": [
+        -34.7600669,
+        -60.8445036
+    ],
+    "pasman_buenos aires": [
+        -37.2244756,
+        -62.1630242
+    ],
+    "rafael obligado_buenos aires": [
+        -34.3596838,
+        -60.7838835
+    ],
+    "florentino ameghino_buenos aires": [
+        -34.8452487,
+        -62.4668089
+    ],
+    "roberts_buenos aires": [
+        -35.1429018,
+        -61.970349
+    ],
+    "tres arroyos_buenos aires": [
+        -38.3770014,
+        -60.2755685
+    ],
+    "inés indart_buenos aires": [
+        -34.3974645,
+        -60.5414165
+    ],
+    "pirovano_buenos aires": [
+        -36.5101321,
+        -61.5554592
+    ],
+    "pedro gamen_buenos aires": [
+        -35.6477564,
+        -61.8392874
+    ],
+    "pigüé_buenos aires": [
+        -37.6027951,
+        -62.4023096
+    ],
+    "berraondo_buenos aires": [
+        -38.4138301,
+        -62.8176345
+    ],
+    "carhue_buenos aires": [
+        -37.1799683,
+        -62.7494197
+    ],
+    "chascomús_buenos aires": [
+        -35.5786869,
+        -58.0138252
+    ],
+    "necochea_buenos aires": [
+        -38.5545494,
+        -58.7392624
+    ],
+    "salto_buenos aires": [
+        -34.2917828,
+        -60.2544888
+    ],
+    "trenque lauquen_buenos aires": [
+        -35.9731074,
+        -62.7328794
+    ],
+    "chillar_buenos aires": [
+        -37.3128702,
+        -59.985229
+    ],
+    "viboras_buenos aires": [
+        -37.6943991,
+        -62.8060699
+    ],
+    "12 de octubre_buenos aires": [
+        -38.7388808,
+        -62.21265
+    ],
+    "ferré_buenos aires": [
+        -34.1257562,
+        -61.1338078
+    ],
+    "_buenos aires": [
+        -34.6095579,
+        -58.3887904
+    ],
+    "casey_buenos aires": [
+        -36.6876044,
+        -62.3506481
+    ],
+    "guanaco_buenos aires": [
+        -35.7147753,
+        -61.6495335
+    ],
+    "henderson_buenos aires": [
+        -36.301954,
+        -61.7139204
+    ],
+    "ayacucho_buenos aires": [
+        -37.1527482,
+        -58.4884187
+    ],
+    "gral. madariaga_buenos aires": [
+        -34.7042911,
+        -58.3677233
+    ],
+    "orense_buenos aires": [
+        -38.6882222,
+        -59.7807284
+    ],
+    "bragado_buenos aires": [
+        -35.1155766,
+        -60.489771
+    ],
+    "san pedro_buenos aires": [
+        -33.6760716,
+        -59.6629342
+    ],
+    "alberdi_buenos aires": [
+        -36.8836862,
+        -60.3348534
+    ],
+    "junín_buenos aires": [
+        -34.5934412,
+        -60.9461678
+    ],
+    "catriló_buenos aires": [
+        -34.6696654,
+        -58.521334
+    ],
+    "chivilcoy_buenos aires": [
+        -34.8969591,
+        -60.0190499
+    ],
+    "conesa_buenos aires": [
+        -33.5957269,
+        -60.3558532
+    ],
+    "san antonio de areco_buenos aires": [
+        -34.2437294,
+        -59.4734187
+    ],
+    "bordenave_buenos aires": [
+        -37.8046981,
+        -63.0410532
+    ],
+    "ascasubi_buenos aires": [
+        -34.7353656,
+        -58.2367332
+    ],
+    "bolivar_buenos aires": [
+        -34.6097375,
+        -58.3741113
+    ],
+    "pehuajó_buenos aires": [
+        -35.8104933,
+        -61.899055
+    ],
+    "balcarce_buenos aires": [
+        -37.846399,
+        -58.2554648
+    ],
+    "general roca_córdoba": [
+        -32.7310158,
+        -61.915915
+    ],
+    "gral. cabrera_córdoba": [
+        -32.6990341,
+        -63.7013339
+    ],
+    "la playosa_córdoba": [
+        -32.0996251,
+        -63.03167
+    ],
+    "ordoñez_córdoba": [
+        -32.8410457,
+        -62.8659311
+    ],
+    "arroyo cabral_córdoba": [
+        -32.4894728,
+        -63.4022008
+    ],
+    "benjamín gould_córdoba": [
+        -33.5874801,
+        -62.7282108
+    ],
+    "buchardo_córdoba": [
+        -34.7238062,
+        -63.5073178
+    ],
+    "coronel moldes_córdoba": [
+        -33.620793,
+        -64.5918428
+    ],
+    "guatimozin_córdoba": [
+        -33.4642953,
+        -62.4381621
+    ],
+    "lecueder_córdoba": [
+        -34.4955295,
+        -64.8096741
+    ],
+    "villa valeria_córdoba": [
+        -34.3416235,
+        -64.9206789
+    ],
+    "jovita_córdoba": [
+        -34.518857,
+        -63.9440228
+    ],
+    "adelia maría_córdoba": [
+        -33.6336195,
+        -64.0240394
+    ],
+    "cuatro vientos_córdoba": [
+        -33.0720427,
+        -64.5785213
+    ],
+    "general levalle_córdoba": [
+        -34.0074973,
+        -63.923389
+    ],
+    "la carlota_córdoba": [
+        -33.4179364,
+        -63.2934951
+    ],
+    "melo_córdoba": [
+        -34.3487625,
+        -63.445206
+    ],
+    "vicuña mackenna_córdoba": [
+        -33.9156871,
+        -64.3898493
+    ],
+    "monte buey_córdoba": [
+        -32.919699,
+        -62.4559927
+    ],
+    "marcos juarez 2_córdoba": [
+        -32.160109,
+        -64.1532828
+    ],
+    "ballesteros_córdoba": [
+        -32.5453242,
+        -62.9811138
+    ],
+    "achiras_córdoba": [
+        -33.174502,
+        -64.9920514
+    ],
+    "macachín_la pampa": [
+        -37.1369966,
+        -63.6667496
+    ],
+    "general pico_la pampa": [
+        -35.6591085,
+        -63.7576103
+    ],
+    "quemú quemú_la pampa": [
+        -36.0548131,
+        -63.5659467
+    ],
+    "santa rosa_la pampa": [
+        -36.6203503,
+        -64.2905765
+    ],
+    "anguil 1_la pampa": [
+        -36.5269604,
+        -64.0079566
+    ],
+    "winifreda_la pampa": [
+        -36.2275956,
+        -64.2334829
+    ],
+    "álvarez_santa fe": [
+        -33.1305513,
+        -60.8021185
+    ],
+    "hughes_santa fe": [
+        -33.8012821,
+        -61.3363467
+    ],
+    "iriarte_santa fe": [
+        -32.8737177,
+        -60.6912877
+    ],
+    "máximo paz_santa fe": [
+        -33.4831667,
+        -60.9561804
+    ],
+    "san jerónimo sur_santa fe": [
+        -32.8758681,
+        -61.0347379
+    ],
+    "teodelina_santa fe": [
+        -34.1895388,
+        -61.5265613
+    ],
+    "timbúes_santa fe": [
+        -32.6674546,
+        -60.7957434
+    ],
+    "venado tuerto_santa fe": [
+        -33.7455871,
+        -61.9686068
+    ],
+    "villa mugueta_santa fe": [
+        -33.3119003,
+        -61.0563641
+    ],
+    "wheelright_santa fe": [
+        -33.7129778,
+        -61.0480619
+    ],
+    "j. b. molina_santa fe": [
+        -33.4938205,
+        -60.5108701
+    ],
+    "armstrong_santa fe": [
+        -32.7862754,
+        -61.6035897
+    ],
+    "chañar ladeado_santa fe": [
+        -33.3261137,
+        -62.0352689
+    ],
+    "zavalla_santa fe": [
+        -33.0185383,
+        -60.8788584
+    ],
+    "pueblo uranga_santa fe": [
+        -33.2637886,
+        -60.7059966
+    ],
+    "pujato_santa fe": [
+        -33.0176021,
+        -61.0430978
+    ],
+    "cañada de gómez_santa fe": [
+        -32.8234448,
+        -61.3905125
+    ],
+    "los quirquinchos_santa fe": [
+        -33.3791194,
+        -61.7121111
+    ],
+    "copo quiles_salta": [
+        -24.7,
+        -65.4
+    ],
+    "j v gonzales_salta": [
+        -24.7277409,
+        -65.4952481
+    ],
+    "tusquita_tucumán": [
+        -26.9,
+        -65.2
+    ],
+    "la bajada_tucumán": [
+        -28.383254,
+        -65.6209226
+    ],
+    "rapelli_tucumán": [
+        -26.3946871,
+        -64.5034556
+    ],
+    "tierras del oeste_santiago del estero": [
+        -49.347033,
+        68.7133281
+    ],
+    "la osca_santa fe": [
+        42.772296,
+        -0.3307652
+    ],
+    "el guanagan_santa fe": [
+        -30.9,
+        -60.8
+    ],
+    "avia terai_santiago del estero": [
+        -26.6865723,
+        -60.7279985
+    ],
+    "copra_corrientes": [
+        -9.3136582,
+        -35.9341007
+    ],
+    "gral. arenales t1_buenos aires": [
+        -34.3037291,
+        -61.3062916
+    ],
+    "villa gral. savio_buenos aires": [
+        -33.4350116,
+        -60.1459721
+    ],
+    "25 de mayo salesiana_buenos aires": [
+        -35.4324152,
+        -60.171624
+    ],
+    "paraje fra pal_buenos aires": [
+        -36.67,
+        -60.5
+    ],
+    "gral. villegas_buenos aires": [
+        -35.032594,
+        -63.0148473
+    ],
+    "cnel. baigorria_córdoba": [
+        -32.1,
+        -63.6
+    ],
+    "la brianza_córdoba": [
+        45.5818917,
+        9.2720641
+    ],
+    "ing. luiggi_la pampa": [
+        -36.6,
+        -64.3
+    ],
+    "monte de oca_santa fe": [
+        -27.4783954,
+        -55.1388513
+    ]
+}
