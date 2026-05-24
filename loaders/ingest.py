@@ -43,28 +43,32 @@ def ingest_pest_records(records: List[PestMonitoringRecord]) -> int:
         )
     """)
 
-    # Convert Pydantic objects to standard dictionaries for SQL parameter binding
-    param_list = [
-        {
-            "occurrence_date": rec.occurrence_date,
-            "pest_type": rec.pest_type,
-            "severity_level": rec.severity_level,
-            "longitude": rec.longitude,
-            "latitude": rec.latitude,
-            "institution": rec.institution,
-            "province": rec.province,
-            "locality": rec.locality,
-            "adults_count": rec.adults_count,
-            "infection_percent": rec.infection_percent
-        }
-        for rec in records
-    ]
+    # Python-level deduplication of the batch to prevent duplicates within the same transaction batch
+    unique_params = {}
+    for rec in records:
+        # Use composite key matching the WHERE NOT EXISTS DB lookup
+        key = (rec.occurrence_date, rec.pest_type, rec.province, rec.locality, rec.institution)
+        if key not in unique_params:
+            unique_params[key] = {
+                "occurrence_date": rec.occurrence_date,
+                "pest_type": rec.pest_type,
+                "severity_level": rec.severity_level,
+                "longitude": rec.longitude,
+                "latitude": rec.latitude,
+                "institution": rec.institution,
+                "province": rec.province,
+                "locality": rec.locality,
+                "adults_count": rec.adults_count,
+                "infection_percent": rec.infection_percent
+            }
+
+    param_list = list(unique_params.values())
 
     try:
         with engine.begin() as conn:
             result = conn.execute(query, param_list)
             inserted_count = len(param_list)
-            logger.info(f"Successfully ingested {inserted_count} pest monitoring records.")
+            logger.info(f"Successfully ingested {inserted_count} unique pest monitoring records (filtered from {len(records)}).")
             return inserted_count
     except Exception as e:
         logger.error(f"Error ingesting pest monitoring records: {e}")
@@ -99,25 +103,30 @@ def ingest_climate_telemetry(records: List[ClimateTelemetryRecord]) -> int:
         )
     """)
 
-    param_list = [
-        {
-            "time": rec.time,
-            "location_id": rec.location_id,
-            "temp_max": rec.temp_max,
-            "humidity": rec.humidity,
-            "precipitation": rec.precipitation,
-            "longitude": rec.longitude,
-            "latitude": rec.latitude
-        }
-        for rec in records
-    ]
+    # Python-level deduplication to prevent duplicates in the same batch statement
+    unique_params = {}
+    for rec in records:
+        key = (rec.time, rec.location_id)
+        if key not in unique_params:
+            unique_params[key] = {
+                "time": rec.time,
+                "location_id": rec.location_id,
+                "temp_max": rec.temp_max,
+                "humidity": rec.humidity,
+                "precipitation": rec.precipitation,
+                "longitude": rec.longitude,
+                "latitude": rec.latitude
+            }
+
+    param_list = list(unique_params.values())
 
     try:
         with engine.begin() as conn:
             result = conn.execute(query, param_list)
             inserted_count = len(param_list)
-            logger.info(f"Successfully ingested {inserted_count} climate telemetry records.")
+            logger.info(f"Successfully ingested {inserted_count} unique climate telemetry records (filtered from {len(records)}).")
             return inserted_count
     except Exception as e:
         logger.error(f"Error ingesting climate telemetry records: {e}")
         raise
+

@@ -1,0 +1,24 @@
+# Plag-out Thermodynamic & Biological Parameters Matrix
+# Derived from official INTA guidelines and scientific literature (PubMed / Wiley)
+
+dalbulus_maidis:
+  scientific_name: "Dalbulus maidis"
+  common_name: "Chicharrita del maíz (Corn Leafhopper)"
+  thermodynamics:
+    t_base: 4.9             # Base developmental threshold in °C
+    t_max: 35.0             # Upper developmental cutoff in °C (fitness declines above this)
+    thermal_constant: 648.26 # Degree-days (DD) required from egg to adult
+  optimal_range:
+    min_temp: 17.5
+    max_temp: 35.0
+
+spodoptera_frugiperda:
+  scientific_name: "Spodoptera frugiperda"
+  common_name: "Oruga cogollera (Fall Armyworm)"
+  thermodynamics:
+    t_base: 11.0            # Base developmental threshold in °C
+    t_max: 32.0             # Upper developmental threshold (declines sharply above, lethal at 40°C)
+    thermal_constant: 430.0  # Average degree-days (DD) required from egg to adult (range 391-466)
+  optimal_range:
+    min_temp: 25.0
+    max_temp: 32.0

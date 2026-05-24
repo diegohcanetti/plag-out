@@ -133,14 +133,38 @@ def run_pipeline(
                 except Exception as e:
                     logger.error(f"Failed to ingest MAIZAR pest records: {e}")
 
-    # Step 3: Weather extraction from NASA POWER for each unique MAIZAR coordinate and occurrence date
-    if all_maizar_records:
-        logger.info("Step 2: Harvesting agrometeorological daily climate telemetry from NASA POWER...")
+    # Step 3: INGEST Extra Integrations (SINAVIMO Ground Truth and GBIF climatic niches)
+    logger.info("Step 2: Ingesting GBIF and SINAVIMO occurrences for niches validation...")
+    gbif_records = []
+    try:
+        gbif_limit = 5 if test_mode else 100
+        logger.info(f"Extracting GBIF occurrences (limit: {gbif_limit})...")
+        gbif_records = extract_gbif_occurrences("Spodoptera frugiperda", limit=gbif_limit)
+        if gbif_records:
+            ingest_pest_records(gbif_records)
+    except Exception as e:
+        logger.error(f"Failed to fetch/load GBIF occurrences: {e}")
+
+    sinavimo_records = []
+    try:
+        logger.info("Extracting SINAVIMO official alerts...")
+        sinavimo_records = extract_sinavimo_alerts()
+        if sinavimo_records:
+            ingest_pest_records(sinavimo_records)
+    except Exception as e:
+        logger.error(f"Failed to fetch/load SINAVIMO official alerts: {e}")
+
+    # Combine all biological records for unified climate harvesting
+    all_pest_records = all_maizar_records + gbif_records + sinavimo_records
+
+    # Step 4: Weather extraction from NASA POWER for each unique combined coordinate and occurrence date
+    if all_pest_records:
+        logger.info("Step 3: Harvesting agrometeorological daily climate telemetry from NASA POWER for all unified records...")
         # Extract unique combination of (latitude, longitude, date)
         unique_coord_dates = set(
             (rec.latitude, rec.longitude, rec.occurrence_date)
-            for rec in all_maizar_records
-            if rec.latitude != 0.0
+            for rec in all_pest_records
+            if rec.latitude != 0.0 and rec.latitude is not None and rec.longitude is not None
         )
         
         logger.info(f"Found {len(unique_coord_dates)} unique spatial-temporal coordinates to harvest weather.")
@@ -174,21 +198,6 @@ def run_pipeline(
                 ingest_climate_telemetry(climate_records)
             except Exception as e:
                 logger.error(f"Failed to ingest remaining climate variables: {e}")
-
-    # Step 4: INGEST Extra Integrations (SINAVIMO Ground Truth and GBIF climatic niches)
-    logger.info("Step 3: Ingesting GBIF and SINAVIMO occurrences for niches validation...")
-    try:
-        gbif_limit = 5 if test_mode else 100
-        gbif_records = extract_gbif_occurrences("Spodoptera frugiperda", limit=gbif_limit)
-        ingest_pest_records(gbif_records)
-    except Exception as e:
-        logger.error(f"Failed to fetch/load GBIF occurrences: {e}")
-
-    try:
-        sinavimo_records = extract_sinavimo_alerts()
-        ingest_pest_records(sinavimo_records)
-    except Exception as e:
-        logger.error(f"Failed to fetch/load SINAVIMO official alerts: {e}")
 
     logger.info("End-to-End Plag-out Pipeline Execution complete!")
 

@@ -12,9 +12,11 @@ def test_parse_maizar_pdf_real():
     """
     Verifies the PDF parser extracts structured records from the actual downloaded PDF.
     """
-    pdf_path = "42_report.pdf"
-    if not os.path.exists(pdf_path):
-        pytest.skip("Test PDF not present. Skipping real integration parsing test.")
+    import glob
+    pdf_files = glob.glob("data/maizar_pdfs/*.pdf")
+    if not pdf_files:
+        pytest.skip("No MAIZAR PDFs found in data/maizar_pdfs/. Skipping integration parsing test.")
+    pdf_path = pdf_files[0]
         
     report_date = datetime(2026, 5, 20)
     records = parse_maizar_pdf(pdf_path, report_date)

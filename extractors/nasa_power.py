@@ -21,19 +21,28 @@ logger = logging.getLogger(__name__)
 # Production-grade DNS caching at the Python socket level to completely prevent NameResolutionError (DNS exhaustion)
 _DNS_CACHE = {}
 _ORIGINAL_GETADDRINFO = socket.getaddrinfo
-
 def _cached_getaddrinfo(*args, **kwargs):
-    if args in _DNS_CACHE:
-        return _DNS_CACHE[args]
+    # Unify positional and keyword arguments into a standard tuple key
+    host = args[0] if len(args) > 0 else kwargs.get("host")
+    port = args[1] if len(args) > 1 else kwargs.get("port")
+    family = args[2] if len(args) > 2 else kwargs.get("family", 0)
+    socket_type = args[3] if len(args) > 3 else kwargs.get("type", 0)
+    proto = args[4] if len(args) > 4 else kwargs.get("proto", 0)
+    flags = args[5] if len(args) > 5 else kwargs.get("flags", 0)
+
+    cache_key = (host, port, family, socket_type, proto, flags)
+
+    if cache_key in _DNS_CACHE:
+        return _DNS_CACHE[cache_key]
     try:
         res = _ORIGINAL_GETADDRINFO(*args, **kwargs)
-        _DNS_CACHE[args] = res
+        _DNS_CACHE[cache_key] = res
         return res
     except Exception as e:
-        # If lookup fails but we have a stale entry, use it as a fallback!
-        for cached_args, cached_res in _DNS_CACHE.items():
-            if len(args) > 0 and len(cached_args) > 0 and args[0] == cached_args[0]:
-                logger.warning(f"DNS lookup failed for {args[0]}. Using cached fallback IP: {cached_res}")
+        # Fallback check matches only the host string
+        for cached_key, cached_res in _DNS_CACHE.items():
+            if host and cached_key[0] == host:
+                logger.warning(f"DNS lookup failed for {host}. Using cached fallback IP: {cached_res}")
                 return cached_res
         raise e
 
