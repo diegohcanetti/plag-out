@@ -28,10 +28,18 @@ def ingest_pest_records(records: List[PestMonitoringRecord]) -> int:
         INSERT INTO pest_monitoring (
             occurrence_date, pest_type, severity_level, geom, 
             institution, province, locality, adults_count, infection_percent
-        ) VALUES (
+        )
+        SELECT 
             :occurrence_date, :pest_type, :severity_level, 
             ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326)::geography,
             :institution, :province, :locality, :adults_count, :infection_percent
+        WHERE NOT EXISTS (
+            SELECT 1 FROM pest_monitoring 
+            WHERE occurrence_date = :occurrence_date 
+              AND pest_type = :pest_type 
+              AND province IS NOT DISTINCT FROM :province 
+              AND locality IS NOT DISTINCT FROM :locality 
+              AND institution IS NOT DISTINCT FROM :institution
         )
     """)
 
@@ -80,9 +88,14 @@ def ingest_climate_telemetry(records: List[ClimateTelemetryRecord]) -> int:
     query = text("""
         INSERT INTO climate_telemetry (
             time, location_id, temp_max, humidity, precipitation, location
-        ) VALUES (
+        )
+        SELECT 
             :time, :location_id, :temp_max, :humidity, :precipitation,
             ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326)::geography
+        WHERE NOT EXISTS (
+            SELECT 1 FROM climate_telemetry 
+            WHERE time = :time 
+              AND location_id = :location_id
         )
     """)
 

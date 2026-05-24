@@ -7,6 +7,8 @@ validated Pydantic models ready for ingestion.
 """
 
 import logging
+import time
+import socket
 from datetime import datetime
 from typing import List, Dict, Optional
 import requests
@@ -16,18 +18,42 @@ from models.schemas import ClimateTelemetryRecord
 
 logger = logging.getLogger(__name__)
 
+# Production-grade DNS caching at the Python socket level to completely prevent NameResolutionError (DNS exhaustion)
+_DNS_CACHE = {}
+_ORIGINAL_GETADDRINFO = socket.getaddrinfo
+
+def _cached_getaddrinfo(*args, **kwargs):
+    if args in _DNS_CACHE:
+        return _DNS_CACHE[args]
+    try:
+        res = _ORIGINAL_GETADDRINFO(*args, **kwargs)
+        _DNS_CACHE[args] = res
+        return res
+    except Exception as e:
+        # If lookup fails but we have a stale entry, use it as a fallback!
+        for cached_args, cached_res in _DNS_CACHE.items():
+            if len(args) > 0 and len(cached_args) > 0 and args[0] == cached_args[0]:
+                logger.warning(f"DNS lookup failed for {args[0]}. Using cached fallback IP: {cached_res}")
+                return cached_res
+        raise e
+
+socket.getaddrinfo = _cached_getaddrinfo
+
 # Configure local SQLite cache for NASA POWER calls
 requests_cache.install_cache(
     ".nasa_power_cache",
     expire_after=-1  # Static historical weather data does not change, never expire
 )
 
+# Global tracker for non-cached network calls to facilitate rate limiting / micro-pacing
+_NETWORK_CALLS_COUNT = 0
+
 
 class NasaPowerExtractor:
     """
     Client for the NASA POWER API implementing resilient daily data extraction.
     """
-    def __init__(self, retries: int = 5, backoff_factor: float = 0.3) -> None:
+    def __init__(self, retries: int = 5, backoff_factor: float = 1.0) -> None:
         # Wrap requests with automatic retries on status codes / connection drops
         session = requests.Session()
         self.session = retry(session, retries=retries, backoff_factor=backoff_factor)
@@ -66,8 +92,44 @@ class NasaPowerExtractor:
             "User-Agent": "Plag-out-Agrotech-Thesis-Pipeline-MVP/1.0"
         }
         
-        response = self.session.get(url, params=params, headers=headers, timeout=25)
-        response.raise_for_status()
+        global _NETWORK_CALLS_COUNT
+        
+        max_attempts = 3
+        response = None
+        for attempt in range(1, max_attempts + 1):
+            try:
+                response = self.session.get(url, params=params, headers=headers, timeout=25)
+                response.raise_for_status()
+                break  # Success!
+            except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as ce:
+                if attempt == max_attempts:
+                    logger.error(f"Failed to fetch climate variables for ({latitude}, {longitude}) after {max_attempts} attempts due to network errors.")
+                    raise ce
+                logger.warning(
+                    f"Network/DNS error on attempt {attempt}/{max_attempts} for coords ({latitude}, {longitude}): {ce}. "
+                    f"Initiating a 30-second cooldown recovery sleep before retry..."
+                )
+                time.sleep(30.0)
+            except Exception as e:
+                logger.error(f"Fatal or unexpected error querying NASA POWER on attempt {attempt}/{max_attempts}: {e}")
+                raise e
+                
+        if response is None:
+            return []
+            
+        # Inspect caching status to apply smart pacing (avoid slowing down cache hits)
+        is_from_cache = getattr(response, "from_cache", False)
+        if not is_from_cache:
+            _NETWORK_CALLS_COUNT += 1
+            logger.info(f"NASA POWER API network call #{_NETWORK_CALLS_COUNT}. Applying 0.3s micro-pacing sleep...")
+            time.sleep(0.3)
+            
+            # Group requests into chunks of 100, followed by a cool-down sleep
+            if _NETWORK_CALLS_COUNT % 100 == 0:
+                logger.info(f"Reached {_NETWORK_CALLS_COUNT} non-cached API requests. Initiating a 15-second chunk cool-down sleep...")
+                time.sleep(15.0)
+        else:
+            logger.debug(f"NASA POWER cache hit for coords ({latitude}, {longitude}) from {start_date} to {end_date}.")
         
         data = response.json()
         
@@ -134,16 +196,26 @@ class NasaPowerExtractor:
         return records
 
 
+# Cached single global instance of NasaPowerExtractor to leverage HTTP Keep-Alive connection pooling
+_SHARED_EXTRACTOR = None
+
+
 def extract_nasa_climate(
     latitude: float,
     longitude: float,
     start_date: str,
-    end_date: str
+    end_date: str,
+    extractor: Optional[NasaPowerExtractor] = None
 ) -> List[ClimateTelemetryRecord]:
     """
     Functional entrypoint to retrieve historical weather telemetry.
+    Reuses a shared/provided NasaPowerExtractor to leverage HTTP Keep-Alive connection pooling.
     """
-    extractor = NasaPowerExtractor()
+    global _SHARED_EXTRACTOR
+    if extractor is None:
+        if _SHARED_EXTRACTOR is None:
+            _SHARED_EXTRACTOR = NasaPowerExtractor()
+        extractor = _SHARED_EXTRACTOR
     return extractor.extract(latitude, longitude, start_date, end_date)
 
 

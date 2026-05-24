@@ -53,15 +53,17 @@ def get_session() -> Session:
 
 def execute_migration_queries():
     """
-    Ensure the database schema has the required columns for Plag-out data.
-    If the tables exist, it alters them to add the MAIZAR/pest metrics if missing.
+    Ensure the database schema has the required columns and indexes for Plag-out data.
+    If the tables exist, it alters them to add the MAIZAR/pest metrics and lookup indexes if missing.
     """
     alter_queries = [
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS institution TEXT;",
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS province TEXT;",
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS locality TEXT;",
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS adults_count INT;",
-        "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS infection_percent FLOAT;"
+        "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS infection_percent FLOAT;",
+        "CREATE INDEX IF NOT EXISTS pest_monitoring_lookup_idx ON pest_monitoring(occurrence_date, pest_type, province, locality, institution);",
+        "CREATE INDEX IF NOT EXISTS climate_telemetry_lookup_idx ON climate_telemetry(time, location_id);"
     ]
     engine = get_engine()
     with engine.begin() as conn:
@@ -70,5 +72,5 @@ def execute_migration_queries():
                 conn.execute(text(query))
                 logger.info(f"Executed: {query.strip()}")
             except Exception as e:
-                # If there's an issue executing, log and continue (e.g. columns might already exist)
+                # If there's an issue executing, log and continue (e.g. columns/indexes might already exist)
                 logger.warning(f"Failed to execute migration query: {e}")

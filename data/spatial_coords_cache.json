@@ -1390,5 +1390,169 @@
     "monte de oca_santa fe": [
         -27.4783954,
         -55.1388513
+    ],
+    "ballivián_salta": [
+        -22.9343587,
+        -63.8598092
+    ],
+    "gral pizarro_salta": [
+        -34.654802,
+        -58.5496468
+    ],
+    "mollinedo_salta": [
+        -24.5399351,
+        -64.1007255
+    ],
+    "nstra sra de talavera_salta": [
+        -24.7,
+        -65.4
+    ],
+    "pichanal_salta": [
+        -23.3220599,
+        -64.2269308
+    ],
+    "urundel_salta": [
+        -23.5582035,
+        -64.3978211
+    ],
+    "termas de río hondo_santiago del estero": [
+        -27.4959255,
+        -64.8640783
+    ],
+    "villa angela_chaco": [
+        -27.5768225,
+        -60.7112067
+    ],
+    "santa teresa capdevilla_chaco": [
+        -26.3,
+        -60.8
+    ],
+    "los juries_santiago del estero": [
+        -28.4633987,
+        -62.1100222
+    ],
+    "palo blanco_chaco": [
+        -26.6118635,
+        -61.592597
+    ],
+    "el colorado_santiago del estero": [
+        -27.9146149,
+        -62.1771313
+    ],
+    "_corrientes": [
+        -28.5,
+        -57.8
+    ],
+    "_entre ríos": [
+        -32.1,
+        -59.8
+    ],
+    "el trébol 4_santa fe": [
+        -32.1972868,
+        -61.7099311
+    ],
+    "puan_buenos aires": [
+        -34.623559,
+        -58.448639
+    ],
+    "talavera_salta": [
+        -25.4605474,
+        -63.7805985
+    ],
+    "chilca_tucumán": [
+        -27.7860633,
+        -65.2789917
+    ],
+    "hondo_santiago del estero": [
+        -27.5067621,
+        -64.9124835
+    ],
+    "el tocon bermejo_chaco": [
+        -26.3,
+        -60.8
+    ],
+    "cayasto_santa fe": [
+        -30.9,
+        -60.8
+    ],
+    "villada_santa fe": [
+        -33.3487788,
+        -61.4466868
+    ],
+    "pampa pozo_santiago del estero": [
+        -26.49377,
+        -64.5158346
+    ],
+    "susana_santa fe": [
+        -31.3557161,
+        -61.5159907
+    ],
+    "san pedro de guasayán_santiago del estero": [
+        -27.9546106,
+        -65.1665606
+    ],
+    "guasayán_santiago del estero": [
+        -27.9623216,
+        -64.8594587
+    ],
+    "castelli_chaco": [
+        -25.4551276,
+        -62.7128792
+    ],
+    "estancia el rocio copra_corrientes": [
+        -28.5,
+        -57.8
+    ],
+    "concepción del uruguay_entre ríos": [
+        -32.4851849,
+        -58.2320232
+    ],
+    "bajo hondo_chaco": [
+        -26.9966942,
+        -60.3375165
+    ],
+    "colonia la maría_santa fe": [
+        -34.6790358,
+        -58.6009577
+    ],
+    "bandera 2_santiago del estero": [
+        -28.8878546,
+        -62.2688764
+    ],
+    "obispo trejo_córdoba": [
+        -30.7810682,
+        -63.4101362
+    ],
+    "sebastián el cano_córdoba": [
+        -33.9206307,
+        -60.5949457
+    ],
+    "santa margarina_santa fe": [
+        -30.9,
+        -60.8
+    ],
+    "averias_santiago del estero": [
+        -27.3250112,
+        -63.6950605
+    ],
+    "cuatro bocas_santiago del estero": [
+        -28.8642078,
+        -61.8575993
+    ],
+    "las arenas_santiago del estero": [
+        -28.7822953,
+        -61.8431206
+    ],
+    "el malacara_santiago del estero": [
+        -28.4169383,
+        -62.5169647
+    ],
+    "videla_santa fe": [
+        -30.9441655,
+        -60.6522379
+    ],
+    "naré_santa fe": [
+        -30.948103,
+        -60.4668904
     ]
 }

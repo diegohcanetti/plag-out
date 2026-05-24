@@ -72,7 +72,7 @@ def fetch_report_pages() -> List[Dict[str, str]]:
     Scrapes the list page to find all individual report links and metadata.
     
     Returns:
-        List[Dict[str, str]]: List of dictionaries containing "title", "url", "id", "report_num".
+        List[Dict[str, str]]: List of dictionaries containing "title", "url", "id", "report_num", "date".
     """
     logger.info(f"Crawling MAIZAR index page: {SECCION_URL}")
     response = requests.get(SECCION_URL, headers=get_headers(), timeout=20)
@@ -88,11 +88,25 @@ def fetch_report_pages() -> List[Dict[str, str]]:
             # Avoid duplicate links or links that don't look like monitoring reports
             if "monitoreo" in title.lower() or "dalbulus" in title.lower() or "informe" in title.lower():
                 report_num = extract_report_number(title)
+                
+                # Extract date from sibling column
+                pub_date = None
+                parent_td = a.find_parent("td")
+                if parent_td:
+                    parent_tr = parent_td.find_parent("tr")
+                    if parent_tr:
+                        tds = parent_tr.find_all("td")
+                        if len(tds) >= 2:
+                            date_str = tds[1].get_text(strip=True)
+                            if re.match(r"\d{2}/\d{2}/\d{4}", date_str):
+                                pub_date = date_str
+                                
                 reports.append({
                     "title": title,
                     "url": f"{BASE_URL}/{href}",
                     "id": href.split("id=")[1],
-                    "report_num": report_num
+                    "report_num": report_num,
+                    "date": pub_date
                 })
                 
     # De-duplicate reports by URL
