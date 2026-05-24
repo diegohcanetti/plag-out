@@ -8,6 +8,10 @@ dalbulus_maidis:
     t_base: 4.9             # Base developmental threshold in °C
     t_max: 35.0             # Upper developmental cutoff in °C (fitness declines above this)
     thermal_constant: 648.26 # Degree-days (DD) required from egg to adult
+    egg_gdd: 102.0
+    nymph_gdd: 224.0
+    preoviposition_gdd: 55.0
+    generation_gdd: 381.0
   optimal_range:
     min_temp: 17.5
     max_temp: 35.0
@@ -19,6 +23,11 @@ spodoptera_frugiperda:
     t_base: 11.0            # Base developmental threshold in °C
     t_max: 32.0             # Upper developmental threshold (declines sharply above, lethal at 40°C)
     thermal_constant: 430.0  # Average degree-days (DD) required from egg to adult (range 391-466)
+    egg_gdd: 36.0
+    larva_gdd: 194.0
+    pupa_gdd: 113.0
+    preoviposition_gdd: 35.0
+    generation_gdd: 378.0
   optimal_range:
     min_temp: 25.0
     max_temp: 32.0

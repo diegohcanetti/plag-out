@@ -12,7 +12,7 @@ This script executes the complete predictive and thermodynamic workflow for Plag
 import os
 import argparse
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,6 +22,7 @@ from ml.biofix import BiofixExtractor, BiofixCohort
 from ml.climate import ClimateProvider, GDDCalculator, PEST_BIOLOGY
 from ml.predictors import FeatureEngineer, WarningLevel1Model
 from ml.engine import ThermodynamicEngine
+from loaders.db import get_engine
 
 # Configure logging
 logging.basicConfig(
@@ -36,13 +37,19 @@ def run_full_ml_pipeline(test_mode: bool = False):
     logger.info("        STARTING PLAG-OUT ML & THERMODYNAMIC PREDICTIVE PIPELINE       ")
     logger.info("======================================================================")
     
-    # Load dataset
-    pest_csv = "data/exports/pest_monitoring_dataset.csv"
-    if not os.path.exists(pest_csv):
-        raise FileNotFoundError(f"Pest monitoring CSV not found at {pest_csv}. Please run export_datasets.py first.")
-        
-    pest_df = pd.read_csv(pest_csv)
-    logger.info(f"Loaded {len(pest_df)} historical pest occurrence records from CSV.")
+    # Connect directly to the database and retrieve occurrences
+    try:
+        db_engine = get_engine()
+        query = (
+            "SELECT id, occurrence_date, pest_type, severity_level, institution, "
+            "province, locality, adults_count, infection_percent, ST_AsText(geom) as geom_wkt "
+            "FROM pest_monitoring"
+        )
+        pest_df = pd.read_sql_query(query, con=db_engine)
+        logger.info(f"Loaded {len(pest_df)} historical pest occurrence records directly from database.")
+    except Exception as e:
+        logger.error(f"Failed to fetch data directly from PostgreSQL: {e}")
+        raise
     
     # Initialize Climate Provider and GDD Calculator
     # In test_mode or offline, we use synthetic climate telemetry. Otherwise, we fetch NASA POWER.
@@ -136,9 +143,26 @@ def run_full_ml_pipeline(test_mode: bool = False):
             })
             
     alerts_df = pd.DataFrame(active_alerts)
+    
+    # Ensure exports directory exists and write CSV for backup
     alerts_csv = "data/exports/active_pest_alerts.csv"
+    os.makedirs(os.path.dirname(alerts_csv), exist_ok=True)
     alerts_df.to_csv(alerts_csv, index=False)
     logger.info(f"Successfully generated active thermodynamic alerts and exported to {alerts_csv}")
+    
+    # Persist the active alerts back to PostgreSQL database for event sourcing
+    if not alerts_df.empty:
+        try:
+            alerts_df_to_save = alerts_df.copy()
+            alerts_df_to_save["generated_at"] = datetime.now(timezone.utc)
+            alerts_df_to_save["evaluation_date"] = evaluation_date
+            
+            alerts_df_to_save.to_sql("pest_alerts", con=db_engine, if_exists="append", index=False)
+            logger.info("Successfully persisted active thermodynamic alerts to 'pest_alerts' table in PostgreSQL.")
+        except Exception as e:
+            logger.error(f"Failed to persist active alerts to PostgreSQL: {e}")
+    else:
+        logger.warning("No active thermodynamic alerts generated to persist to PostgreSQL.")
     
     # --------------------------------------------------------------------------
     # REPORTING & VISUALIZATION (WOW FACTOR)
@@ -177,8 +201,11 @@ def run_full_ml_pipeline(test_mode: bool = False):
         
         plt.plot(weather_df['date'], weather_df['cumulative_gdd'], label=f"{cohort.species} at {cohort.locality} (Biofix: {cohort.biofix_date.strftime('%Y-%m-%d')})", linewidth=2)
         
-    plt.axhline(y=381.0, color='r', linestyle='--', alpha=0.7, label="Dalbulus Generation GDD Threshold (381)")
-    plt.axhline(y=378.0, color='g', linestyle=':', alpha=0.7, label="Spodoptera Generation GDD Threshold (378)")
+    dm_gdd = PEST_BIOLOGY.get("Dalbulus maidis", {}).get("generation_gdd", 381.0)
+    sf_gdd = PEST_BIOLOGY.get("Spodoptera frugiperda", {}).get("generation_gdd", 378.0)
+    
+    plt.axhline(y=dm_gdd, color='r', linestyle='--', alpha=0.7, label=f"Dalbulus Generation GDD Threshold ({int(dm_gdd)})")
+    plt.axhline(y=sf_gdd, color='g', linestyle=':', alpha=0.7, label=f"Spodoptera Generation GDD Threshold ({int(sf_gdd)})")
     
     plt.title("Growing Degree Days (GDD) Accumulation from Empirical Biofix Dates", fontsize=14, fontweight='bold', pad=15)
     plt.xlabel("Date", fontsize=12)

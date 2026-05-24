@@ -18,26 +18,44 @@ from extractors.nasa_power import extract_nasa_climate
 logger = logging.getLogger(__name__)
 
 
-# Biological constants for target pests
-PEST_BIOLOGY = {
-    "Dalbulus maidis": {
-        "tbase": 10.0,
-        "tupper": 30.0,  # GDD calculation upper cutoff
-        "egg_gdd": 102.0,
-        "nymph_gdd": 224.0,
-        "preoviposition_gdd": 55.0,
-        "generation_gdd": 381.0,  # Total lifecycle from egg to adult egg-laying
-    },
-    "Spodoptera frugiperda": {
-        "tbase": 10.9,
-        "tupper": 32.0,
-        "egg_gdd": 36.0,
-        "larva_gdd": 194.0,
-        "pupa_gdd": 113.0,
-        "preoviposition_gdd": 35.0,
-        "generation_gdd": 378.0,
-    }
-}
+import yaml
+
+# Load dynamic biological parameters
+def load_pest_biology() -> Dict[str, dict]:
+    yaml_path = os.path.join(os.path.dirname(__file__), "biofix_params.yaml")
+    if not os.path.exists(yaml_path):
+        raise FileNotFoundError(f"biofix_params.yaml not found at {yaml_path}")
+    
+    with open(yaml_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+        
+    biology = {}
+    for key, info in data.items():
+        scientific_name = info.get("scientific_name")
+        thermo = info.get("thermodynamics", {})
+        
+        # Build dictionary compatible with the rest of the ML codebase
+        pest_dict = {
+            "tbase": thermo.get("t_base"),
+            "tupper": thermo.get("t_max"),
+        }
+        
+        # Include dynamic developmental GDD thresholds
+        gdd_keys = [
+            "egg_gdd", "nymph_gdd", "larva_gdd", "pupa_gdd", 
+            "preoviposition_gdd", "generation_gdd"
+        ]
+        for gk in gdd_keys:
+            if gk in thermo:
+                pest_dict[gk] = thermo[gk]
+                
+        if scientific_name:
+            biology[scientific_name] = pest_dict
+            
+    return biology
+
+PEST_BIOLOGY = load_pest_biology()
+
 
 
 class ClimateProvider:

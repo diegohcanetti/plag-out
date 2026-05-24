@@ -12,13 +12,13 @@ from sqlalchemy.orm import sessionmaker, Session
 
 logger = logging.getLogger(__name__)
 
-# Default connection URL. Can be overridden with PLAGOUT_DB_URL env var.
+# Default connection URL. Can be overridden with DATABASE_URL env var.
 DEFAULT_DB_URL = "postgresql://localhost/plagout_db"
-DB_URL = os.environ.get("PLAGOUT_DB_URL")
+DB_URL = os.environ.get("DATABASE_URL") or os.environ.get("PLAGOUT_DB_URL")
 
 if not DB_URL:
     logger.warning(
-        "PLAGOUT_DB_URL environment variable is not set! "
+        "DATABASE_URL environment variable is not set! "
         f"Falling back to default local URL: {DEFAULT_DB_URL}"
     )
     DB_URL = DEFAULT_DB_URL
