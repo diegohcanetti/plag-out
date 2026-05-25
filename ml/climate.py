@@ -14,6 +14,8 @@ import pandas as pd
 import numpy as np
 
 from extractors.nasa_power import extract_nasa_climate
+from loaders.db import get_engine
+from sqlalchemy import text
 
 logger = logging.getLogger(__name__)
 
@@ -165,7 +167,50 @@ class ClimateProvider:
             
         # Try database cache or API fetch if allowed
         df = None
-        if self.use_api:
+        
+        if self.use_db_cache:
+            try:
+                engine = get_engine()
+                loc_id = f"{lat_r:.4f}_{lon_r:.4f}"
+                # Order by time and retrieve local weather records using index
+                query = (
+                    "SELECT time::date as date, temp_max, humidity, precipitation "
+                    "FROM climate_telemetry "
+                    "WHERE location_id = :location_id "
+                    "AND time >= :start_date AND time < :end_date_next "
+                    "ORDER BY time"
+                )
+                end_date_next = end_date + timedelta(days=1)
+                with engine.connect() as conn:
+                    db_df = pd.read_sql_query(
+                        text(query),
+                        con=conn,
+                        params={
+                            "location_id": loc_id,
+                            "start_date": start_date,
+                            "end_date_next": end_date_next
+                        }
+                    )
+                if not db_df.empty:
+                    # Format column types
+                    db_df['date'] = pd.to_datetime(db_df['date'])
+                    db_df['temp_max'] = pd.to_numeric(db_df['temp_max'], errors='coerce')
+                    db_df['humidity'] = pd.to_numeric(db_df['humidity'], errors='coerce')
+                    db_df['precipitation'] = pd.to_numeric(db_df['precipitation'], errors='coerce')
+                    
+                    # Estimate temp_min (standard offset of 12.0 degrees, matching NASA API parser)
+                    db_df['temp_min'] = db_df['temp_max'] - 12.0
+                    
+                    # Check if the cache contains the full date range requested
+                    expected_days = (end_date - start_date).days + 1
+                    if len(db_df) >= expected_days:
+                        df = db_df[['date', 'temp_max', 'temp_min', 'humidity', 'precipitation']].copy().ffill().bfill()
+                        logger.debug(f"Loaded {len(df)} daily climate records from local database cache for {loc_id}")
+            except Exception as e:
+                logger.warning(f"Failed to query database climate cache for location {lat_r}_{lon_r}: {e}")
+                df = None
+                
+        if df is None and self.use_api:
             try:
                 # Query NASA POWER
                 records = extract_nasa_climate(lat_r, lon_r, start_str, end_str)
@@ -236,12 +281,24 @@ class GDDCalculator:
         """
         df = weather_df.copy()
         
-        gdds = []
-        for _, row in df.iterrows():
-            gdd = self.calculate_daily_gdd(row['temp_max'], row['temp_min'], tbase, tupper)
-            gdds.append(gdd)
+        tmax = df['temp_max'].copy()
+        tmin = df['temp_min'].copy()
+        
+        # Ensure temperatures are numeric to prevent NaT comparison issues
+        tmax = pd.to_numeric(tmax, errors='coerce')
+        tmin = pd.to_numeric(tmin, errors='coerce')
+        
+        if tupper is not None:
+            tmax = tmax.clip(upper=tupper)
+            tmin = tmin.clip(upper=tupper)
             
-        df['daily_gdd'] = gdds
+        tmax = tmax.clip(lower=tbase)
+        tmin = tmin.clip(lower=tbase)
+        
+        daily_gdd = ((tmax + tmin) / 2.0) - tbase
+        daily_gdd = daily_gdd.clip(lower=0.0).fillna(0.0)
+        
+        df['daily_gdd'] = daily_gdd
         df['cumulative_gdd'] = df['daily_gdd'].cumsum()
         
         return df
