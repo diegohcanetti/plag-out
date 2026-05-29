@@ -1,0 +1,41 @@
+name: Plag-out Nightly Pipeline
+
+on:
+  schedule:
+    # Run every night at 2:00 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering from the GitHub UI
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute ETL Pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PLAGOUT_API_KEY: ${{ secrets.PLAGOUT_API_KEY }}
+        run: |
+          PYTHONPATH=. python orchestrator.py
+
+      - name: Execute ML Pipeline
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          PLAGOUT_API_KEY: ${{ secrets.PLAGOUT_API_KEY }}
+        run: |
+          PYTHONPATH=. python ml/run_ml_pipeline.py
