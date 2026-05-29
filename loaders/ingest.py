@@ -75,7 +75,7 @@ def ingest_pest_records(records: List[PestMonitoringRecord]) -> int:
         raise
 
 
-def ingest_climate_telemetry(records: List[ClimateTelemetryRecord]) -> int:
+def ingest_climate_telemetry(records: List[ClimateTelemetryRecord], fast: bool = False) -> int:
     """
     Ingests a list of ClimateTelemetryRecords into the `climate_telemetry` table.
     Uses PostGIS geometry for spatial tracking and TimescaleDB hypertable optimization.
@@ -86,22 +86,30 @@ def ingest_climate_telemetry(records: List[ClimateTelemetryRecord]) -> int:
         return 0
 
     engine = get_engine()
-    # In order to support upsert, we need a unique constraint on (time, location_id).
-    # Since the user didn't specify one, we can do a standard insert. Let's make sure
-    # we don't insert duplicate keys if a unique index is present or simply run a standard INSERT.
-    query = text("""
-        INSERT INTO climate_telemetry (
-            time, location_id, temp_max, humidity, precipitation, location
-        )
-        SELECT 
-            :time, :location_id, :temp_max, :humidity, :precipitation,
-            ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326)::geography
-        WHERE NOT EXISTS (
-            SELECT 1 FROM climate_telemetry 
-            WHERE time = :time 
-              AND location_id = :location_id
-        )
-    """)
+    if fast:
+        query = text("""
+            INSERT INTO climate_telemetry (
+                time, location_id, temp_max, humidity, precipitation, location
+            )
+            VALUES (
+                :time, :location_id, :temp_max, :humidity, :precipitation,
+                ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326)::geography
+            )
+        """)
+    else:
+        query = text("""
+            INSERT INTO climate_telemetry (
+                time, location_id, temp_max, humidity, precipitation, location
+            )
+            SELECT 
+                :time, :location_id, :temp_max, :humidity, :precipitation,
+                ST_SetSRID(ST_MakePoint(:longitude, :latitude), 4326)::geography
+            WHERE NOT EXISTS (
+                SELECT 1 FROM climate_telemetry 
+                WHERE time = :time 
+                  AND location_id = :location_id
+            )
+        """)
 
     # Python-level deduplication to prevent duplicates in the same batch statement
     unique_params = {}
@@ -124,7 +132,7 @@ def ingest_climate_telemetry(records: List[ClimateTelemetryRecord]) -> int:
         with engine.begin() as conn:
             result = conn.execute(query, param_list)
             inserted_count = len(param_list)
-            logger.info(f"Successfully ingested {inserted_count} unique climate telemetry records (filtered from {len(records)}).")
+            logger.info(f"Successfully ingested {inserted_count} unique climate telemetry records (filtered from {len(records)}, fast={fast}).")
             return inserted_count
     except Exception as e:
         logger.error(f"Error ingesting climate telemetry records: {e}")

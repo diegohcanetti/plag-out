@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Mapa de insectos de los cultivos (Argentina) | Mapas REM (Red de Manejo de Plagas)</title>
+    <meta name="description" content="Mapas sobre insectos de los principales cultivos en Argentina. Distribución a escala de partido, tratamientos de control y tecnologías asociadas." />
+
+    <!-- Open Graph data 
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:site" content="@xxxxxx" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:video" content="" />
+    -->
+
+
+    <!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PLJHK8JX');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+    <meta name="GOOGLEBOT" content="INDEX,FOLLOW,ALL" />
+    <meta name="ROBOTS" content="INDEX,FOLLOW,ALL" />
+    <meta name="REVISIT" content="7 days" />
+    <meta name="REVISIT-AFTER" content="7 DAYS" />
+    <meta name="content-language" content="es-ES" />
+
+
+
+<meta http-equiv="cacrol" content="cache" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="shortcut icon" type="image/x-icon" href="https://www.aapresid.org.ar/rem-malezas/favicon.ico" />
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="/rem-malezas/js/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.aapresid.org.ar/rem-malezas/js/bootstrap-multiselect/dist/css/bootstrap-multiselect.css">
+
+
+<!-- Favicon -->
+<link href="https://www.aapresid.org.ar/rem-malezas/js/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="https://www.aapresid.org.ar/rem-malezas/css/flaticon/font/flaticon.css" rel="stylesheet">
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700,800" rel="stylesheet" />
+
+
+<!-- Styles -->
+<link href="https://www.aapresid.org.ar/rem-malezas/css/sidebar.css?v50" rel="stylesheet">
+<link href="https://www.aapresid.org.ar/rem-malezas/css/style.css?v2022-12" rel="stylesheet">
+<link href="https://www.aapresid.org.ar/rem-malezas/js/animate/animate.min.css" rel="stylesheet">
+
+
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://www.aapresid.org.ar/rem-malezas/js/mousewheel/jquery.mousewheel.min.css">
+
+
+<script>
+    var IDIOMA = 'es';
+
+    var imgIdioma = '';
+    if (IDIOMA == 'en') imgIdioma = '-' + IDIOMA;
+
+    var oTxtIdioma = {"Todos_los_filtros":"Todos los filtros","Filtros_malezas":"Filtros malezas","Todas_las_malezas":"Todas las malezas","Todas_las_insectos":"Todos los insectos","Malezas":"Malezas","Todos_los_anos":"Todos los a\u00f1os","seleccionados":"seleccionados","Anos":"A\u00f1os","Ano":"A\u00f1o","rem_presencia_de_malezas":"REM-Presencia-de-malezas","Filtros_aplicados_a_malezas":"Filtros aplicados a malezas","rem_abundancia_de_malezas":"REM-Abundancia-de-malezas","FUENTE_DE_LA_INFORMACION_CONSULTAR_EN":"FUENTE DE LA INFORMACI\u00d3N CONSULTAR EN","Cargando":"Cargando","Mapa_de_presencia_de_malezas":"Mapa de presencia de malezas","Mapa_de_porcentaje_de_lotes_afectados":"Mapa de porcentaje de lotes afectados","Porcentaje_de_lotes_afectados":"% de lotes afectados","lotes_afectados":"lotes afectados","has_afectadas":"has afectadas","has_agricolas_totales":"has agr\u00edcolas totales","Sospecha_de_resistencia":"Sospecha de resistencia","Tolerancia":"Tolerancia","Resistencia":"Resistencia","Cantidad_de_malezas":"Cantidad de malezas","o_mas":"o m\u00e1s","error_1001":"S\u00f3lo se pueden seleccionar 3 a\u00f1os","Buscar_como":"Se relev\u00f3 como ","No_se_relevo":"No se relev\u00f3","Filtros_cultivos":"Filtros cultivos","Todas_los_insectos":"Todas los insectos","Todas_las_enfermedades":"Todas las enfermedades","Todas_las_aplicaciones":"Todas las aplicaciones","Insectos":"Insectos","Enfermedades":"Enfermedades","Aplicaciones":"Aplicaciones","Cantidad_de_insectos":"Cantidad de insectos","Cantidad_de_enfermedades":"Cant. de enfermedades","Cantidad_de_aplicaciones":"Cant. de aplicaciones","Presencia_de_enfermedad":"Presencia de enfermedad","Presencia_de_insecto":"Presencia de insecto","Presencia_de_aplicacion":"Presencia de aplicaci\u00f3n","Mapa_de_porcentaje_de_lotes_tratados":"Mapa de porcentaje de lotes tratados","Porcentaje_de_lotes_tratados":"% de lotes tratados","lotes_tratados":"lotes tratados","has_tratados":"has tratados","Mapa_de_presencia_de_insectos":"Mapa de presencia de insectos","Mapa_de_presencia_de_enfermedades":"Mapa de presencia de enfermedades","Mapa_de_prevalencia_de_enfermedades":"Mapa de prevalencia de enfermedades","Mapa_de_cantidad_de_aplicaciones":"Mapa de cantidad de aplicaciones","Filtros_aplicados":"Filtros aplicados","rem_insectos_presencia":"REM-insectos-presencia","rem_insectos_superficie_tratada":"REM-insectos-superficie-tratada","rem_enfermedades_presencia":"REM-enfermedades-presencia","rem_enfermedades_prevalencia":"REM-enfermedades-prevalencia","rem_enfermedades_superficie_tratada":"REM-enfermedades-superficie-tratada","rem_aplicaciones_cantidad":"REM-aplicaciones-cantidad","rem_aplicaciones_uso_de_carboxamidas":"REM-aplicaciones-uso-de-carboxamidas","Porcentaje_uso_de_carboxamidas":"% uso de carboxamidas","Uso_de_carboxamidas":"Uso de carboxamidas","porc2_tratados_insectos":"% de lotes del cultivo con esta tecnolog\u00eda","de_lotes_con_soja_Intacta":"de lotes con soja Intacta","de_lotes_con_soja_Conkesta":"de lotes con soja Conkesta"};
+</script>
+    <style>
+        #boxMapas .cantMalezas h4.gris i {
+            background-color: #fb0a00 !important;
+        }
+
+        .categoriasAbundancia span {
+            font-size: 13px !important;
+        }
+
+        .tooltips {}
+
+        .tooltips .maleza {
+            overflow: hidden;
+            padding-right: 30px;
+            position: relative;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .tooltips .maleza.vGris.v0,
+        .tooltips .maleza.vGris.v0 fa,
+        .tooltips .maleza.vGris.v0 * {
+            color: #848484;
+        }
+
+        .tooltips .maleza.vGris.v0 {
+            border-left: 2px solid #848484;
+        }
+
+        .tooltips .maleza b {
+            font-weight: 500;
+        }
+
+
+
+
+        .maleza.vGris.v1,
+        .maleza.vGris.v1 fa,
+        .maleza.vGris.v1 * {
+            color: #212121;
+        }
+
+        .maleza.vGris.v1 {
+            border-left: 2px solid #212121;
+        }
+
+        .boxMaleza .descripcion.v0,
+        .boxMaleza .descripcion.v0 * {
+            color: #848484;
+        }
+
+        .boxMaleza .descripcion.v1,
+        .boxMaleza .descripcion.v1 * {
+            color: #212121;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PLJHK8JX');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body id="pagMapa" class="print">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLJHK8JX"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="wrapper">
+
+        <!-- Sidebar Holder -->
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="logo"><a href="https://www.aapresid.org.ar/rem/"><img src="https://www.aapresid.org.ar/rem-malezas/images/logo_rem.png" alt="Logo REM" /></a></div>
+    </div>
+    <div class="subMenuBononera">
+        <h3>Mapas</h3>
+        <div class="d3c">
+            <a href="https://www.aapresid.org.ar/rem-malezas/mapa-malezas" title="Mapa de malezas" data-toggle="tooltip"><img src="https://www.aapresid.org.ar/rem-malezas/images/iconos/icono-malezas-1x1-blanco.png" alt="" height="30px" /></a>
+            <a class="active" href="https://www.aapresid.org.ar/rem-malezas/mapa-insectos" title="Mapa de insectos" data-toggle="tooltip"><img src="https://www.aapresid.org.ar/rem-malezas/images/iconos/icono-insectos-1x1-blanco.png" alt="" height="30px" /></a>
+            <a href="https://www.aapresid.org.ar/rem-malezas/mapa-enfermedades" title="Mapa de enfermedades" data-toggle="tooltip"><img src="https://www.aapresid.org.ar/rem-malezas/images/iconos/icono-enfermedades-1x1-blanco.png" alt="" height="30px" /></a>
+        </div>
+    </div>
+    <ul class="list-unstyled components listMenu">
+
+
+
+
+        <li  class="active" >
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="true"><i class="flaticon-map"></i><span>Mapa de insectos</span></a>
+            <ul class="collapse list-unstyled  in " id="homeSubmenu">
+                <li>
+                    <form method="POST" action="https://www.aapresid.org.ar/rem-malezas/mapa-insectos/" class="formD2 D2-1" id="formMapa">
+
+
+                        <br>
+                        <!--<h4>Mapas</h4>-->
+
+
+
+                        <div>
+                            <label class="pdd-l12 pdd-b7" style="display: block;">
+                                <input type="radio" name="tipo_mapa" value="abundancia_maleza" class="middle campoAM campoPM" /><span class="color4 fw300" title="Indica % de lotes tratados para el control de la plaga en el departamento/partido" data-toggle="tooltip" data-placement="bottom">&nbsp;Superficie tratada</span>
+                            </label>
+                        </div>
+                        <div class="esAM esconder ">
+
+
+                            <div class="selectMultiple D2 divCultivoMapaAbundancia">
+                                <select name="cultivoMapaAbundancia[]" multiple="true" class="campoAM">
+                                    <option value="soja">Soja</option><option value="maiz-temprano">Maíz Temprano</option><option value="maiz-tardio">Maíz Tardío</option><option value="trigo">Trigo</option><option value="cebada">Cebada</option><option value="sorgo">Sorgo</option>                                </select>
+                            </div>
+
+
+                            <h4 class="pdd-l12 pdd-b7" style="padding-left: 24px;">Insecto en cultivo</h4>
+                            <div class="categoriasAbundancia">
+                                
+                                    <label class="pdd-l12 pdd-b7  soja">
+                                        <input type="radio" name="maleza[]" value="chinches-en-soja"    class="middle campoAM campoPM" /><span class="color4 fw300">Chinches en soja</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  soja">
+                                        <input type="radio" name="maleza[]" value="lepidopteros-en-soja-bt"    class="middle campoAM campoPM" /><span class="color4 fw300">Lepidópteros en soja Bt</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  soja">
+                                        <input type="radio" name="maleza[]" value="lepidopteros-en-soja-no-bt"    class="middle campoAM campoPM" /><span class="color4 fw300">Lepidópteros en soja no Bt</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  soja">
+                                        <input type="radio" name="maleza[]" value="trips-y-aranuela-en-soja"    class="middle campoAM campoPM" /><span class="color4 fw300">Trips y Arañuela en soja</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  soja">
+                                        <input type="radio" name="maleza[]" value="picudo-en-soja"    class="middle campoAM campoPM" /><span class="color4 fw300">Picudo en soja</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-temprano-no-bt"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz temprano no Bt</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-temprano-bt-cry"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz temprano Bt Cry</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-temprano-bt-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz temprano Bt Vip</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-tardio-no-bt"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz tardío no Bt</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-tardio-bt-cry"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz tardío Bt Cry</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="cogollero-en-maiz-tardio-bt-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Cogollero en maíz tardío Bt Vip</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="helicoverpa-en-maiz-temprano-no-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Helicoverpa en maíz temprano no Vip (no bt+Cry)</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="helicoverpa-en-maiz-temprano-bt-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Helicoverpa en maíz temprano Bt Vip</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="helicoverpa-en-maiz-tardio-no-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Helicoverpa en maíz tardio no Vip (no bt+Cry)</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="helicoverpa-en-maiz-tardio-bt-vip"    class="middle campoAM campoPM" /><span class="color4 fw300">Helicoverpa en maíz tardio Bt Vip</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-temprano">
+                                        <input type="radio" name="maleza[]" value="chicharrita-en-maiz-temprano"    class="middle campoAM campoPM" /><span class="color4 fw300">Chicharrita en maíz temprano (Dalbulus maidis)</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  maiz-tardio">
+                                        <input type="radio" name="maleza[]" value="chicharrita-en-maiz-tardio"    class="middle campoAM campoPM" /><span class="color4 fw300">Chicharrita en maíz tardío (Dalbulus maidis)</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  trigo">
+                                        <input type="radio" name="maleza[]" value="pulgones-en-trigo"    class="middle campoAM campoPM" /><span class="color4 fw300">Pulgones en trigo</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  trigo">
+                                        <input type="radio" name="maleza[]" value="oruga-desgranadora-en-trigo"    class="middle campoAM campoPM" /><span class="color4 fw300">Oruga desgranadora en trigo (Faronta albilinea)</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  cebada">
+                                        <input type="radio" name="maleza[]" value="pulgones-en-cebada"    class="middle campoAM campoPM" /><span class="color4 fw300">Pulgones en cebada</span>
+                                    </label>
+                                    
+                                    <label class="pdd-l12 pdd-b7  sorgo">
+                                        <input type="radio" name="maleza[]" value="pulgon-amarillo"    class="middle campoAM campoPM" /><span class="color4 fw300">Pulgon Amarillo (Melanaphis sorghi)</span>
+                                    </label>
+                                                                </div>
+                            <div class="selectMultiple D2 divAnosMapaAbundancia">
+                                <select name="anosMapaAbundancia[]" multiple="true" required="true" class="campoAM">
+                                    <option value="2019/2020"  selected="true"  >2019/2020</option><option value="2021/2022"  selected="true"  >2021/2022</option><option value="2023/2024"  selected="true"  >2023/2024</option>                                </select>
+                            </div>
+                            <br />
+                        </div>
+
+
+
+
+
+
+
+                        <div>
+                            <label class="pdd-l12 pdd-b7" style="display: block;">
+                                <input type="radio" name="tipo_mapa" value="presencia_maleza" checked="true" class="middle campoAM campoPM" /><span class="color4 fw300" title="Indica la presencia de la plaga en el departamento/partido" data-toggle="tooltip" data-placement="top">&nbsp;Presencia</span>
+                            </label>
+                        </div>
+                        <div class="selectMultiple D2 esPM div_filtros_malezas">
+                            <select name="filtros_malezas[]" multiple="true" class="campoPM">
+                                <option value="soja">Soja</option><option value="maiz-temprano">Maíz Temprano</option><option value="maiz-tardio">Maíz Tardío</option><option value="trigo">Trigo</option><option value="cebada">Cebada</option><option value="sorgo">Sorgo</option>                            </select>
+                        </div>
+                        <div class="selectMultiple D2 esPM">
+                            <select name="malezas[]" multiple="true" required="true" class="campoPM">
+                                <option value="chinches-en-soja" selected="true"  data-filtros="--soja--"  >Chinches en soja</option><option value="lepidopteros-en-soja" selected="true"  data-filtros="--soja--"  >Lepidópteros en soja</option><option value="trips-y-aranuela-en-soja" selected="true"  data-filtros="--soja--"  >Trips y Arañuela en soja</option><option value="picudo-en-soja" selected="true"  data-filtros="--soja--"  >Picudo en soja</option><option value="cogollero-en-maiz-temprano" selected="true"  data-filtros="--maiz-temprano--"  >Cogollero en maíz temprano</option><option value="cogollero-en-maiz-tardio" selected="true"  data-filtros="--maiz-tardio--"  >Cogollero en maíz tardío</option><option value="chicharrita-en-maiz-temprano" selected="true"  data-filtros="--maiz-temprano--"  >Chicharrita en maíz temprano</option><option value="chicharrita-en-maiz-tardio" selected="true"  data-filtros="--maiz-tardio--"  >Chicharrita en maíz tardio</option><option value="pulgones-en-trigo" selected="true"  data-filtros="--trigo--"  >Pulgones en trigo</option><option value="pulgones-en-cebada" selected="true"  data-filtros="--cebada--"  >Pulgones en cebada</option><option value="oruga-de-la-espiga-en-maiz-temprano" selected="true"  data-filtros="--maiz-temprano--"  >Oruga de la espiga en maiz temprano (Helicoverpa zea)</option><option value="oruga-de-la-espiga-en-maiz-tardio" selected="true"  data-filtros="--maiz-tardio--"  >Oruga de la espiga en maiz tardio (Helicoverpa zea)</option><option value="pulgon-amarillo-en-sorgo" selected="true"  data-filtros="--sorgo--"  >Pulgon Amarillo en sorgo (Melanaphis sorghi)</option><option value="oruga-desgranadora" selected="true"  data-filtros="--trigo--"  >Oruga desgranadora en trigo (Faronta albilinea)</option>                            </select>
+                        </div>
+                        <div class="selectMultiple D2 esPM divAnosPM">
+                            <p class="error esconder" title="Sólo se pueden seleccionar 3 años">Sólo se pueden seleccionar 3 años</p>
+                            <select name="anosPM[]" multiple="true" required="true" class="campoPM">
+                                <option value="2019/2020"  selected="true"  >2019/2020</option><option value="2021/2022"  selected="true"  >2021/2022</option><option value="2023/2024"  selected="true"  >2023/2024</option>                            </select>
+                        </div>
+
+
+                        <br />
+
+                        <button type="submit" class="btn btn-D12 btnSubmit"><i class="fa fa-spinner fa-spin"></i>Filtrar</button>
+
+                    </form>
+                </li>
+            </ul>
+        </li>
+        <li ><a href="https://www.aapresid.org.ar/rem-malezas/mapa-insectos/guia-visual"><i class="flaticon-instagram"></i><span>Guía visual</span></a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <!--<div class="logo"><a href="https://www.aapresid.org.ar"><img src="https://www.aapresid.org.ar/rem-malezas/images/logo_aapresid.png?v01" alt="Logo Aapresid" /></a></div>-->
+        <h4 class="uppercase">Datos de contacto</h4>
+        <p class="datos direccion">
+            
+Edificio Dorrego Bureaux Dorrego 1639,
+<br>Piso 2, Oficina A,
+<br>(2000) Rosario, Santa Fe, Argentina
+        </p>
+        <p class="datos cel"><a href="tel:+54-341-4260745" class="link">+54 (341) 4260745/46</a></p>
+        <p class="datos email"><a href="/cdn-cgi/l/email-protection#9fedfaf2dffefeefedfaecf6fbb1f0edf8b1feed" class="link"><span class="__cf_email__" data-cfemail="5f2d3a321f3e3e2f2d3a2c363b71302d38713e2d">[email&#160;protected]</span></a></p>
+    </div>
+
+    <button type="button" id="sidebarCollapse" class="btn navbar-btn btnSidebar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+</nav>
+
+<div class="headerPrint esconder">
+    <img src="https://www.aapresid.org.ar/rem-malezas/images/logo_rem_w700.png" alt="Logo REM" height="85px" width="auto" />
+</div>
+
+<div class="logo-header-movil esconder"><a href="https://www.aapresid.org.ar/rem/"><img src="https://www.aapresid.org.ar/rem-malezas/images/logo_aapresid_rem_color.png" alt="Logo REM" height="auto" width="auto" style="width:65%;max-width:300px;" class="logoMovil" /></a></div>
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <div class="txtValoresSelec esconder">
+                <div class="titulo">
+                    <h1></h1>
+                </div>
+                <div class="filtros_malezas"><b>Filtros aplicados:</b>&nbsp;<span class="valor"></span></div>
+                <div class="malezas"><b>Insectos:</b>&nbsp;<span class="valor"></span></div>
+                <div class="anos"><b>Años:</b>&nbsp;<span class="valor"></span></div>
+                <div class="maleza"><b>Insectos:</b>&nbsp;<span class="valor"></span></div>
+                <div class="boxColoresEnMapa text-left">
+
+                </div>
+            </div>
+
+            <div id="boxMapas" class="M3">
+
+                <div class="loadingMapa">
+                    <div><i class="fa fa-spinner fa-spin"></i>Cargando</div>
+                </div>
+
+            </div>
+
+            <div class="botoneraGeneral">
+
+                                    <a href="?idioma=en" class="btn btn-D13 idioma" title="Map in English"><i class="fa fa-language"></i> English</a>
+                
+                <button type="button" class="btn btn-D13 btnDownloadPDF" title="Descargar PDF" data-toggle="tooltip" data-placement="top"><i class="fa fa-file-pdf"></i></button>
+                <a href="#" class="print btn btn-D13 imprimirCotenidoActual" title="Imprimir" data-toggle="tooltip" data-placement="top"><i class="fa fa-print"></i></a>
+
+
+                <a href="#" target="_blank" class="btn btn-D13 facebook" title="Compartir en Facebook" data-toggle="tooltip" data-placement="top"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" class="btn btn-D13 twitter twitter-share" title="Compartir en Twitter" data-toggle="tooltip" data-placement="top"><i class="fab fa-twitter"></i></a>
+
+                <a href="#" target="_blank" class="btn btn-D13 whatsapp" title="Compartir en Whatsapp" data-toggle="tooltip" data-placement="top"><i class="fab fa-whatsapp"></i></a>
+
+                <button type="button" class="btn btn-D13" title="¿Cómo se hicieron los mapas?" data-toggle="tooltip" data-placement="top" onclick="$('#MdlInfoMapas').modal('show')"><i class="fa fa-question"></i></button>
+
+            </div>
+
+            <div class="boxCopyRight esconder print"><span class="fw500">Fuente de la información consultar en:</span> <span class="fw500 color1">www.aapresid.org.ar/rem</span></div>
+
+        </div>
+    </div>
+
+
+
+    
+<div class="js">
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    var WEB_URL_COMPLETA = 'https://www.aapresid.org.ar/rem-malezas/';
+    var WEB_URL_COMPLETA_CARPETA_RAIZ = 'https://www.aapresid.org.ar/rem-malezas/mapa-insectos/';
+    </script>
+    <!-- JS Scripts -->
+    <script src="https://www.aapresid.org.ar/rem-malezas/js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://www.aapresid.org.ar/rem-malezas/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://www.aapresid.org.ar/rem-malezas/js/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+    
+    <script src="https://www.aapresid.org.ar/rem-malezas/mapa-insectos/js/script.js"></script> 
+    <script src="https://www.aapresid.org.ar/rem-malezas/mapa-insectos/js/mapasMalezas/jsMapa.js?v2024-11-v02"></script>
+    
+    <script>
+    $(function(){
+        jsImprimir();   
+        
+        $('[data-toggle="tooltip"]').tooltip(); 
+    })
+    </script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://www.aapresid.org.ar/rem-malezas/js/mousewheel/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                                //$('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+
+
+    
+
+</div>
+
+
+    <script src="https://www.aapresid.org.ar/rem-malezas/js/jsPDF/dist/jspdf.min.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4ewnb-t2naErJjWxzVjvjyOguyZdzZs&loading=async"></script>
+
+    <script type="text/javascript" src="https://www.aapresid.org.ar/rem-malezas/js/html2canvas.js"></script>
+
+
+
+    <!-- Modal: ¿Cómo se hicieron los mapas? -->
+    <div class="modal fade" id="MdlInfoMapas" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h3>¿Cómo se hicieron los mapas?</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+
+
+                    <div>
+
+                        
+<p>La existencia de mapas que muestran la presencia y tratamientos de las principales enfermedades y plagas insectiles de los cultivos de mayor importancia en el país, es valorada por diferentes actores de la producción: los productores y asesores para conocer si en su zona se encuentra determinada  plaga y así aumentar la precaución, especialmente el monitoreo; las empresas de insumos para dirigir la búsqueda de soluciones y su fuerza de venta hacia las zonas más afectadas; entre otras utilidades.</p>
+
+<br />
+<h4>Enfermedades e insectos mapeados</h4>
+<p>En el año 2020 REM realizó este mapeo por primera vez. El mismo estuvo dirigido a las principales adversidades fúngicas e insectiles que se encuentran en los cultivos de soja, maíz (temprano y tardío), trigo y cebada. Se recopiló información sobre la presencia de las mismas para los distintos Departamentos/Partidos como así también en qué porcentaje los lotes requirieron tratamiento. Esta información es sumamente valiosa para territorializar el estado de situación de los cultivos, la presión que ejercen dichas adversidades sobre los mismos, y el alcance de umbrales de acción para tratamientos químicos.<p>
+
+
+<br />
+<h4>Enfermedades mapeadas por REM</h4>
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>EFC en soja (Septoria glycines, Cercospora kikuchii, Colletotrichum truncatum, Phomopsis sp.etc.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roya del maíz (Puccinia sorghi) (en maíz temprano)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tizón del maíz (Exserohilum turcicum) (en maíz temprano)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roya del maíz (Puccinia sorghi) (en maíz tardío)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tizón del maíz (Exserohilum turcicum) (en maíz tardío)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roya amarilla o estriada del trigo (Puccinia striiformis f. sp. tritici)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roya anaranjada o de la hoja del Trigo (Puccinia triticina)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Roya negra o del tallo del Trigo (Puccinia graminis f. sp. tritici)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mancha amarilla del trigo (Drechslera tritici-repentis)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Septoriosis del trigo (Zymoseptoria tritici)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Royas de la cebada (Puccinia sp.)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ramularia de la cebada (Ramularia collo-cygni)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mancha en red de la cebada (Drechslera teres)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        
+
+<br />
+<h4>Insectos mapeados</h4>
+
+
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>Lepidópteros en soja no Bt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lepidópteros en soja Bt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chinches en soja</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trips y Arañuela en soja</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Picudo en soja</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz temprano no Bt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz temprano Bt Cry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz temprano Bt Vip</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz tardío no Bt</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz tardío Bt Cry</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cogollero en maíz tardío Bt Vip</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+                        
+<br />
+<br />
+<p>
+Los mapas incluyen información de 200 partidos y departamentos de 10 provincias argentinas, lo que representa prácticamente la totalidad del área agrícola del país. Para obtener esta información se consultó a 200 profesionales y fue revisado por  referentes distribuidos en toda esta geografía.
+</p>
+
+
+
+
+<br />
+<br />
+<h4 dir="ltr">Colores de los mapas</h4>
+<p dir="ltr">En los <strong>mapas de presencia</strong>, cuando se visualiza más de una adversidad (ya sea enfermedades o insectos) la escala de colores va del blanco al negro, pasando por un gradiente de tonalides de grises según avance la cantidad presente. 
+<br>Ahora bien, cuando se centra la caracterización a una adversidad específica; el rojo indica la presencia de la misma en dicho departamento o partido. La visualización del gris pertenece a los departamentos que fueron consultados para dicho cultivos pero donde la adversidad no tuvo presencia.
+</p>
+<p dir="ltr">En el caso de los <strong>mapas de superficie tratada</strong> los departamentos se colorean según un gradiente de intensidad de tonalidades rojas según aumente el porcentaje de lotes tratados para una adversidad específica.
+<br>Cabe aclarar que en el caso de los insectos, para los cultivos de maíz y soja, también se informa el dato del porcentaje de lotes del cultivo con las diferentes tecnologías disponibles para lepidópteros. Es un dato que creemos importante poder visualizar ya que nos da información de la adopción por parte de los productores y en qué medida tiene impacto ese porcentaje de los lotes tratados.
+</p>
+
+
+
+
+
+
+<br />
+<h4 dir="ltr">Limitaciones</h4>
+<p dir="ltr">Por último, es preciso mencionar como limitaciones de esta metodología, en primer lugar la posibilidad que en algún partido/departamento exista la presencia de alguna adversidad y no aparezcan en el mapa, por desconocimiento de las personas consultadas. En segundo lugar, se debe tener en consideración que los porcentajes informados en los mapas surgen de estimaciones propias de los encuestados por lo que puede haber diferencias a campo.</p>
+
+
+
+
+
+<br />
+<h4 dir="ltr">Agradecimientos</h4>
+<p dir="ltr">A todas las personas que desinteresadamente respondieron brindando información de su zona.</p>
+<p dir="ltr">A los referentes técnicos de instituciones públicas que hicieron aportes a la información presentada.</p>
+
+<br />
+<br />
+
+
+
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a036097dc89eceb8',t:'MTc4MDA2MzM0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
+</html>

@@ -7,6 +7,8 @@ It uses SQLAlchemy to provide a robust connection pool.
 
 import os
 import logging
+from datetime import datetime
+from typing import Optional
 from sqlalchemy import create_engine, Engine, text
 from sqlalchemy.orm import sessionmaker, Session
 
@@ -97,7 +99,9 @@ def execute_migration_queries():
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS adults_count INT;",
         "ALTER TABLE pest_monitoring ADD COLUMN IF NOT EXISTS infection_percent FLOAT;",
         "CREATE INDEX IF NOT EXISTS pest_monitoring_lookup_idx ON pest_monitoring(occurrence_date, pest_type, province, locality, institution);",
-        "CREATE INDEX IF NOT EXISTS climate_telemetry_lookup_idx ON climate_telemetry(time, location_id);"
+        "CREATE INDEX IF NOT EXISTS climate_telemetry_lookup_idx ON climate_telemetry(time, location_id);",
+        "CREATE TABLE IF NOT EXISTS etl_watermarks (source_name TEXT PRIMARY KEY, last_run_timestamp TIMESTAMPTZ NOT NULL);",
+        "CREATE TABLE IF NOT EXISTS etl_quarantine (id SERIAL PRIMARY KEY, file_path TEXT NOT NULL, error_message TEXT, quarantined_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP);"
     ]
     
     with engine.begin() as conn:
@@ -108,4 +112,62 @@ def execute_migration_queries():
             except Exception as e:
                 # If there's an issue executing, log and continue (e.g. columns/indexes might already exist)
                 logger.warning(f"Failed to execute migration query: {e}")
+
+
+def get_etl_watermark(source_name: str) -> Optional[datetime]:
+    """
+    Get the last run timestamp for a given ETL source.
+    """
+    engine = get_engine()
+    try:
+        with engine.connect() as conn:
+            result = conn.execute(
+                text("SELECT last_run_timestamp FROM etl_watermarks WHERE source_name = :source"),
+                {"source": source_name}
+            ).fetchone()
+            if result:
+                return result[0]
+    except Exception as e:
+        logger.warning(f"Failed to fetch ETL watermark for {source_name}: {e}")
+    return None
+
+
+def update_etl_watermark(source_name: str, last_run_timestamp: datetime):
+    """
+    Set or update the last run timestamp for a given ETL source.
+    """
+    engine = get_engine()
+    try:
+        with engine.begin() as conn:
+            conn.execute(
+                text(
+                    "INSERT INTO etl_watermarks (source_name, last_run_timestamp) "
+                    "VALUES (:source, :timestamp) "
+                    "ON CONFLICT (source_name) DO UPDATE "
+                    "SET last_run_timestamp = EXCLUDED.last_run_timestamp"
+                ),
+                {"source": source_name, "timestamp": last_run_timestamp}
+            )
+            logger.info(f"ETL watermark for {source_name} updated to {last_run_timestamp.isoformat()}")
+    except Exception as e:
+        logger.error(f"Failed to update ETL watermark for {source_name}: {e}")
+
+
+def quarantine_failed_file(file_path: str, error_message: str):
+    """
+    Log a failed ingestion file to the etl_quarantine table.
+    """
+    engine = get_engine()
+    try:
+        with engine.begin() as conn:
+            conn.execute(
+                text(
+                    "INSERT INTO etl_quarantine (file_path, error_message) "
+                    "VALUES (:file_path, :error_message)"
+                ),
+                {"file_path": file_path, "error_message": error_message}
+            )
+            logger.warning(f"File quarantined in database: {file_path} due to error: {error_message}")
+    except Exception as e:
+        logger.error(f"Failed to quarantine file {file_path} in database: {e}")
 

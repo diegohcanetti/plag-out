@@ -26,3 +26,18 @@ CREATE TABLE IF NOT EXISTS pest_monitoring (
 
 -- 4. Create PostGIS spatial index
 CREATE INDEX IF NOT EXISTS pest_geom_idx ON pest_monitoring USING GIST (geom);
+
+-- 5. Create ETL Watermarks table for Delta Loads
+CREATE TABLE IF NOT EXISTS etl_watermarks (
+    source_name TEXT PRIMARY KEY,
+    last_run_timestamp TIMESTAMPTZ NOT NULL
+);
+
+-- 6. Create ETL Quarantine table (Dead Letter Queue)
+CREATE TABLE IF NOT EXISTS etl_quarantine (
+    id SERIAL PRIMARY KEY,
+    file_path TEXT NOT NULL,
+    error_message TEXT,
+    quarantined_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
+);
+

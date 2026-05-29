@@ -51,6 +51,27 @@ def load_pest_biology() -> Dict[str, dict]:
             if gk in thermo:
                 pest_dict[gk] = thermo[gk]
                 
+        # Dynamic fallbacks for missing preoviposition and generation GDD
+        if "preoviposition_gdd" not in pest_dict:
+            pest_dict["preoviposition_gdd"] = 35.0
+            
+        if "generation_gdd" not in pest_dict:
+            if "larva_gdd" in pest_dict and "pupa_gdd" in pest_dict:
+                pest_dict["generation_gdd"] = (
+                    pest_dict.get("egg_gdd", 0.0) + 
+                    pest_dict["larva_gdd"] + 
+                    pest_dict["pupa_gdd"] + 
+                    pest_dict["preoviposition_gdd"]
+                )
+            elif "nymph_gdd" in pest_dict:
+                pest_dict["generation_gdd"] = (
+                    pest_dict.get("egg_gdd", 0.0) + 
+                    pest_dict["nymph_gdd"] + 
+                    pest_dict["preoviposition_gdd"]
+                )
+            else:
+                pest_dict["generation_gdd"] = thermo.get("thermal_constant", 400.0) + pest_dict["preoviposition_gdd"]
+                
         if scientific_name:
             biology[scientific_name] = pest_dict
             

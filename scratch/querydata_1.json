@@ -1,0 +1,422 @@
+{
+  "jobIds": [
+    "38206db6-ee0e-481b-9ee4-12c511b1ec0d"
+  ],
+  "results": [
+    {
+      "jobId": "38206db6-ee0e-481b-9ee4-12c511b1ec0d",
+      "result": {
+        "data": {
+          "timestamp": "2026-05-28T15:03:32.224Z",
+          "rootActivityId": "2e9d9d15-0369-479a-be97-9183955bb1cf",
+          "descriptor": {
+            "Select": [
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G0",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "Hoja 1",
+                      "Property": "Unidad INTA"
+                    },
+                    "Calc": "G0",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Hoja 1.Unidad INTA"
+              }
+            ],
+            "Expressions": {
+              "Primary": {
+                "Groupings": [
+                  {
+                    "Keys": [
+                      {
+                        "Source": {
+                          "Entity": "Hoja 1",
+                          "Property": "Unidad INTA"
+                        },
+                        "Select": 0
+                      }
+                    ],
+                    "Member": "DM0"
+                  }
+                ]
+              }
+            },
+            "Version": 2
+          },
+          "metrics": {
+            "Version": "1.0.0",
+            "Events": [
+              {
+                "Id": "52256fdf-8519-4f70-8496-842b666f41ef",
+                "Name": "Execute Semantic Query",
+                "Component": "DSE",
+                "Start": "2026-05-28T15:03:32.224387Z",
+                "End": "2026-05-28T15:03:32.3493786Z"
+              },
+              {
+                "Id": "e02bea77-298e-4363-b2eb-258281fa025a",
+                "ParentId": "52256fdf-8519-4f70-8496-842b666f41ef",
+                "Name": "Execute DAX Query",
+                "Component": "DSE",
+                "Start": "2026-05-28T15:03:32.224387Z",
+                "End": "2026-05-28T15:03:32.3493786Z",
+                "Metrics": {
+                  "RowCount": 101
+                }
+              },
+              {
+                "Id": "112E6D07-9346-46F1-9483-5DAADBD66630",
+                "ParentId": "e02bea77-298e-4363-b2eb-258281fa025a",
+                "Name": "Execute Query",
+                "Component": "AS",
+                "Start": "2026-05-28T15:03:32.25Z",
+                "End": "2026-05-28T15:03:32.253Z"
+              },
+              {
+                "Id": "F05B2ACC-E806-4095-BDF8-286E94A0019F",
+                "ParentId": "112E6D07-9346-46F1-9483-5DAADBD66630",
+                "Name": "Serialize Rowset",
+                "Component": "AS",
+                "Start": "2026-05-28T15:03:32.253Z",
+                "End": "2026-05-28T15:03:32.253Z"
+              }
+            ]
+          },
+          "fromCache": false,
+          "dsr": {
+            "Version": 2,
+            "MinorVersion": 1,
+            "DS": [
+              {
+                "N": "DS0",
+                "PH": [
+                  {
+                    "DM0": [
+                      {
+                        "S": [
+                          {
+                            "N": "G0",
+                            "T": 1
+                          }
+                        ],
+                        "G0": "AER  Paraná"
+                      },
+                      {
+                        "G0": "AER 25 de Mayo"
+                      },
+                      {
+                        "G0": "AER Adelia María"
+                      },
+                      {
+                        "G0": "AER Aguilares"
+                      },
+                      {
+                        "G0": "AER Anguil"
+                      },
+                      {
+                        "G0": "AER Banda del Río Salí"
+                      },
+                      {
+                        "G0": "AER Bell Ville"
+                      },
+                      {
+                        "G0": "AER Bolívar"
+                      },
+                      {
+                        "G0": "AER Brinkmann"
+                      },
+                      {
+                        "G0": "AER Calchaquí"
+                      },
+                      {
+                        "G0": "AER Cañada de Gómez"
+                      },
+                      {
+                        "G0": "AER Carlos Pellegrini"
+                      },
+                      {
+                        "G0": "AER Casilda"
+                      },
+                      {
+                        "G0": "AER Castellanos"
+                      },
+                      {
+                        "G0": "AER Ceres"
+                      },
+                      {
+                        "G0": "AER Chascomús"
+                      },
+                      {
+                        "G0": "AER Chivilcoy"
+                      },
+                      {
+                        "G0": "AER Colón"
+                      },
+                      {
+                        "G0": "AER Concordia"
+                      },
+                      {
+                        "G0": "AER Córdoba"
+                      },
+                      {
+                        "G0": "AER Corral de Bustos"
+                      },
+                      {
+                        "G0": "AER Crespo"
+                      },
+                      {
+                        "G0": "AER Cruz del Eje"
+                      },
+                      {
+                        "G0": "AER Déan Funes"
+                      },
+                      {
+                        "G0": "AER Diamante"
+                      },
+                      {
+                        "G0": "AER Esperanza"
+                      },
+                      {
+                        "G0": "AER Federal"
+                      },
+                      {
+                        "G0": "AER Feliciano"
+                      },
+                      {
+                        "G0": "AER Gálvez"
+                      },
+                      {
+                        "G0": "AER Gral. Cabrera"
+                      },
+                      {
+                        "G0": "AER Graneros"
+                      },
+                      {
+                        "G0": "AER Gualeguay"
+                      },
+                      {
+                        "G0": "AER Gualeguaychú"
+                      },
+                      {
+                        "G0": "AER Guatraché"
+                      },
+                      {
+                        "G0": "AER Huinca Renancó"
+                      },
+                      {
+                        "G0": "AER Ibarreta"
+                      },
+                      {
+                        "G0": "AER Jesús María"
+                      },
+                      {
+                        "G0": "AER Junín"
+                      },
+                      {
+                        "G0": "AER Justiniano Posse"
+                      },
+                      {
+                        "G0": "AER La Carlota"
+                      },
+                      {
+                        "G0": "AER La Paz"
+                      },
+                      {
+                        "G0": "AER Laboulaye"
+                      },
+                      {
+                        "G0": "AER Laguna Blanca"
+                      },
+                      {
+                        "G0": "AER Las Breñas"
+                      },
+                      {
+                        "G0": "AER Las Rosas"
+                      },
+                      {
+                        "G0": "AER Las Toscas"
+                      },
+                      {
+                        "G0": "AER Lincoln"
+                      },
+                      {
+                        "G0": "AER Maipú"
+                      },
+                      {
+                        "G0": "AER Metán"
+                      },
+                      {
+                        "G0": "AER Monte Caseros"
+                      },
+                      {
+                        "G0": "AER Monte Vera"
+                      },
+                      {
+                        "G0": "AER Monteros"
+                      },
+                      {
+                        "G0": "AER Nogoyá"
+                      },
+                      {
+                        "G0": "AER Oncativo"
+                      },
+                      {
+                        "G0": "AER Orán"
+                      },
+                      {
+                        "G0": "AER Pago de los Arroyos"
+                      },
+                      {
+                        "G0": "AER Palma Sola"
+                      },
+                      {
+                        "G0": "AER Parana"
+                      },
+                      {
+                        "G0": "AER Paraná"
+                      },
+                      {
+                        "G0": "AER Pehuajó"
+                      },
+                      {
+                        "G0": "AER Quines"
+                      },
+                      {
+                        "G0": "AER Reconquista"
+                      },
+                      {
+                        "G0": "AER Río Primero"
+                      },
+                      {
+                        "G0": "AER Río Seco"
+                      },
+                      {
+                        "G0": "AER Roldán"
+                      },
+                      {
+                        "G0": "AER San Antonio de Areco"
+                      },
+                      {
+                        "G0": "AER San Cristóbal"
+                      },
+                      {
+                        "G0": "AER San Francisco"
+                      },
+                      {
+                        "G0": "AER San Javier"
+                      },
+                      {
+                        "G0": "AER San Justo"
+                      },
+                      {
+                        "G0": "AER San Martín"
+                      },
+                      {
+                        "G0": "AER San Nicolás"
+                      },
+                      {
+                        "G0": "AER San Pedro"
+                      },
+                      {
+                        "G0": "AER San Pedro de Jujuy"
+                      },
+                      {
+                        "G0": "AER San Salvador"
+                      },
+                      {
+                        "G0": "AER Sauce"
+                      },
+                      {
+                        "G0": "AER Tartagal"
+                      },
+                      {
+                        "G0": "AER Tostado"
+                      },
+                      {
+                        "G0": "AER Totoras"
+                      },
+                      {
+                        "G0": "AER Trancas"
+                      },
+                      {
+                        "G0": "AER Trenque Lauquen"
+                      },
+                      {
+                        "G0": "AER Valle de Lerma"
+                      },
+                      {
+                        "G0": "AER Venado Tuerto"
+                      },
+                      {
+                        "G0": "AER Victoria"
+                      },
+                      {
+                        "G0": "AER Villaguay"
+                      },
+                      {
+                        "G0": "AER Villegas"
+                      },
+                      {
+                        "G0": "AER Zarate"
+                      },
+                      {
+                        "G0": "CHEI Barrow"
+                      },
+                      {
+                        "G0": "EEA Anguil"
+                      },
+                      {
+                        "G0": "EEA Bordenave"
+                      },
+                      {
+                        "G0": "EEA C. del Uruguay"
+                      },
+                      {
+                        "G0": "EEA Catamarca"
+                      },
+                      {
+                        "G0": "EEA Concepción del Uruguay"
+                      },
+                      {
+                        "G0": "EEA El Colorado"
+                      },
+                      {
+                        "G0": "EEA Famaillá"
+                      },
+                      {
+                        "G0": "EEA Hilario Ascasubi"
+                      },
+                      {
+                        "G0": "EEA Las Breñas"
+                      },
+                      {
+                        "G0": "EEA Manfredi"
+                      },
+                      {
+                        "G0": "EEA Marcos Juárez"
+                      },
+                      {
+                        "G0": "EEA Mercedes"
+                      }
+                    ]
+                  }
+                ],
+                "IC": false,
+                "RT": [
+                  [
+                    "'EEA Mercedes'"
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

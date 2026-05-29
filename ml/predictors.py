@@ -110,26 +110,59 @@ class WarningLevel1Model:
         pest_type: str = "Dalbulus maidis"
     ) -> Tuple[pd.DataFrame, pd.Series]:
         """
-        Builds the training matrix by programmatically estimating planting dates
-        and engineering spatial-temporal weather lag features.
+        Builds the training matrix by programmatically estimating planting dates,
+        applying spatiotemporal deduplication, and engineering climate lag features.
         """
         logger.info(f"Preparing machine learning dataset for {pest_type}...")
-        df = pest_df[pest_df['pest_type'] == pest_type].copy()
         
+        from ml.biofix import BiofixExtractor
+        be = BiofixExtractor()
+        
+        # 1. Spatiotemporal Deduplication
+        pest_df_copy = pest_df.copy()
+        pest_df_copy['occurrence_date_parsed'] = pd.to_datetime(pest_df_copy['occurrence_date'], format='mixed', utc=True)
+        # Convert occurrence date to week start date
+        pest_df_copy['week'] = pest_df_copy['occurrence_date_parsed'].dt.to_period('W').dt.start_time
+        pest_df_copy['institution'] = pest_df_copy['institution'].fillna('Unknown')
+        pest_df_copy['province'] = pest_df_copy['province'].fillna('Unknown')
+        
+        def get_rounded_coords(geom_wkt):
+            try:
+                lat, lon = be.parse_coordinates(geom_wkt)
+                return round(lat, 1), round(lon, 1)
+            except:
+                return 0.0, 0.0
+                
+        # Calculate rounded coordinates (1 decimal place is ~11km at the equator)
+        pest_df_copy['rounded_coords'] = pest_df_copy['geom_wkt'].apply(get_rounded_coords)
+        
+        # Drop invalid coordinates
+        pest_df_copy = pest_df_copy[pest_df_copy['rounded_coords'] != (0.0, 0.0)]
+        
+        # Group by week, pest_type, and rounded_coords to find spatiotemporal duplicate clusters
+        grouped = pest_df_copy.groupby(['week', 'pest_type', 'rounded_coords'])
+        
+        # Source confidence is the count of unique institutions that reported this spatiotemporal event
+        confidence_counts = grouped['institution'].nunique().to_dict()
+        
+        # Deduplicate: collapse all duplicate records in the same spatiotemporal cell into a single unique record
+        pest_df_deduped = pest_df_copy.drop_duplicates(subset=['week', 'pest_type', 'rounded_coords'], keep='first')
+        
+        logger.info(f"Spatiotemporal deduplication: reduced raw records from {len(pest_df)} to {len(pest_df_deduped)}")
+        
+        # Filter for the target pest species
+        df = pest_df_deduped[pest_df_deduped['pest_type'] == pest_type].copy()
         df['occurrence_date'] = pd.to_datetime(df['occurrence_date'], format='mixed', utc=True)
         df['adults_count'] = pd.to_numeric(df['adults_count'], errors='coerce').fillna(0.0)
         
-        # Target: 1 if severe outbreak (adults_count >= 50 or Explosive severity), 0 otherwise
+        # Target: 1 if severe outbreak (adults_count >= 50 or Explosive severity or official alert), 0 otherwise
         df['target'] = df.apply(
-            lambda r: 1 if (r['adults_count'] >= 50.0 or r['severity_level'] in ['Explosive', 'High', 'Official Alert (Confirmed Survival)']) else 0,
+            lambda r: 1 if (r['adults_count'] >= 50.0 or r['severity_level'] in ['Explosive', 'High', 'Official Alert (Confirmed Survival)', 'Official Alert (Confirmed: Presente)', 'Official Alert (Confirmed: Presente ampliamente distribuida)']) else 0,
             axis=1
         )
         
         records_features = []
         targets = []
-        
-        from ml.biofix import BiofixExtractor
-        be = BiofixExtractor()
         
         for idx, row in df.iterrows():
             lat, lon = be.parse_coordinates(row['geom_wkt'])
@@ -138,17 +171,31 @@ class WarningLevel1Model:
                 
             occ_date = row['occurrence_date'].to_pydatetime()
             
+            # Resolve the week, pest type, and rounded coordinates for looking up the corroboration count
+            row_week = row['occurrence_date'].to_period('W').start_time
+            row_pest = row['pest_type']
+            row_rounded_coords = (round(lat, 1), round(lon, 1))
+            
+            # Retrieve confidence multiplier (default to 1 if not found)
+            source_conf = confidence_counts.get((row_week, row_pest, row_rounded_coords), 1)
+            
             # Estimate planting date: ~60 days prior to observation
             planting_date = occ_date - timedelta(days=60)
             
             try:
                 feats = fe.engineer_features_for_record(lat, lon, occ_date, planting_date)
+                # Injects source_confidence as an ML feature column
+                feats['source_confidence'] = float(source_conf)
                 records_features.append(feats)
                 targets.append(row['target'])
             except Exception as e:
                 logger.debug(f"Failed to engineer features for record {idx}: {e}")
                 continue
                 
+        if not records_features:
+            logger.warning(f"No valid features engineered for {pest_type} dataset.")
+            return pd.DataFrame(), pd.Series()
+            
         features_df = pd.DataFrame(records_features)
         targets_series = pd.Series(targets)
         

@@ -1,0 +1,2732 @@
+{
+  "resultado": true,
+  "aMalezaDeptoMediciones": {
+    "2023/2024": {
+      "chicharrita-en-maiz-tardio": {
+        "103": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "103",
+          "has_depto": 195000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "203": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "203",
+          "has_depto": 113695,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "152": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "152",
+          "has_depto": 83900,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "192": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "192",
+          "has_depto": 97127,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "105": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "105",
+          "has_depto": 99400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "113": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "113",
+          "has_depto": 210991,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "73": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "73",
+          "has_depto": 4000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "200": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "200",
+          "has_depto": 180279,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "191": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "191",
+          "has_depto": 77731,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "198": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "198",
+          "has_depto": 111338,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "121": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "121",
+          "has_depto": 157400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "159": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "159",
+          "has_depto": 150750,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "86": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "86",
+          "has_depto": 6450,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "145": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "145",
+          "has_depto": 8500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "189": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "189",
+          "has_depto": 38671,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "130": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "130",
+          "has_depto": 123150,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "140": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "140",
+          "has_depto": 131900,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "184": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "184",
+          "has_depto": 65000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "175": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "175",
+          "has_depto": 156400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "158": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "158",
+          "has_depto": 133700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "193": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "193",
+          "has_depto": 70214,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "91": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "91",
+          "has_depto": 141425,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "205": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "205",
+          "has_depto": 83008,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "89": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "89",
+          "has_depto": 5500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "99": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "99",
+          "has_depto": 190000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "112": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "112",
+          "has_depto": 153600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "84": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "84",
+          "has_depto": 21200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "167": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "167",
+          "has_depto": 75200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "95": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "95",
+          "has_depto": 89994,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "122": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "122",
+          "has_depto": 41400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "182": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "182",
+          "has_depto": 117850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "126": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "126",
+          "has_depto": 52365,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "101": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "101",
+          "has_depto": 44100,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "100": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "100",
+          "has_depto": 118000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "109": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "109",
+          "has_depto": 1000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "180": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "180",
+          "has_depto": 129100,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "206": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "206",
+          "has_depto": 47498,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "148": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "148",
+          "has_depto": 116500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "179": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "179",
+          "has_depto": 415500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "106": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "106",
+          "has_depto": 164000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "118": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "118",
+          "has_depto": 118500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "181": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "181",
+          "has_depto": 145800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "97": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "97",
+          "has_depto": 49806,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "124": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "124",
+          "has_depto": 53637,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "183": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "183",
+          "has_depto": 97200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "169": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "169",
+          "has_depto": 231500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "202": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "202",
+          "has_depto": 246818,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "141": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "141",
+          "has_depto": 45942,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "80": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "80",
+          "has_depto": 21600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "102": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "102",
+          "has_depto": 25100,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "197": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "197",
+          "has_depto": 52715,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "174": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "174",
+          "has_depto": 29300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "134": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "134",
+          "has_depto": 53426,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "87": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "87",
+          "has_depto": 0,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "146": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "146",
+          "has_depto": 41188,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "204": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "204",
+          "has_depto": 243073,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "136": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "136",
+          "has_depto": 238200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "108": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "108",
+          "has_depto": 105400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "88": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "88",
+          "has_depto": 9300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "128": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "128",
+          "has_depto": 216102,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "120": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "120",
+          "has_depto": 112500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "187": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "187",
+          "has_depto": 218681,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "82": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "82",
+          "has_depto": 8330,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "201": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "201",
+          "has_depto": 26000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "195": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "195",
+          "has_depto": 65713,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "115": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "115",
+          "has_depto": 28035,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "135": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "135",
+          "has_depto": 238648,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "190": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "190",
+          "has_depto": 149300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "132": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "132",
+          "has_depto": 51697,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "199": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "199",
+          "has_depto": 46000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "129": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "129",
+          "has_depto": 115703,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "104": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "104",
+          "has_depto": 81000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "188": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "188",
+          "has_depto": 133890,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "185": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "185",
+          "has_depto": 68180,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "186": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "186",
+          "has_depto": 52744,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "92": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "92",
+          "has_depto": 143238,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "72": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "72",
+          "has_depto": 41418,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "194": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "194",
+          "has_depto": 56250,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "173": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "173",
+          "has_depto": 36200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "98": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "98",
+          "has_depto": 250529,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "93": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "93",
+          "has_depto": 23000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "127": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "127",
+          "has_depto": 186587,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "94": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "94",
+          "has_depto": 310159,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "114": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "114",
+          "has_depto": 140978,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "137": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "137",
+          "has_depto": 234976,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "90": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "90",
+          "has_depto": 11800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "85": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "85",
+          "has_depto": 22000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "419": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "419",
+          "has_depto": 3300,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "423": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "423",
+          "has_depto": 0,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "417": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "417",
+          "has_depto": 58950,
+          "porc_maleza": 85.7,
+          "porc2_maleza": ""
+        },
+        "475": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "475",
+          "has_depto": 126000,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "487": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "487",
+          "has_depto": 156400,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "481": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "481",
+          "has_depto": 57000,
+          "porc_maleza": 75,
+          "porc2_maleza": ""
+        },
+        "490": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "490",
+          "has_depto": 131400,
+          "porc_maleza": 85,
+          "porc2_maleza": ""
+        },
+        "497": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "497",
+          "has_depto": 67080,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "498": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "498",
+          "has_depto": 32600,
+          "porc_maleza": 81.3,
+          "porc2_maleza": ""
+        },
+        "485": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "485",
+          "has_depto": 52365,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "482": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "482",
+          "has_depto": 112000,
+          "porc_maleza": 76.7,
+          "porc2_maleza": ""
+        },
+        "479": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "479",
+          "has_depto": 4700,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "477": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "477",
+          "has_depto": 25100,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "496": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "496",
+          "has_depto": 53150,
+          "porc_maleza": 56.3,
+          "porc2_maleza": ""
+        },
+        "484": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "484",
+          "has_depto": 238200,
+          "porc_maleza": 75,
+          "porc2_maleza": ""
+        },
+        "491": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "491",
+          "has_depto": 67600,
+          "porc_maleza": 81.3,
+          "porc2_maleza": ""
+        },
+        "262": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "262",
+          "has_depto": 68650,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "270": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "270",
+          "has_depto": 14400,
+          "porc_maleza": 15,
+          "porc2_maleza": ""
+        },
+        "279": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "279",
+          "has_depto": 122862,
+          "porc_maleza": 15,
+          "porc2_maleza": ""
+        },
+        "282": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "282",
+          "has_depto": 724231,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "260": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "260",
+          "has_depto": 306200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "280": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "280",
+          "has_depto": 514350,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "261": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "261",
+          "has_depto": 656426,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "281": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "281",
+          "has_depto": 481352,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "259": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "259",
+          "has_depto": 1274500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "265": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "265",
+          "has_depto": 430985,
+          "porc_maleza": 6.4,
+          "porc2_maleza": ""
+        },
+        "276": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "276",
+          "has_depto": 141393,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "269": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "269",
+          "has_depto": 399000,
+          "porc_maleza": 5,
+          "porc2_maleza": ""
+        },
+        "271": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "271",
+          "has_depto": 770095,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "267": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "267",
+          "has_depto": 164800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "266": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "266",
+          "has_depto": 412000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "273": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "273",
+          "has_depto": 180202,
+          "porc_maleza": 1.7,
+          "porc2_maleza": ""
+        },
+        "258": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "258",
+          "has_depto": 114213,
+          "porc_maleza": 1.3,
+          "porc2_maleza": ""
+        },
+        "264": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "264",
+          "has_depto": 680210,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "338": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "338",
+          "has_depto": 70214,
+          "porc_maleza": 18.3,
+          "porc2_maleza": ""
+        },
+        "343": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "343",
+          "has_depto": 27270,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "341": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "341",
+          "has_depto": 73350,
+          "porc_maleza": 25.8,
+          "porc2_maleza": ""
+        },
+        "329": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "329",
+          "has_depto": 13850,
+          "porc_maleza": 53.3,
+          "porc2_maleza": ""
+        },
+        "335": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "335",
+          "has_depto": 38400,
+          "porc_maleza": 30,
+          "porc2_maleza": ""
+        },
+        "334": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "334",
+          "has_depto": 118550,
+          "porc_maleza": 15,
+          "porc2_maleza": ""
+        },
+        "333": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "333",
+          "has_depto": 225730,
+          "porc_maleza": 23.3,
+          "porc2_maleza": ""
+        },
+        "331": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "331",
+          "has_depto": 0,
+          "porc_maleza": 26.4,
+          "porc2_maleza": ""
+        },
+        "339": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "339",
+          "has_depto": 151450,
+          "porc_maleza": 20,
+          "porc2_maleza": ""
+        },
+        "344": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "344",
+          "has_depto": 169450,
+          "porc_maleza": 39.2,
+          "porc2_maleza": ""
+        },
+        "342": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "342",
+          "has_depto": 21850,
+          "porc_maleza": 53.3,
+          "porc2_maleza": ""
+        },
+        "346": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "346",
+          "has_depto": 27570,
+          "porc_maleza": 40,
+          "porc2_maleza": ""
+        },
+        "337": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "337",
+          "has_depto": 80800,
+          "porc_maleza": 30,
+          "porc2_maleza": ""
+        },
+        "336": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "336",
+          "has_depto": 164900,
+          "porc_maleza": 23.3,
+          "porc2_maleza": ""
+        },
+        "332": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "332",
+          "has_depto": 108100,
+          "porc_maleza": 22,
+          "porc2_maleza": ""
+        },
+        "345": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "345",
+          "has_depto": 164300,
+          "porc_maleza": 35,
+          "porc2_maleza": ""
+        },
+        "228": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "228",
+          "has_depto": 113550,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "235": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "235",
+          "has_depto": 14400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "232": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "232",
+          "has_depto": 142970,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "226": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "226",
+          "has_depto": 179500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "240": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "240",
+          "has_depto": 137500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "241": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "241",
+          "has_depto": 142500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "239": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "239",
+          "has_depto": 140300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "242": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "242",
+          "has_depto": 150800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "237": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "237",
+          "has_depto": 141000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "238": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "238",
+          "has_depto": 89200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "450": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "450",
+          "has_depto": 381645,
+          "porc_maleza": 38.8,
+          "porc2_maleza": ""
+        },
+        "452": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "452",
+          "has_depto": 12157,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "443": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "443",
+          "has_depto": 129594,
+          "porc_maleza": 54,
+          "porc2_maleza": ""
+        },
+        "464": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "464",
+          "has_depto": 6610,
+          "porc_maleza": 33.3,
+          "porc2_maleza": ""
+        },
+        "456": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "456",
+          "has_depto": 66095,
+          "porc_maleza": 45,
+          "porc2_maleza": ""
+        },
+        "445": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "445",
+          "has_depto": 27236,
+          "porc_maleza": 66.7,
+          "porc2_maleza": ""
+        },
+        "462": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "462",
+          "has_depto": 66859,
+          "porc_maleza": 35,
+          "porc2_maleza": ""
+        },
+        "254": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "254",
+          "has_depto": 156400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "253": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "253",
+          "has_depto": 83008,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "251": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "251",
+          "has_depto": 318300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "256": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "256",
+          "has_depto": 117500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "248": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "248",
+          "has_depto": 145800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "250": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "250",
+          "has_depto": 77300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "249": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "249",
+          "has_depto": 8200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "255": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "255",
+          "has_depto": 99400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "316": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "316",
+          "has_depto": 201186,
+          "porc_maleza": 3.3,
+          "porc2_maleza": ""
+        },
+        "313": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "313",
+          "has_depto": 276500,
+          "porc_maleza": 10,
+          "porc2_maleza": ""
+        },
+        "323": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "323",
+          "has_depto": 449220,
+          "porc_maleza": 73.5,
+          "porc2_maleza": ""
+        },
+        "327": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "327",
+          "has_depto": 250000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "322": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "322",
+          "has_depto": 7300,
+          "porc_maleza": 90,
+          "porc2_maleza": ""
+        },
+        "328": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "328",
+          "has_depto": 733500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "311": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "311",
+          "has_depto": 205700,
+          "porc_maleza": 43.8,
+          "porc2_maleza": ""
+        },
+        "314": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "314",
+          "has_depto": 257980,
+          "porc_maleza": 22,
+          "porc2_maleza": ""
+        },
+        "324": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "324",
+          "has_depto": 54700,
+          "porc_maleza": 60.8,
+          "porc2_maleza": ""
+        },
+        "321": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "321",
+          "has_depto": 337662,
+          "porc_maleza": 56.4,
+          "porc2_maleza": ""
+        },
+        "317": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "317",
+          "has_depto": 238200,
+          "porc_maleza": 28,
+          "porc2_maleza": ""
+        },
+        "312": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "312",
+          "has_depto": 110800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "319": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "319",
+          "has_depto": 379117,
+          "porc_maleza": 48,
+          "porc2_maleza": ""
+        },
+        "318": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "318",
+          "has_depto": 49300,
+          "porc_maleza": 58.3,
+          "porc2_maleza": ""
+        },
+        "326": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "326",
+          "has_depto": 206478,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "320": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "320",
+          "has_depto": 770095,
+          "porc_maleza": 43.6,
+          "porc2_maleza": ""
+        },
+        "315": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "315",
+          "has_depto": 158100,
+          "porc_maleza": 1.7,
+          "porc2_maleza": ""
+        },
+        "325": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "325",
+          "has_depto": 389794,
+          "porc_maleza": 36.7,
+          "porc2_maleza": ""
+        },
+        "310": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "310",
+          "has_depto": 86400,
+          "porc_maleza": 65,
+          "porc2_maleza": ""
+        },
+        "306": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "306",
+          "has_depto": 59930,
+          "porc_maleza": 52,
+          "porc2_maleza": ""
+        },
+        "284": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "284",
+          "has_depto": 209175,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "305": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "305",
+          "has_depto": 201186,
+          "porc_maleza": 26.67,
+          "porc2_maleza": ""
+        },
+        "298": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "298",
+          "has_depto": 18250,
+          "porc_maleza": 70,
+          "porc2_maleza": ""
+        },
+        "285": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "285",
+          "has_depto": 38847,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "301": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "301",
+          "has_depto": 324400,
+          "porc_maleza": 30,
+          "porc2_maleza": ""
+        },
+        "293": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "293",
+          "has_depto": 28550,
+          "porc_maleza": 92.5,
+          "porc2_maleza": ""
+        },
+        "286": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "286",
+          "has_depto": 146650,
+          "porc_maleza": 62,
+          "porc2_maleza": ""
+        },
+        "294": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "294",
+          "has_depto": 158705,
+          "porc_maleza": 80,
+          "porc2_maleza": ""
+        },
+        "287": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "287",
+          "has_depto": 555650,
+          "porc_maleza": 75,
+          "porc2_maleza": ""
+        },
+        "283": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "283",
+          "has_depto": 112500,
+          "porc_maleza": 31.43,
+          "porc2_maleza": ""
+        },
+        "290": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "290",
+          "has_depto": 29500,
+          "porc_maleza": 57.5,
+          "porc2_maleza": ""
+        },
+        "309": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "309",
+          "has_depto": 238648,
+          "porc_maleza": 38.33,
+          "porc2_maleza": ""
+        },
+        "425": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "425",
+          "has_depto": 106620,
+          "porc_maleza": 53.57,
+          "porc2_maleza": ""
+        },
+        "430": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "430",
+          "has_depto": 37700,
+          "porc_maleza": 60.83,
+          "porc2_maleza": ""
+        },
+        "433": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "433",
+          "has_depto": 0,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "440": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "440",
+          "has_depto": 33100,
+          "porc_maleza": 68.57,
+          "porc2_maleza": ""
+        },
+        "439": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "439",
+          "has_depto": 2100,
+          "porc_maleza": 76.67,
+          "porc2_maleza": ""
+        },
+        "441": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "441",
+          "has_depto": 21450,
+          "porc_maleza": 70,
+          "porc2_maleza": ""
+        },
+        "435": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "435",
+          "has_depto": 29400,
+          "porc_maleza": 62.5,
+          "porc2_maleza": ""
+        },
+        "429": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "429",
+          "has_depto": 1200,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "434": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "434",
+          "has_depto": 500,
+          "porc_maleza": 65,
+          "porc2_maleza": ""
+        },
+        "437": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "437",
+          "has_depto": 2800,
+          "porc_maleza": 68.33,
+          "porc2_maleza": ""
+        },
+        "427": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "427",
+          "has_depto": 180,
+          "porc_maleza": 100,
+          "porc2_maleza": ""
+        },
+        "428": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "428",
+          "has_depto": 0,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        }
+      }
+    },
+    "2021/2022": {
+      "chicharrita-en-maiz-tardio": {
+        "103": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "103",
+          "has_depto": 195000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "203": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "203",
+          "has_depto": 86062,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "152": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "152",
+          "has_depto": 75036,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "192": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "192",
+          "has_depto": 96639,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "105": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "105",
+          "has_depto": 87500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "113": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "113",
+          "has_depto": 208142,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "73": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "73",
+          "has_depto": 4400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "200": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "200",
+          "has_depto": 174261,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "191": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "191",
+          "has_depto": 74633,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "198": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "198",
+          "has_depto": 111678,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "121": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "121",
+          "has_depto": 210600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "159": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "159",
+          "has_depto": 145875,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "189": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "189",
+          "has_depto": 46620,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "130": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "130",
+          "has_depto": 127276,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "140": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "140",
+          "has_depto": 134298,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "184": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "184",
+          "has_depto": 64500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "175": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "175",
+          "has_depto": 154200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "158": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "158",
+          "has_depto": 129344,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "193": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "193",
+          "has_depto": 68730,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "91": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "91",
+          "has_depto": 125349,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "205": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "205",
+          "has_depto": 64122,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "89": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "89",
+          "has_depto": 5570,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "99": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "99",
+          "has_depto": 189000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "112": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "112",
+          "has_depto": 185600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "84": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "84",
+          "has_depto": 27274,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "167": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "167",
+          "has_depto": 74600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "95": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "95",
+          "has_depto": 95216,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "122": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "122",
+          "has_depto": 39050,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "182": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "182",
+          "has_depto": 124050,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "101": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "101",
+          "has_depto": 36000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "100": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "100",
+          "has_depto": 105700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "109": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "109",
+          "has_depto": 1200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "180": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "180",
+          "has_depto": 132700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "206": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "206",
+          "has_depto": 45511,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "148": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "148",
+          "has_depto": 120400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "179": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "179",
+          "has_depto": 380000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "106": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "106",
+          "has_depto": 167000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "118": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "118",
+          "has_depto": 110850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "181": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "181",
+          "has_depto": 148250,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "97": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "97",
+          "has_depto": 34020,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "183": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "183",
+          "has_depto": 96300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "169": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "169",
+          "has_depto": 222000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "202": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "202",
+          "has_depto": 241984,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "141": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "141",
+          "has_depto": 47071,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "80": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "80",
+          "has_depto": 19850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "102": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "102",
+          "has_depto": 23550,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "197": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "197",
+          "has_depto": 49780,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "174": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "174",
+          "has_depto": 28810,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "87": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "87",
+          "has_depto": 0,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "146": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "146",
+          "has_depto": 38747,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "204": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "204",
+          "has_depto": 230439,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "136": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "136",
+          "has_depto": 228992,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "108": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "108",
+          "has_depto": 119200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "128": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "128",
+          "has_depto": 222124,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "120": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "120",
+          "has_depto": 112500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "187": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "187",
+          "has_depto": 224225,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "201": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "201",
+          "has_depto": 22300,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "195": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "195",
+          "has_depto": 82232,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "115": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "115",
+          "has_depto": 21950,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "135": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "135",
+          "has_depto": 246200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "190": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "190",
+          "has_depto": 147820,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "132": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "132",
+          "has_depto": 54718,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "199": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "199",
+          "has_depto": 46600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "129": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "129",
+          "has_depto": 96510,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "104": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "104",
+          "has_depto": 81000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "188": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "188",
+          "has_depto": 133670,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "185": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "185",
+          "has_depto": 64540,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "186": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "186",
+          "has_depto": 60098,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "92": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "92",
+          "has_depto": 140188,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "72": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "72",
+          "has_depto": 42910,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "194": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "194",
+          "has_depto": 77705,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "173": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "173",
+          "has_depto": 35867,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "98": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "98",
+          "has_depto": 258370,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "117": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "117",
+          "has_depto": 15800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "93": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "93",
+          "has_depto": 21500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "127": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "127",
+          "has_depto": 309293,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "94": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "94",
+          "has_depto": 272513,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "114": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "114",
+          "has_depto": 88500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "137": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "137",
+          "has_depto": 236415,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "90": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "90",
+          "has_depto": 12700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "85": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "85",
+          "has_depto": 27750,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "475": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "475",
+          "has_depto": 260700,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "487": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "487",
+          "has_depto": 154200,
+          "porc_maleza": 59.3,
+          "porc2_maleza": ""
+        },
+        "481": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "481",
+          "has_depto": 61500,
+          "porc_maleza": 67.5,
+          "porc2_maleza": ""
+        },
+        "490": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "490",
+          "has_depto": 150700,
+          "porc_maleza": 46.1,
+          "porc2_maleza": ""
+        },
+        "497": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "497",
+          "has_depto": 96810,
+          "porc_maleza": 52.5,
+          "porc2_maleza": ""
+        },
+        "498": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "498",
+          "has_depto": 31200,
+          "porc_maleza": 36,
+          "porc2_maleza": ""
+        },
+        "485": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "485",
+          "has_depto": 46485,
+          "porc_maleza": 36.7,
+          "porc2_maleza": ""
+        },
+        "482": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "482",
+          "has_depto": 116000,
+          "porc_maleza": 61.7,
+          "porc2_maleza": ""
+        },
+        "479": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "479",
+          "has_depto": 10300,
+          "porc_maleza": 20,
+          "porc2_maleza": ""
+        },
+        "477": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "477",
+          "has_depto": 23550,
+          "porc_maleza": 45,
+          "porc2_maleza": ""
+        },
+        "496": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "496",
+          "has_depto": 56400,
+          "porc_maleza": 36,
+          "porc2_maleza": ""
+        },
+        "484": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "484",
+          "has_depto": 228992,
+          "porc_maleza": 60,
+          "porc2_maleza": ""
+        },
+        "491": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "491",
+          "has_depto": 67550,
+          "porc_maleza": 56.7,
+          "porc2_maleza": ""
+        },
+        "262": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "262",
+          "has_depto": 67450,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "270": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "270",
+          "has_depto": 29368,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "279": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "279",
+          "has_depto": 68730,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "282": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "282",
+          "has_depto": 748313,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "260": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "260",
+          "has_depto": 321000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "280": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "280",
+          "has_depto": 505850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "261": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "261",
+          "has_depto": 708600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "281": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "281",
+          "has_depto": 456123,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "259": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "259",
+          "has_depto": 1257500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "265": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "265",
+          "has_depto": 443802,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "276": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "276",
+          "has_depto": 122661,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "269": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "269",
+          "has_depto": 411050,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "271": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "271",
+          "has_depto": 800895,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "267": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "267",
+          "has_depto": 166600,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "266": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "266",
+          "has_depto": 418400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "273": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "273",
+          "has_depto": 173032,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "258": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "258",
+          "has_depto": 127903,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "264": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "264",
+          "has_depto": 731060,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "338": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "338",
+          "has_depto": 68730,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "343": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "343",
+          "has_depto": 32540,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "341": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "341",
+          "has_depto": 93200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "329": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "329",
+          "has_depto": 16150,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "335": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "335",
+          "has_depto": 44480,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "334": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "334",
+          "has_depto": 131650,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "333": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "333",
+          "has_depto": 222100,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "331": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "331",
+          "has_depto": 159850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "339": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "339",
+          "has_depto": 156150,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "344": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "344",
+          "has_depto": 206130,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "342": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "342",
+          "has_depto": 25000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "346": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "346",
+          "has_depto": 28530,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "337": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "337",
+          "has_depto": 87500,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "336": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "336",
+          "has_depto": 183820,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "332": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "332",
+          "has_depto": 120640,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "345": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "345",
+          "has_depto": 163820,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "228": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "228",
+          "has_depto": 111362,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "235": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "235",
+          "has_depto": 29368,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "232": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "232",
+          "has_depto": 142030,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "226": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "226",
+          "has_depto": 164658,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "240": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "240",
+          "has_depto": 136681,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "241": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "241",
+          "has_depto": 136103,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "239": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "239",
+          "has_depto": 133067,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "242": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "242",
+          "has_depto": 151852,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "237": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "237",
+          "has_depto": 128344,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "238": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "238",
+          "has_depto": 78694,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "450": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "450",
+          "has_depto": 351597,
+          "porc_maleza": 8.8,
+          "porc2_maleza": ""
+        },
+        "452": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "452",
+          "has_depto": 37000,
+          "porc_maleza": 10,
+          "porc2_maleza": ""
+        },
+        "443": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "443",
+          "has_depto": 121720,
+          "porc_maleza": 52.5,
+          "porc2_maleza": ""
+        },
+        "456": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "456",
+          "has_depto": 69388,
+          "porc_maleza": 7.5,
+          "porc2_maleza": ""
+        },
+        "445": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "445",
+          "has_depto": 23236,
+          "porc_maleza": 5,
+          "porc2_maleza": ""
+        },
+        "462": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "462",
+          "has_depto": 67744,
+          "porc_maleza": 10,
+          "porc2_maleza": ""
+        },
+        "251": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "251",
+          "has_depto": 363000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "316": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "316",
+          "has_depto": 216969,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "313": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "313",
+          "has_depto": 282400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "323": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "323",
+          "has_depto": 443783,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "327": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "327",
+          "has_depto": 255850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "322": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "322",
+          "has_depto": 7060,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "328": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "328",
+          "has_depto": 767200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "311": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "311",
+          "has_depto": 206800,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "314": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "314",
+          "has_depto": 259838,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "324": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "324",
+          "has_depto": 55900,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "321": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "321",
+          "has_depto": 334123,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "317": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "317",
+          "has_depto": 228992,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "312": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "312",
+          "has_depto": 120390,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "319": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "319",
+          "has_depto": 325830,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "318": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "318",
+          "has_depto": 35700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "326": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "326",
+          "has_depto": 222123,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "320": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "320",
+          "has_depto": 800895,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "315": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "315",
+          "has_depto": 9850,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "325": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "325",
+          "has_depto": 382767,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "306": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "306",
+          "has_depto": 57180,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "284": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "284",
+          "has_depto": 207475,
+          "porc_maleza": 30,
+          "porc2_maleza": ""
+        },
+        "305": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "305",
+          "has_depto": 216969,
+          "porc_maleza": 11.1,
+          "porc2_maleza": ""
+        },
+        "285": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "285",
+          "has_depto": 27060,
+          "porc_maleza": 22.5,
+          "porc2_maleza": ""
+        },
+        "301": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "301",
+          "has_depto": 318600,
+          "porc_maleza": 12.5,
+          "porc2_maleza": ""
+        },
+        "293": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "293",
+          "has_depto": 20700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "286": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "286",
+          "has_depto": 148000,
+          "porc_maleza": 16.7,
+          "porc2_maleza": ""
+        },
+        "294": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "294",
+          "has_depto": 152650,
+          "porc_maleza": 20,
+          "porc2_maleza": ""
+        },
+        "287": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "287",
+          "has_depto": 554200,
+          "porc_maleza": 19.2,
+          "porc2_maleza": ""
+        },
+        "283": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "283",
+          "has_depto": 112500,
+          "porc_maleza": 33.3,
+          "porc2_maleza": ""
+        },
+        "290": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "290",
+          "has_depto": 27000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "309": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "309",
+          "has_depto": 246200,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "425": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "425",
+          "has_depto": 104050,
+          "porc_maleza": 11.1,
+          "porc2_maleza": ""
+        },
+        "430": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "430",
+          "has_depto": 36700,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "440": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "440",
+          "has_depto": 32400,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "439": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "439",
+          "has_depto": 12100,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "441": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "441",
+          "has_depto": 27450,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "435": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "435",
+          "has_depto": 33900,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        },
+        "310": {
+          "id_maleza": "chicharrita-en-maiz-tardio",
+          "id_depto": "310",
+          "has_depto": 80000,
+          "porc_maleza": 0,
+          "porc2_maleza": ""
+        }
+      }
+    },
+    "2019/2020": {
+      "chicharrita-en-maiz-tardio": []
+    }
+  }
+}

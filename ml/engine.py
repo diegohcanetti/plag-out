@@ -56,7 +56,7 @@ class ThermodynamicEngine:
             raise ValueError(f"Unknown species biology: {species}")
             
         stages = []
-        if species == "Dalbulus maidis":
+        if "nymph_gdd" in bio:
             stages = [
                 BiologicalStage("Egg Development", 0.0, bio["egg_gdd"], 
                                 "Monitor egg parasitoids (biocontrol). Treatment generally not required.", "Low"),
@@ -67,17 +67,23 @@ class ThermodynamicEngine:
                 BiologicalStage("Subsequent Generation Emergence", bio["generation_gdd"], float('inf'), 
                                 "ALERT: Next generation cohort starting. Trap monitoring highly recommended.", "Warning")
             ]
-        elif species == "Spodoptera frugiperda":
+        else:
+            egg = bio.get("egg_gdd", 40.0)
+            larva = bio.get("larva_gdd", 200.0)
+            pupa = bio.get("pupa_gdd", 120.0)
+            preovip = bio.get("preoviposition_gdd", 35.0)
+            gen = bio.get("generation_gdd", egg + larva + pupa + preovip)
+            
             stages = [
-                BiologicalStage("Egg Development", 0.0, bio["egg_gdd"], 
+                BiologicalStage("Egg Development", 0.0, egg, 
                                 "Apply egg-parasitic biocontrols (Trichogramma). Check lower leaf faces.", "Low"),
-                BiologicalStage("Larval Growth & Devastating Feeding", bio["egg_gdd"], bio["egg_gdd"] + bio["larva_gdd"], 
+                BiologicalStage("Larval Growth & Devastating Feeding", egg, egg + larva, 
                                 "CRITICAL WINDOW: Apply Bt-toxins, physiological insecticides, or Baculovirus. Extremely high defoliation risk.", "Critical"),
-                BiologicalStage("Pupal Phase (Soil)", bio["egg_gdd"] + bio["larva_gdd"], bio["egg_gdd"] + bio["larva_gdd"] + bio["pupa_gdd"], 
+                BiologicalStage("Pupal Phase (Soil)", egg + larva, egg + larva + pupa, 
                                 "INFO: Cohort pupating in soil. Prepare traps for adult emergence.", "Info"),
-                BiologicalStage("Moths & Oviposition", bio["egg_gdd"] + bio["larva_gdd"] + bio["pupa_gdd"], bio["generation_gdd"], 
+                BiologicalStage("Moths & Oviposition", egg + larva + pupa, gen, 
                                 "WARNING WINDOW: Moths actively laying eggs. Apply light/pheromone traps and foliar deterrents.", "Warning"),
-                BiologicalStage("Subsequent Generation Emergence", bio["generation_gdd"], float('inf'), 
+                BiologicalStage("Subsequent Generation Emergence", gen, float('inf'), 
                                 "ALERT: Second generation larval wave beginning. Re-evaluate monitoring protocols.", "Warning")
             ]
             

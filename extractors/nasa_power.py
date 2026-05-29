@@ -130,8 +130,8 @@ class NasaPowerExtractor:
         is_from_cache = getattr(response, "from_cache", False)
         if not is_from_cache:
             _NETWORK_CALLS_COUNT += 1
-            logger.info(f"NASA POWER API network call #{_NETWORK_CALLS_COUNT}. Applying 0.3s micro-pacing sleep...")
-            time.sleep(0.3)
+            logger.info(f"NASA POWER API network call #{_NETWORK_CALLS_COUNT}. Applying 1.0s micro-pacing sleep to enforce 60 req/min limit...")
+            time.sleep(1.0)
             
             # Group requests into chunks of 100, followed by a cool-down sleep
             if _NETWORK_CALLS_COUNT % 100 == 0:

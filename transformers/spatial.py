@@ -42,6 +42,7 @@ class SpatialGeocoder:
     def __init__(self, cache_path: str = CACHE_FILE) -> None:
         self.cache_path = cache_path
         self.cache = self._load_cache()
+        self.nominatim_blocked = False
 
     def _load_cache(self) -> Dict[str, Tuple[float, float]]:
         """
@@ -70,12 +71,14 @@ class SpatialGeocoder:
         except Exception as e:
             logger.error(f"Failed to save spatial cache: {e}")
 
-    def _clean_locality(self, locality: str) -> str:
+    def clean_locality_name(self, locality: str) -> str:
         """
         Applies heuristic cleanup to strip trap/trial tags, expand abbreviations,
         and standardize common spelling issues.
         """
         import re
+        # Normalize all whitespaces (including \xa0 and other unicode space chars) to normal space \x20
+        locality = " ".join(locality.strip().split())
         loc = locality.replace("Gral.", "General")
         loc = loc.replace("gral.", "General")
         loc = loc.replace("J V ", "Joaquin V. ")
@@ -92,17 +95,19 @@ class SpatialGeocoder:
         loc = loc.replace("Sto.", "Santo")
         loc = loc.replace("sto.", "Santo")
         
-        # Strip trial/trap patterns like "T1", "T2", "T-3", etc.
-        loc = re.sub(r"\b[Tt]\d+\b", "", loc)
-        loc = re.sub(r"\bTraza\s*\d+\b", "", loc)
+        # Strip specific trailing labels common in trial farms and trap names (case-insensitive)
+        loc = re.sub(r'(?i)\b(trampa|perdida|perdido|sin datos|sin_datos|datos|trial|farm|salesiana|inta|aapresid|crea|aappce|agtsa)\b', '', loc)
         
-        # Strip specific trailing labels common in trial farms
-        loc_lower = loc.lower()
-        for tag in ["salesiana", "inta", "aapresid", "crea", "aappce", "agtsa"]:
-            if loc_lower.endswith(f" {tag}"):
-                loc = loc[:-(len(tag) + 1)]
-                loc_lower = loc.lower()
-                
+        # Strip all standalone numbers
+        loc = re.sub(r'\b\d+\b', '', loc)
+        
+        # Strip trial/trap patterns like "T1", "T2", "T-3", etc.
+        loc = re.sub(r'\b[Tt]\d+\b', '', loc)
+        loc = re.sub(r'\bTraza\s*\d+\b', '', loc)
+        
+        # Clean parentheses and hyphens
+        loc = loc.replace("(", "").replace(")", "").replace("-", " ")
+        
         return " ".join(loc.strip().split())
 
     def geocode(self, locality: str, province: str) -> Tuple[float, float]:
@@ -113,16 +118,23 @@ class SpatialGeocoder:
         Returns:
             Tuple[float, float]: (latitude, longitude) or province fallback if unresolved.
         """
-        # Normalize keys to lower-case without double spaces
-        loc_normalized = " ".join(locality.strip().lower().split())
+        cleaned_locality = self.clean_locality_name(locality)
+        
+        # Normalize keys to lower-case without double spaces and standardize all whitespaces
+        loc_normalized = " ".join(cleaned_locality.strip().lower().split())
         prov_normalized = " ".join(province.strip().lower().split())
         key = f"{loc_normalized}_{prov_normalized}"
         
         if key in self.cache:
             return self.cache[key]
             
-        # Fallback to geocode using Nominatim API
-        coords = self._query_nominatim(locality, province)
+        coords = None
+        if self.nominatim_blocked:
+            logger.debug(f"Nominatim geocoding is currently blocked. Bypassing search for '{locality}'.")
+        else:
+            # Fallback to geocode using Nominatim API
+            coords = self._query_nominatim(locality, province)
+            
         if coords:
             self.cache[key] = coords
             self._save_cache()
@@ -163,13 +175,16 @@ class SpatialGeocoder:
             return fallback_coords
 
         logger.warning(f"Could not geocode spatial region: {locality}, {province}. Returning (0.0, 0.0)")
+        # Cache failed geocodes as (0.0, 0.0) so we never query Nominatim again for this exact invalid key
+        self.cache[key] = (0.0, 0.0)
+        self._save_cache()
         return 0.0, 0.0
 
     def _query_nominatim(self, locality: str, province: str) -> Optional[Tuple[float, float]]:
         """
         Queries OpenStreetMap Nominatim with a multi-tiered search strategy and polite delays.
         """
-        cleaned_loc = self._clean_locality(locality)
+        cleaned_loc = self.clean_locality_name(locality)
         if not cleaned_loc:
             return None
             
@@ -208,6 +223,10 @@ class SpatialGeocoder:
                     return lat, lon
             except Exception as e:
                 logger.error(f"Nominatim geocoding failed for {query_str}: {e}")
-                
+                if "429" in str(e) or "too many requests" in str(e).lower():
+                    logger.warning("Nominatim returned 429. Bypassing OSM geocoding for the rest of this session to prevent hang.")
+                    self.nominatim_blocked = True
+                    break
+                    
         return None
 

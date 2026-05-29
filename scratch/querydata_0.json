@@ -1,0 +1,124 @@
+{
+  "jobIds": [
+    "c4684102-a9d2-4643-b7d4-48515574b0bf"
+  ],
+  "results": [
+    {
+      "jobId": "c4684102-a9d2-4643-b7d4-48515574b0bf",
+      "result": {
+        "data": {
+          "timestamp": "2026-05-28T15:03:32.161Z",
+          "rootActivityId": "2332b735-901c-457f-ad3c-cc7fe3d7deb8",
+          "descriptor": {
+            "Select": [
+              {
+                "Kind": 1,
+                "Depth": 0,
+                "Value": "G0",
+                "GroupKeys": [
+                  {
+                    "Source": {
+                      "Entity": "Hoja 1",
+                      "Property": "Registro"
+                    },
+                    "Calc": "G0",
+                    "IsSameAsSelect": true
+                  }
+                ],
+                "Name": "Hoja 1.Registro"
+              }
+            ],
+            "Expressions": {
+              "Primary": {
+                "Groupings": [
+                  {
+                    "Keys": [
+                      {
+                        "Source": {
+                          "Entity": "Hoja 1",
+                          "Property": "Registro"
+                        },
+                        "Select": 0
+                      }
+                    ],
+                    "Member": "DM0"
+                  }
+                ]
+              }
+            },
+            "Version": 2
+          },
+          "metrics": {
+            "Version": "1.0.0",
+            "Events": [
+              {
+                "Id": "b7d4e797-d91b-419d-be2c-750006995b86",
+                "Name": "Execute Semantic Query",
+                "Component": "DSE",
+                "Start": "2026-05-28T15:03:32.1619234Z",
+                "End": "2026-05-28T15:03:32.2088272Z"
+              },
+              {
+                "Id": "9b5d19c7-9e47-4e02-a6e2-fc576b038742",
+                "ParentId": "b7d4e797-d91b-419d-be2c-750006995b86",
+                "Name": "Execute DAX Query",
+                "Component": "DSE",
+                "Start": "2026-05-28T15:03:32.1619234Z",
+                "End": "2026-05-28T15:03:32.2088272Z",
+                "Metrics": {
+                  "RowCount": 2
+                }
+              },
+              {
+                "Id": "13532B26-AA08-413B-A2EA-903F1AF18C1D",
+                "ParentId": "9b5d19c7-9e47-4e02-a6e2-fc576b038742",
+                "Name": "Execute Query",
+                "Component": "AS",
+                "Start": "2026-05-28T15:03:32.213Z",
+                "End": "2026-05-28T15:03:32.217Z"
+              },
+              {
+                "Id": "5714EDE6-697B-487D-8464-CAC36BCF544B",
+                "ParentId": "13532B26-AA08-413B-A2EA-903F1AF18C1D",
+                "Name": "Serialize Rowset",
+                "Component": "AS",
+                "Start": "2026-05-28T15:03:32.217Z",
+                "End": "2026-05-28T15:03:32.217Z"
+              }
+            ]
+          },
+          "fromCache": false,
+          "dsr": {
+            "Version": 2,
+            "MinorVersion": 1,
+            "DS": [
+              {
+                "N": "DS0",
+                "PH": [
+                  {
+                    "DM0": [
+                      {
+                        "S": [
+                          {
+                            "N": "G0",
+                            "T": 1
+                          }
+                        ],
+                        "G0": "Con Presencia"
+                      },
+                      {
+                        "G0": "Sin Presencia"
+                      }
+                    ]
+                  }
+                ],
+                "IC": true,
+                "HAD": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

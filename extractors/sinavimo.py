@@ -185,7 +185,20 @@ class SinavimoExtractor:
         
         pests_to_scrape = []
         if pest_type.lower() == "all":
-            pests_to_scrape = ["Dalbulus maidis", "Spodoptera frugiperda"]
+            import os
+            import yaml
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            yaml_path = os.path.join(os.path.dirname(current_dir), "ml", "biofix_params.yaml")
+            if os.path.exists(yaml_path):
+                try:
+                    with open(yaml_path, "r", encoding="utf-8") as f:
+                        data = yaml.safe_load(f)
+                    if data:
+                        pests_to_scrape = [info.get("scientific_name") for info in data.values() if info.get("scientific_name")]
+                except Exception as e:
+                    logger.warning(f"Failed to read biofix_params.yaml: {e}")
+            if not pests_to_scrape:
+                pests_to_scrape = ["Dalbulus maidis", "Spodoptera frugiperda"]
         else:
             pests_to_scrape = [pest_type]
 

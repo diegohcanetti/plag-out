@@ -1,0 +1,6419 @@
+{
+  "resultado": true,
+  "aAnos": {
+    "2023/2024": "2023/2024",
+    "2021/2022": "2021/2022",
+    "2019/2020": "2019/2020"
+  },
+  "aDeptoMalezas": {
+    "103": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "103",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "103",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "203": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "203",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "203",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "152": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "152",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "152",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "192": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "192",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "192",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "105": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "105",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "105",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "113": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "113",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "113",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "73": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "73",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "73",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "200": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "200",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "200",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "191": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "191",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "191",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "198": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "198",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "198",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "121": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "121",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "121",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "159": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "159",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "159",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "189": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "189",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "189",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "130": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "130",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "130",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "140": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "140",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "140",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "184": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "184",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "184",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "175": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "175",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "175",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "158": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "158",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "158",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "193": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "193",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "193",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "91": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "91",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "91",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "205": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "205",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "205",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "89": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "89",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "89",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "99": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "99",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "99",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "112": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "112",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "112",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "84": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "84",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "84",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "167": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "167",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "167",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "95": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "95",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "95",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "122": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "122",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "122",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "182": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "182",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "182",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "101": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "101",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "101",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "100": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "100",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "100",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "109": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "109",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "109",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "180": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "180",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "180",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "206": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "206",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "206",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "148": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "148",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "148",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "179": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "179",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "179",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "106": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "106",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "106",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "118": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "118",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "118",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "181": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "181",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "181",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "97": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "97",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "97",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "183": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "183",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "183",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "169": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "169",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "169",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "202": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "202",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "202",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "141": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "141",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "141",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "80": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "80",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "80",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "102": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "102",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "102",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "197": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "197",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "197",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "174": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "174",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "174",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "87": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "87",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "87",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "146": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "146",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "146",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "204": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "204",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "204",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "136": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "136",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "136",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "108": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "108",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "108",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "128": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "128",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "128",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "120": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "120",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "120",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "187": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "187",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "187",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "201": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "201",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "201",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "195": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "195",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "195",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "115": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "115",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "115",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "135": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "135",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "135",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "190": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "190",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "190",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "132": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "132",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "132",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "199": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "199",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "199",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "129": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "129",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "129",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "104": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "104",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "104",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "188": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "188",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "188",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "185": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "185",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "185",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "186": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "186",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "186",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "92": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "92",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "92",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "72": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "72",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "72",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "194": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "194",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "194",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "173": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "173",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "173",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "98": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "98",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "98",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "117": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "117",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "117",
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "93": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "93",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "93",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "127": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "127",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "127",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "94": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "94",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "94",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "114": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "114",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "114",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "137": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "137",
+        "2023/2024": 0,
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "137",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "90": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "90",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": "S/D",
+        "id_departamento": "90",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "85": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "85",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "85",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "475": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "475",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "475",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "487": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "487",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "487",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "481": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "481",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "481",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "75.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "490": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "490",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "490",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "85.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "497": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "497",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "497",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "498": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "498",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "498",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "81.25"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "485": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "485",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "485",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "482": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "482",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "482",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "76.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "479": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "479",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "479",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "477": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "477",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "477",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "496": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "496",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "496",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "56.25"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "484": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "484",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "484",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "75.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "491": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "491",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "491",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "81.25"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "262": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "262",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "262",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "270": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "270",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "270",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "15.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "279": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "279",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "279",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "15.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "282": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "282",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "282",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "260": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "260",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "260",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "280": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "280",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "280",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "261": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "261",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "261",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "281": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "281",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "281",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "259": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "259",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "259",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "265": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "265",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "3.50"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "265",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.40"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "276": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "276",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "276",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "269": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "269",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "269",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "271": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "271",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "271",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "267": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "267",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "267",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "266": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "266",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "266",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "273": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "273",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "273",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "1.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "258": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "258",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "258",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "1.25"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "264": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "264",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "264",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "338": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "338",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "338",
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "343": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "343",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "343",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "341": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "341",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "4.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "341",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "25.83"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "329": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "329",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "329",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "53.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "335": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "335",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "10.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "335",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "30.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "334": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "334",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "334",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "15.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "333": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "333",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "333",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "23.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "331": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "331",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "4.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "331",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "26.43"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "339": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "339",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "2.86"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "339",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "20.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "344": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "344",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "4.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "344",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "39.17"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "342": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "342",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "342",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "53.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "346": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "346",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "10.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "346",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "40.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "337": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "337",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "337",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "30.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "336": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "336",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "336",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "23.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "332": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "332",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "5.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "332",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "22.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "345": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "345",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "3.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "345",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "35.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "228": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "228",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "228",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "235": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "235",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "235",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "232": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "232",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "232",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "226": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "226",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "226",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "240": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "240",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "240",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "241": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "241",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "241",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "239": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "239",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "239",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "242": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "242",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "242",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "237": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "237",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "237",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "238": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "238",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "238",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "450": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "450",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "450",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "38.75"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "452": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "452",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "452",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "443": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "443",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "443",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "54.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "456": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "456",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "456",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "45.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "445": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "445",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "445",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "66.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "462": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "462",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "462",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "35.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "251": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "251",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "251",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "316": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "316",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "316",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "3.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "313": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "313",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "313",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "10.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "323": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "323",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "323",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "73.50"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "327": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "327",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "327",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "322": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "322",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "322",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "90.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "328": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "328",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "328",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "311": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "311",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "14.29"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "311",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "43.75"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "314": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "314",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "16.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "314",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "22.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "324": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "324",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "324",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.83"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "321": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "321",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "321",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "56.43"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "317": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "317",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "317",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "28.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "312": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "312",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "312",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "319": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "319",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "319",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "48.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "318": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "318",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "318",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "58.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "326": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "326",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "326",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "320": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "320",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "320",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "43.57"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "315": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "315",
+        "2023/2024": 0,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "315",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "1.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "325": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "325",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "325",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "36.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "306": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "306",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "306",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "52.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "284": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "284",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "284",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "305": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "305",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "305",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "26.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "285": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "285",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "285",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "301": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "301",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "301",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "30.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "293": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "293",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "293",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "92.50"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "286": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "286",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "286",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "62.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "294": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "294",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "294",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "80.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "287": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 1,
+        "id_departamento": "287",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "287",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "75.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "283": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "283",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "283",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "31.43"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "290": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "290",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "290",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "57.50"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "309": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "309",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "15.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "309",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "38.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "425": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "425",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "425",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "53.57"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "430": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "430",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "430",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.83"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "440": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "440",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "440",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "68.57"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "439": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "439",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 1,
+        "id_departamento": "439",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "76.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "441": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "441",
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "441",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "70.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "435": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": "S/D",
+        "id_departamento": "435",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "435",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "62.50"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "310": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2021/2022": 0,
+        "id_departamento": "310",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "33.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2021/2022": 0,
+        "id_departamento": "310",
+        "2023/2024": 1,
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "65.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "86": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "86",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "86",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "145": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "145",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "145",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "126": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "126",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "126",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "124": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "124",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "124",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "134": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "134",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "134",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "88": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "88",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "88",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "82": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "82",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 0,
+        "id_departamento": "82",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "340": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 1,
+        "id_departamento": "340",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "6.67"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "340",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "18.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "254": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "254",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "254",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "253": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 1,
+        "id_departamento": "253",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "253",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "248": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "248",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "248",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "249": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "249",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "249",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "255": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 0,
+        "id_departamento": "255",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "255",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "434": [
+      {
+        "maleza": "Chicharrita en maíz temprano",
+        "id_maleza": "chicharrita-en-maiz-temprano",
+        "2023/2024": 1,
+        "id_departamento": "434",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz temprano"
+      },
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "434",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "65.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "419": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "419",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "60.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "423": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "423",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "417": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "417",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "85.71"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "464": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "464",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "33.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "256": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "256",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "250": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "250",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "0.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "298": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "298",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "70.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "429": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "429",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "437": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "437",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "68.33"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ],
+    "427": [
+      {
+        "maleza": "Chicharrita en maíz tardio",
+        "id_maleza": "chicharrita-en-maiz-tardio",
+        "2023/2024": 1,
+        "id_departamento": "427",
+        "mas_info": {
+          "2024": {
+            "sup_trat_no_bt": "100.00"
+          }
+        },
+        "nombre": "Chicharrita en maíz tardio"
+      }
+    ]
+  },
+  "aDeptoMediciones": {
+    "103": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "203": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "152": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "192": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "105": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "113": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "73": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "200": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "191": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "198": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "121": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "159": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "189": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "130": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "140": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "184": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "175": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "158": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "193": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "91": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "205": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "89": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "99": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "112": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "84": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "167": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "95": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "122": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "182": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "101": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "100": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "109": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "180": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "206": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "148": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "179": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "106": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "118": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "181": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "97": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "183": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "169": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "202": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "141": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "80": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "102": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "197": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "174": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "87": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "146": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "204": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "136": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "108": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "128": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "120": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "187": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "201": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "195": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "115": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "135": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "190": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "132": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "199": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "129": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "104": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "188": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "185": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "186": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "92": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "72": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "194": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "173": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "98": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "117": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "93": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "127": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "94": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "114": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "137": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "90": {
+      "2023/2024": 1,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "85": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "475": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "487": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "481": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "490": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "497": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "498": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "485": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "482": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "479": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "477": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "496": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "484": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "491": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "262": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "270": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "279": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "282": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "260": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "280": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "261": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "281": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "259": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "265": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "276": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "269": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "271": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "267": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "266": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "273": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "258": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "264": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "338": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "343": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "341": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "329": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "335": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "334": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "333": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "331": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "339": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "344": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "342": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "346": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "337": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "336": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "332": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "345": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "228": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "235": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "232": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "226": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "240": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "241": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "239": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "242": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "237": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "238": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "450": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "452": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "443": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "456": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "445": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "462": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "251": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "316": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "313": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "323": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "327": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "322": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "328": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "311": {
+      "2023/2024": 7,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "314": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "324": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "321": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "317": {
+      "2023/2024": 7,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "312": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "319": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "318": {
+      "2023/2024": 4,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "326": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "320": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "315": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "325": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "306": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "284": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "305": {
+      "2023/2024": 4,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "285": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "301": {
+      "2023/2024": 4,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "293": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "286": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "294": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "287": {
+      "2023/2024": 4,
+      "2021/2022": 7,
+      "2019/2020": 1
+    },
+    "283": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "290": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "309": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "425": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "430": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "440": {
+      "2023/2024": 4,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "439": {
+      "2023/2024": 7,
+      "2021/2022": 4,
+      "2019/2020": 1
+    },
+    "441": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "435": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "310": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "86": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "145": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "126": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "124": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "134": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "88": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "82": {
+      "2023/2024": 1,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "340": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "254": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "253": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "248": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "249": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "255": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "434": {
+      "2023/2024": 7,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "419": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "423": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "417": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "464": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "256": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "250": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "298": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "429": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "437": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    },
+    "427": {
+      "2023/2024": 4,
+      "2021/2022": 1,
+      "2019/2020": 1
+    }
+  },
+  "aMalezasSelect": {
+    "chicharrita-en-maiz-temprano": "Chicharrita en maíz temprano",
+    "chicharrita-en-maiz-tardio": "Chicharrita en maíz tardio"
+  }
+}

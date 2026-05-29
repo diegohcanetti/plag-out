@@ -12,6 +12,7 @@ This script executes the complete predictive and thermodynamic workflow for Plag
 import os
 import argparse
 import logging
+import gc
 from datetime import datetime, timedelta, timezone
 import pandas as pd
 import numpy as np
@@ -65,34 +66,56 @@ def run_full_ml_pipeline(test_mode: bool = False):
     bio_extractor = BiofixExtractor(min_adults_threshold=10.0, separation_days=28)
     all_cohorts = bio_extractor.extract_biofixes(pest_df)
     
-    # Separate cohorts by pest species (Fallback Protocol)
-    dm_cohorts = [c for c in all_cohorts if c.species == "Dalbulus maidis"]
-    sf_cohorts = [c for c in all_cohorts if c.species == "Spodoptera frugiperda"]
-    
-    logger.info(f"Dalbulus maidis: programmatically extracted {len(dm_cohorts)} cohort threads.")
-    logger.info(f"Spodoptera frugiperda (Secondary Pest): extracted {len(sf_cohorts)} cohort threads.")
+    # Group cohorts by pest species dynamically
+    cohorts_by_species = {}
+    for c in all_cohorts:
+        cohorts_by_species.setdefault(c.species, []).append(c)
+        
+    for species, cohorts in cohorts_by_species.items():
+        logger.info(f"{species}: programmatically extracted {len(cohorts)} cohort threads.")
     
     # --------------------------------------------------------------------------
     # STEPS 2 & 3: FEATURE ENGINEERING & WARNING LEVEL 1 XGBOOST MODELS
     # --------------------------------------------------------------------------
     logger.info("\n--- STEPS 2 & 3: Warning Level 1 Predictive XGBoost Training ---")
-    wl1_dm = WarningLevel1Model(model_dir="data/models/dalbulus_maidis")
-    wl1_sf = WarningLevel1Model(model_dir="data/models/spodoptera_frugiperda")
     
-    # We trim training sets if in test_mode to keep execution quick
-    df_dm_train = pest_df if not test_mode else pest_df.head(150)
-    df_sf_train = pest_df if not test_mode else pest_df.head(150)
+    metrics_report = {}
     
-    # Dalbulus maidis Model
-    logger.info("Training Model for primary pest (Dalbulus maidis)...")
-    X_dm, y_dm = wl1_dm.prepare_dataset(df_dm_train, fe, "Dalbulus maidis")
-    metrics_dm = wl1_dm.train(X_dm, y_dm)
-    
-    # Spodoptera frugiperda Model
-    logger.info("Training Model for secondary pest (Spodoptera frugiperda)...")
-    X_sf, y_sf = wl1_sf.prepare_dataset(df_sf_train, fe, "Spodoptera frugiperda")
-    metrics_sf = wl1_sf.train(X_sf, y_sf)
-    
+    # Dynamically train model for each configured pest species
+    for pest_name in PEST_BIOLOGY.keys():
+        # Trim training sets if in test_mode to keep execution quick
+        df_train = pest_df if not test_mode else pest_df.head(150)
+        
+        # Filter for records of this pest type to check if there is data
+        df_pest_only = df_train[df_train['pest_type'] == pest_name]
+        if df_pest_only.empty:
+            logger.info(f"No records found for {pest_name} in dataset. Skipping model training.")
+            continue
+            
+        logger.info(f"Training Model for pest species: {pest_name}...")
+        pest_slug = pest_name.lower().replace(" ", "_")
+        wl1 = WarningLevel1Model(model_dir=f"data/models/{pest_slug}")
+        
+        try:
+            X, y = wl1.prepare_dataset(df_train, fe, pest_name)
+            if len(X) < 5:
+                logger.warning(f"Insufficient samples ({len(X)}) to train model for {pest_name}. Skipping.")
+                continue
+                
+            metrics = wl1.train(X, y)
+            metrics_report[pest_name] = metrics
+        except Exception as e:
+            logger.error(f"Failed to train Warning Level 1 model for {pest_name}: {e}")
+        finally:
+            # Free up XGBoost model memory to prevent OOM
+            if 'wl1' in locals():
+                del wl1
+            if 'X' in locals():
+                del X
+            if 'y' in locals():
+                del y
+            gc.collect()
+            
     # --------------------------------------------------------------------------
     # STEP 4: WARNING LEVEL 2 THERMODYNAMIC LIFECYCLE TRACKING
     # --------------------------------------------------------------------------
@@ -104,43 +127,29 @@ def run_full_ml_pipeline(test_mode: bool = False):
     
     active_alerts = []
     
-    # Track first 20 active Dalbulus maidis cohorts
-    logger.info("Tracking active Dalbulus maidis thermodynamic cohorts...")
-    for cohort in dm_cohorts[:20]:
-        report = engine.track_cohort(cohort, evaluation_date)
-        if report["status"] == "Active":
-            active_alerts.append({
-                "species": cohort.species,
-                "locality": cohort.locality,
-                "province": cohort.province,
-                "latitude": cohort.latitude,
-                "longitude": cohort.longitude,
-                "biofix_date": cohort.biofix_date.strftime('%Y-%m-%d'),
-                "accumulated_gdd": report["accumulated_gdd"],
-                "days_active": report["days_active"],
-                "biological_stage": report["current_stage"],
-                "recommendation": report["recommendation"],
-                "threat_level": report["threat_level"]
-            })
-            
-    # Track all active Spodoptera frugiperda cohorts
-    logger.info("Tracking active Spodoptera frugiperda thermodynamic cohorts...")
-    for cohort in sf_cohorts:
-        report = engine.track_cohort(cohort, evaluation_date)
-        if report["status"] == "Active":
-            active_alerts.append({
-                "species": cohort.species,
-                "locality": cohort.locality,
-                "province": cohort.province,
-                "latitude": cohort.latitude,
-                "longitude": cohort.longitude,
-                "biofix_date": cohort.biofix_date.strftime('%Y-%m-%d'),
-                "accumulated_gdd": report["accumulated_gdd"],
-                "days_active": report["days_active"],
-                "biological_stage": report["current_stage"],
-                "recommendation": report["recommendation"],
-                "threat_level": report["threat_level"]
-            })
+    # Track active cohorts dynamically across all species
+    for species, cohorts in cohorts_by_species.items():
+        logger.info(f"Tracking active {species} thermodynamic cohorts...")
+        # Process up to 20 active cohorts per species to keep things balanced
+        for cohort in cohorts[:20]:
+            try:
+                report = engine.track_cohort(cohort, evaluation_date)
+                if report["status"] == "Active":
+                    active_alerts.append({
+                        "species": cohort.species,
+                        "locality": cohort.locality,
+                        "province": cohort.province,
+                        "latitude": cohort.latitude,
+                        "longitude": cohort.longitude,
+                        "biofix_date": cohort.biofix_date.strftime('%Y-%m-%d'),
+                        "accumulated_gdd": report["accumulated_gdd"],
+                        "days_active": report["days_active"],
+                        "biological_stage": report["current_stage"],
+                        "recommendation": report["recommendation"],
+                        "threat_level": report["threat_level"]
+                    })
+            except Exception as e:
+                logger.error(f"Error tracking cohort for species {species}: {e}")
             
     alerts_df = pd.DataFrame(active_alerts)
     
@@ -173,39 +182,52 @@ def run_full_ml_pipeline(test_mode: bool = False):
     print("\n" + "="*80)
     print("                 PLAG-OUT ACTIVE THERMODYNAMIC ALERTS SUMMARY")
     print("="*80)
-    print(alerts_df[['species', 'province', 'locality', 'accumulated_gdd', 'biological_stage', 'threat_level']].head(15).to_string(index=False))
+    if not alerts_df.empty:
+        print(alerts_df[['species', 'province', 'locality', 'accumulated_gdd', 'biological_stage', 'threat_level']].head(15).to_string(index=False))
+    else:
+        print("No active alerts generated.")
     print("="*80)
     
     # Generate GDD Accumulation Curves plot for key regions
     plt.figure(figsize=(10, 6))
     
-    # Choose 3 representative cohorts
+    # Choose representative cohorts dynamically across different species
     rep_cohorts = []
-    if dm_cohorts:
-        rep_cohorts.append(dm_cohorts[0])
-    if sf_cohorts:
-        rep_cohorts.append(sf_cohorts[0])
-    if len(dm_cohorts) > 1:
-        rep_cohorts.append(dm_cohorts[1])
-        
+    seen_species = set()
+    for cohort in all_cohorts:
+        if cohort.species not in seen_species:
+            rep_cohorts.append(cohort)
+            seen_species.add(cohort.species)
+        if len(rep_cohorts) >= 4:
+            break
+            
+    # Draw GDD accumulation curves
     for cohort in rep_cohorts:
-        weather_df = cp.get_weather(cohort.latitude, cohort.longitude, cohort.biofix_date, evaluation_date)
-        tbase = PEST_BIOLOGY[cohort.species]["tbase"]
-        tupper = PEST_BIOLOGY[cohort.species]["tupper"]
-        
-        # Recalculate daily/cum GDD
-        weather_df['daily_gdd'] = weather_df.apply(
-            lambda r: GDDCalculator.calculate_daily_gdd(r['temp_max'], r['temp_min'], tbase, tupper), axis=1
-        )
-        weather_df['cumulative_gdd'] = weather_df['daily_gdd'].cumsum()
-        
-        plt.plot(weather_df['date'], weather_df['cumulative_gdd'], label=f"{cohort.species} at {cohort.locality} (Biofix: {cohort.biofix_date.strftime('%Y-%m-%d')})", linewidth=2)
-        
-    dm_gdd = PEST_BIOLOGY.get("Dalbulus maidis", {}).get("generation_gdd", 381.0)
-    sf_gdd = PEST_BIOLOGY.get("Spodoptera frugiperda", {}).get("generation_gdd", 378.0)
-    
-    plt.axhline(y=dm_gdd, color='r', linestyle='--', alpha=0.7, label=f"Dalbulus Generation GDD Threshold ({int(dm_gdd)})")
-    plt.axhline(y=sf_gdd, color='g', linestyle=':', alpha=0.7, label=f"Spodoptera Generation GDD Threshold ({int(sf_gdd)})")
+        try:
+            weather_df = cp.get_weather(cohort.latitude, cohort.longitude, cohort.biofix_date, evaluation_date)
+            tbase = PEST_BIOLOGY[cohort.species]["tbase"]
+            tupper = PEST_BIOLOGY[cohort.species]["tupper"]
+            
+            # Recalculate daily/cum GDD
+            weather_df['daily_gdd'] = weather_df.apply(
+                lambda r: GDDCalculator.calculate_daily_gdd(r['temp_max'], r['temp_min'], tbase, tupper), axis=1
+            )
+            weather_df['cumulative_gdd'] = weather_df['daily_gdd'].cumsum()
+            
+            plt.plot(weather_df['date'], weather_df['cumulative_gdd'], 
+                     label=f"{cohort.species} at {cohort.locality} (Biofix: {cohort.biofix_date.strftime('%Y-%m-%d')})", linewidth=2)
+        except Exception as e:
+            logger.error(f"Failed to plot curve for cohort {cohort}: {e}")
+            
+    # Draw generation thresholds dynamically
+    colors = ['r', 'g', 'b', 'c', 'm', 'y']
+    linestyles = ['--', ':', '-.', '--', ':', '-.']
+    for idx, cohort in enumerate(rep_cohorts):
+        gen_gdd = PEST_BIOLOGY.get(cohort.species, {}).get("generation_gdd", 380.0)
+        color = colors[idx % len(colors)]
+        style = linestyles[idx % len(linestyles)]
+        plt.axhline(y=gen_gdd, color=color, linestyle=style, alpha=0.6, 
+                    label=f"{cohort.species} Gen GDD Threshold ({int(gen_gdd)})")
     
     plt.title("Growing Degree Days (GDD) Accumulation from Empirical Biofix Dates", fontsize=14, fontweight='bold', pad=15)
     plt.xlabel("Date", fontsize=12)
@@ -221,13 +243,13 @@ def run_full_ml_pipeline(test_mode: bool = False):
     print("\n" + "="*80)
     print("                    PIPELINE MODEL ACCURACY COMPARISON REPORT")
     print("="*80)
-    print(f"Primary Pest (Dalbulus maidis) XGBoost Accuracy: {metrics_dm['accuracy']*100:.2f}% | AUC-ROC: {metrics_dm['auc']:.4f}")
-    print(f"Secondary Pest (Spodoptera frugiperda) XGBoost Accuracy: {metrics_sf['accuracy']*100:.2f}% | AUC-ROC: {metrics_sf['auc']:.4f}")
+    for pest_name, metrics in metrics_report.items():
+        print(f"{pest_name} XGBoost Accuracy: {metrics['accuracy']*100:.2f}% | AUC-ROC: {metrics['auc']:.4f}")
     print("="*80)
     
     logger.info("Plag-out ML & Thermodynamic pipeline execution fully complete!")
-
-
+ 
+ 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Plag-out ML Pipeline")
     parser.add_argument("--test", action="store_true", help="Runs pipeline in high-speed test mode with small sample size")

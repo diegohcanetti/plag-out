@@ -1,13 +1,10 @@
-# Plag-out Thermodynamic & Biological Parameters Matrix
-# Derived from official INTA guidelines and scientific literature (PubMed / Wiley)
-
 dalbulus_maidis:
-  scientific_name: "Dalbulus maidis"
-  common_name: "Chicharrita del maíz (Corn Leafhopper)"
+  scientific_name: Dalbulus maidis
+  common_name: Chicharrita del maíz (Corn Leafhopper)
   thermodynamics:
-    t_base: 4.9             # Base developmental threshold in °C
-    t_max: 35.0             # Upper developmental cutoff in °C (fitness declines above this)
-    thermal_constant: 648.26 # Degree-days (DD) required from egg to adult
+    t_base: 4.9
+    t_max: 35.0
+    thermal_constant: 648.26
     egg_gdd: 102.0
     nymph_gdd: 224.0
     preoviposition_gdd: 55.0
@@ -15,14 +12,13 @@ dalbulus_maidis:
   optimal_range:
     min_temp: 17.5
     max_temp: 35.0
-
 spodoptera_frugiperda:
-  scientific_name: "Spodoptera frugiperda"
-  common_name: "Oruga cogollera (Fall Armyworm)"
+  scientific_name: Spodoptera frugiperda
+  common_name: Oruga cogollera (Fall Armyworm)
   thermodynamics:
-    t_base: 11.0            # Base developmental threshold in °C
-    t_max: 32.0             # Upper developmental threshold (declines sharply above, lethal at 40°C)
-    thermal_constant: 430.0  # Average degree-days (DD) required from egg to adult (range 391-466)
+    t_base: 11.0
+    t_max: 32.0
+    thermal_constant: 430.0
     egg_gdd: 36.0
     larva_gdd: 194.0
     pupa_gdd: 113.0
@@ -31,3 +27,94 @@ spodoptera_frugiperda:
   optimal_range:
     min_temp: 25.0
     max_temp: 32.0
+helicoverpa_gelotopoeon:
+  scientific_name: Helicoverpa gelotopoeon
+  common_name: Isoca bolillera
+  thermodynamics:
+    t_base: 11.0
+    t_max: 34.0
+    thermal_constant: 500.0
+    egg_gdd: 50.0
+    larva_gdd: 280.0
+    pupa_gdd: 170.0
+  optimal_range:
+    min_temp: 20.0
+    max_temp: 30.0
+helicoverpa_zea:
+  scientific_name: Helicoverpa zea
+  common_name: Isoca de la espiga (Corn Earworm)
+  thermodynamics:
+    t_base: 12.5
+    t_max: 33.5
+    thermal_constant: 422.0
+    egg_gdd: 40.5
+    larva_gdd: 202.3
+    pupa_gdd: 179.5
+  optimal_range:
+    min_temp: 25.0
+    max_temp: 32.0
+diatraea_saccharalis:
+  scientific_name: Diatraea saccharalis
+  common_name: Barrenador del tallo (Sugarcane Borer)
+  thermodynamics:
+    t_base: 13.6
+    t_max: 33.9
+    thermal_constant: 547.7
+    egg_gdd: 67.5
+    larva_gdd: 354.0
+    pupa_gdd: 126.0
+  optimal_range:
+    min_temp: 25.0
+    max_temp: 30.0
+rachiplusia_nu:
+  scientific_name: Rachiplusia nu
+  common_name: Isoca medidora
+  thermodynamics:
+    t_base: 8.9
+    t_max: 32.0
+    thermal_constant: 834.5
+    egg_gdd: 57.0
+    larva_gdd: 565.0
+    pupa_gdd: 345.0
+  optimal_range:
+    min_temp: 20.0
+    max_temp: 25.0
+chrysodeixis_includens:
+  scientific_name: Chrysodeixis includens
+  common_name: Falsa medidora (Soybean Looper)
+  thermodynamics:
+    t_base: 11.3
+    t_max: 32.0
+    thermal_constant: 609.7
+    egg_gdd: 45.0
+    larva_gdd: 370.0
+    pupa_gdd: 195.0
+  optimal_range:
+    min_temp: 20.0
+    max_temp: 30.0
+pseudaletia_adultera:
+  scientific_name: Pseudaletia adultera
+  common_name: Isoca militar verdadera
+  thermodynamics:
+    t_base: 9.5
+    t_max: 30.0
+    thermal_constant: 600.0
+    egg_gdd: 70.0
+    larva_gdd: 350.0
+    pupa_gdd: 180.0
+  optimal_range:
+    min_temp: 18.0
+    max_temp: 26.0
+faronta_albilinea:
+  scientific_name: Faronta albilinea
+  common_name: Isoca desgranadora
+  thermodynamics:
+    t_base: 10.0
+    t_max: 30.0
+    thermal_constant: 550.0
+    egg_gdd: 60.0
+    larva_gdd: 320.0
+    pupa_gdd: 170.0
+  optimal_range:
+    min_temp: 20.0
+    max_temp: 28.0
