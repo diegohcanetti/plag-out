@@ -34,7 +34,7 @@ python -c "import dotenv" || pip install python-dotenv
 
 # 4. Execute ETL pipeline
 echo "Executing ETL Pipeline..."
-PYTHONPATH=. python orchestrator.py
+PYTHONPATH=. python orchestrator.py "$@"
 
 # 5. Execute ML prediction pipeline
 echo "Executing ML Prediction Pipeline..."
