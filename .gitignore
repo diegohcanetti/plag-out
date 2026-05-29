@@ -10,8 +10,11 @@ env/
 .env
 
 # Python / Cache
-__pycache__/
-*.py[cod]
+**/__pycache__/
+**/*.pyc
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
 *$py.class
 .pytest_cache/
 .mypy_cache/
