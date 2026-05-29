@@ -139,3 +139,35 @@ def test_gdd_simulation_target_reached(mock_get_weather):
     assert data["current_gdd"] == 125
     assert data["target_reached"] is True
     assert "GDD alcanzado" in data["message"]
+
+
+def test_location_alerts_missing_key():
+    """
+    Assert that accessing the location-based alerts endpoint without an API key yields 403.
+    """
+    response = client.get("/api/v1/alerts/location?lat=-24.3&lng=-65.2")
+    assert response.status_code == 403
+
+
+@patch("loaders.db.get_engine")
+def test_location_alerts_csv_fallback(mock_get_engine):
+    """
+    Assert that location-based alerts filter correctly and return sorted by distance.
+    Uses the local fallback active_pest_alerts.csv.
+    """
+    mock_get_engine.side_effect = Exception("DB Connection Mock Failure")
+    
+    # Santa Clara is at (-24.3100735, -64.6619555)
+    # Querying very close to Santa Clara with a 10km radius should return Santa Clara
+    response = client.get(
+        "/api/v1/alerts/location?lat=-24.31&lng=-64.66&radius_km=10",
+        headers={"X-API-KEY": "plagout_secret_token_123"}
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert "alerts" in data
+    assert len(data["alerts"]) > 0
+    # The closest alert should be Santa Clara
+    assert data["alerts"][0]["locality"] == "Santa Clara"
+    assert data["alerts"][0]["distance_km"] < 10.0
+

@@ -1,22 +1,4 @@
 species,locality,province,latitude,longitude,biofix_date,accumulated_gdd,days_active,biological_stage,recommendation,threat_level
-Dalbulus maidis,Alberdi,Buenos Aires,-36.8836862,-60.3348534,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,América,Buenos Aires,-35.4891187,-62.9756868,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,Arrecifes,Buenos Aires,-36.67,-60.5,2025-05-26,4064.55,363,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Arrecifes,Buenos Aires,-36.67,-60.5,2025-06-27,3932.79,331,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Chivilcoy,Buenos Aires,-34.8969591,-60.0190499,2025-06-10,4403.1500000000015,348,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Chivilcoy,Buenos Aires,-34.8969591,-60.0190499,2026-04-20,291.55,34,Nymph Emergence & Feeding (Critical),CRITICAL WINDOW: Apply precision insecticides or biologicals (Beauveria bassiana). High feeding threat.,Critical
-Dalbulus maidis,Chivilcoy,Buenos Aires,-34.8969591,-60.0190499,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,Conesa,Buenos Aires,-33.5957269,-60.3558532,2025-06-10,4906.049999999998,348,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Conesa,Buenos Aires,-33.5957269,-60.3558532,2026-04-20,328.2749999999999,34,Pre-Oviposition Adults,WARNING WINDOW: Prevent adult mating and egg-laying. Apply systemic controls.,Warning
-Dalbulus maidis,Conesa,Buenos Aires,-33.5957269,-60.3558532,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,Ferré,Buenos Aires,-34.1257562,-61.1338078,2025-06-10,4582.920000000004,348,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Gobernador Castro,Buenos Aires,-33.6585733,-59.8675097,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,La Violeta,Buenos Aires,-33.7330396,-60.1685881,2025-04-22,5517.980000000003,397,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,La Violeta,Buenos Aires,-33.7330396,-60.1685881,2025-05-26,5120.010000000003,363,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,La Violeta,Buenos Aires,-33.7330396,-60.1685881,2025-06-27,4946.295000000003,331,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,La Violeta,Buenos Aires,-33.7330396,-60.1685881,2026-04-20,331.40999999999997,34,Pre-Oviposition Adults,WARNING WINDOW: Prevent adult mating and egg-laying. Apply systemic controls.,Warning
-Dalbulus maidis,La Violeta,Buenos Aires,-33.7330396,-60.1685881,2026-05-22,0.0,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
-Dalbulus maidis,Pergamino,Buenos Aires,-33.8899,-60.5696,2025-04-22,5117.3849999999975,397,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Pergamino,Buenos Aires,-33.8899,-60.5696,2025-05-26,4745.134999999996,363,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Dalbulus maidis,Pergamino,Buenos Aires,-33.8899,-60.5696,2025-06-27,4575.594999999996,331,Subsequent Generation Emergence,ALERT: Next generation cohort starting. Trap monitoring highly recommended.,Warning
-Spodoptera frugiperda,Rosario,Santa Fe,-32.9468,-60.6393,2025-05-02,3399.999999999998,387,Subsequent Generation Emergence,ALERT: Second generation larval wave beginning. Re-evaluate monitoring protocols.,Warning
+Dalbulus maidis,EL Carmen,Jujuy,-24.3833,-65.25,2026-05-22,11.374999999999996,2,Egg Development,Monitor egg parasitoids (biocontrol). Treatment generally not required.,Low
+Dalbulus maidis,Fraile Pintado,Jujuy,-23.9425671,-64.8023369,2026-05-07,114.625,17,Nymph Emergence & Feeding (Critical),CRITICAL WINDOW: Apply precision insecticides or biologicals (Beauveria bassiana). High feeding threat.,Critical
+Dalbulus maidis,Santa Clara,Jujuy,-24.3100735,-64.6619555,2026-05-07,174.38500000000002,17,Nymph Emergence & Feeding (Critical),CRITICAL WINDOW: Apply precision insecticides or biologicals (Beauveria bassiana). High feeding threat.,Critical
