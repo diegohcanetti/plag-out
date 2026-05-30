@@ -193,7 +193,7 @@ def run_pipeline(
 
                 # Run ETL Data Quality assertions
                 if maizar_records:
-                    df_maizar = pd.DataFrame([r.dict() for r in maizar_records])
+                    df_maizar = pd.DataFrame([r.model_dump() for r in maizar_records])
                     validate_pest_records_dataframe(df_maizar)
                     
                     # Ingest MAIZAR biological data for this report immediately
@@ -244,7 +244,7 @@ def run_pipeline(
                         pest_gbif_recs = [r for r in pest_gbif_recs if r.occurrence_date.replace(tzinfo=None) > gbif_watermark.replace(tzinfo=None)]
                     if pest_gbif_recs:
                         # Quality Gate Check
-                        df_gbif = pd.DataFrame([r.dict() for r in pest_gbif_recs])
+                        df_gbif = pd.DataFrame([r.model_dump() for r in pest_gbif_recs])
                         validate_pest_records_dataframe(df_gbif)
                         
                         ingest_pest_records(pest_gbif_recs)
@@ -273,7 +273,7 @@ def run_pipeline(
                 fetched_sinavimo = [r for r in fetched_sinavimo if r.occurrence_date.replace(tzinfo=None) > sinavimo_watermark.replace(tzinfo=None)]
             if fetched_sinavimo:
                 # Quality Gate Check
-                df_sinavimo = pd.DataFrame([r.dict() for r in fetched_sinavimo])
+                df_sinavimo = pd.DataFrame([r.model_dump() for r in fetched_sinavimo])
                 validate_pest_records_dataframe(df_sinavimo)
                 
                 ingest_pest_records(fetched_sinavimo)
@@ -302,7 +302,7 @@ def run_pipeline(
                 fetched_aapresid = [r for r in fetched_aapresid if r.occurrence_date.replace(tzinfo=None) > aapresid_watermark.replace(tzinfo=None)]
             if fetched_aapresid:
                 # Quality Gate Check
-                df_aapresid = pd.DataFrame([r.dict() for r in fetched_aapresid])
+                df_aapresid = pd.DataFrame([r.model_dump() for r in fetched_aapresid])
                 validate_pest_records_dataframe(df_aapresid)
                 
                 ingest_pest_records(fetched_aapresid)
@@ -329,7 +329,7 @@ def run_pipeline(
                 fetched_pbi = [r for r in fetched_pbi if r.occurrence_date.replace(tzinfo=None) > pbi_watermark.replace(tzinfo=None)]
             if fetched_pbi:
                 # Quality Gate Check
-                df_pbi = pd.DataFrame([r.dict() for r in fetched_pbi])
+                df_pbi = pd.DataFrame([r.model_dump() for r in fetched_pbi])
                 validate_pest_records_dataframe(df_pbi)
                 
                 ingest_pest_records(fetched_pbi)
@@ -355,7 +355,7 @@ def run_pipeline(
                 fetched_aappce = [r for r in fetched_aappce if r.occurrence_date.replace(tzinfo=None) > aappce_watermark.replace(tzinfo=None)]
             if fetched_aappce:
                 # Quality Gate Check
-                df_aappce = pd.DataFrame([r.dict() for r in fetched_aappce])
+                df_aappce = pd.DataFrame([r.model_dump() for r in fetched_aappce])
                 validate_pest_records_dataframe(df_aappce)
                 
                 ingest_pest_records(fetched_aappce)

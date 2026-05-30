@@ -11,8 +11,12 @@ from datetime import datetime
 from typing import Optional
 from sqlalchemy import create_engine, Engine, text
 from sqlalchemy.orm import sessionmaker, Session
+from dotenv import load_dotenv
 
 logger = logging.getLogger(__name__)
+
+# Load environment variables from .env file if present
+load_dotenv()
 
 # Default connection URL. Can be overridden with DATABASE_URL env var.
 DEFAULT_DB_URL = "postgresql://localhost/plagout_db"

@@ -65,9 +65,13 @@ def ingest_pest_records(records: List[PestMonitoringRecord]) -> int:
     param_list = list(unique_params.values())
 
     try:
+        inserted_count = 0
+        batch_size = 1000
         with engine.begin() as conn:
-            result = conn.execute(query, param_list)
-            inserted_count = len(param_list)
+            for i in range(0, len(param_list), batch_size):
+                batch = param_list[i:i + batch_size]
+                conn.execute(query, batch)
+                inserted_count += len(batch)
             logger.info(f"Successfully ingested {inserted_count} unique pest monitoring records (filtered from {len(records)}).")
             return inserted_count
     except Exception as e:
@@ -129,9 +133,13 @@ def ingest_climate_telemetry(records: List[ClimateTelemetryRecord], fast: bool =
     param_list = list(unique_params.values())
 
     try:
+        inserted_count = 0
+        batch_size = 1000
         with engine.begin() as conn:
-            result = conn.execute(query, param_list)
-            inserted_count = len(param_list)
+            for i in range(0, len(param_list), batch_size):
+                batch = param_list[i:i + batch_size]
+                conn.execute(query, batch)
+                inserted_count += len(batch)
             logger.info(f"Successfully ingested {inserted_count} unique climate telemetry records (filtered from {len(records)}, fast={fast}).")
             return inserted_count
     except Exception as e:

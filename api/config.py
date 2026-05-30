@@ -4,10 +4,10 @@ from pydantic import Field
 
 class Settings(BaseSettings):
     # API key for frontend authentication
-    plagout_api_key: str = Field("plagout_secret_token_123", validation_alias="PLAGOUT_API_KEY")
+    plagout_api_key: str = Field(..., validation_alias="PLAGOUT_API_KEY", description="Secret API Key")
     
-    # Database connection URL
-    database_url: str = Field("postgresql://localhost/plagout_db", validation_alias="DATABASE_URL")
+    # Database connection URL (Default is for local dev only)
+    database_url: str = Field(..., validation_alias="DATABASE_URL")
     
     # Application Defaults
     default_pagination_limit: int = Field(50, validation_alias="DEFAULT_PAGINATION_LIMIT")
