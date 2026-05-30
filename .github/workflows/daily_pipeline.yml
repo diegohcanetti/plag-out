@@ -30,10 +30,10 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -48,6 +48,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run Unit Tests
+        env:
+          DATABASE_URL: postgresql://postgres:password123@localhost:5432/plagout_db
+          PLAGOUT_API_KEY: ${{ secrets.PLAGOUT_API_KEY }}
+          NASA_POWER_API_KEY: ${{ secrets.NASA_POWER_API_KEY }}
+        run: |
+          PYTHONPATH=. pytest tests/
+
       - name: Run ETL & ML daily pipeline
         env:
           DATABASE_URL: postgresql://postgres:password123@localhost:5432/plagout_db
@@ -58,14 +66,14 @@ jobs:
           sh run_daily.sh
 
       - name: Upload Daily Visual Curve Assets
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: daily-agronomic-curves
           path: data/exports/gdd_accumulation_curves.png
           retention-days: 7
 
       - name: Upload Daily Alerts CSV
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: daily-pest-alerts
           path: data/exports/active_pest_alerts.csv

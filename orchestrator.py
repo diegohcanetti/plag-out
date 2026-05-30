@@ -16,6 +16,8 @@ import logging
 import concurrent.futures
 from datetime import datetime, timedelta
 from typing import List, Optional
+import pandas as pd
+
 
 # Import loaders
 from loaders.db import execute_migration_queries, get_engine, get_etl_watermark, update_etl_watermark
@@ -38,6 +40,40 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 )
 logger = logging.getLogger("orchestrator")
+
+
+def validate_pest_records_dataframe(df: pd.DataFrame) -> None:
+    """
+    Validates a DataFrame of pest records using Pandas assertions.
+    Ensures:
+    1. Critical columns (latitude, longitude, occurrence_date) have 0% null values.
+    2. Coordinate bounds fall within South America:
+       - Latitude between -60.0 and 15.0
+       - Longitude between -90.0 and -30.0
+    """
+    if df.empty:
+        return
+
+    for col in ['latitude', 'longitude', 'occurrence_date']:
+        assert col in df.columns, f"Critical column '{col}' is missing from DataFrame."
+        null_count = df[col].isnull().sum()
+        assert null_count == 0, f"Data Quality Failure: Column '{col}' has {null_count} null value(s)."
+
+    # South America bounds check
+    lat_min, lat_max = -60.0, 15.0
+    lon_min, lon_max = -90.0, -30.0
+
+    out_of_bounds_lat = df[(df['latitude'] < lat_min) | (df['latitude'] > lat_max)]
+    assert out_of_bounds_lat.empty, (
+        f"Data Quality Failure: Latitude values out of South America bounds [{lat_min}, {lat_max}]: "
+        f"{out_of_bounds_lat['latitude'].tolist()}"
+    )
+
+    out_of_bounds_lon = df[(df['longitude'] < lon_min) | (df['longitude'] > lon_max)]
+    assert out_of_bounds_lon.empty, (
+        f"Data Quality Failure: Longitude values out of South America bounds [{lon_min}, {lon_max}]: "
+        f"{out_of_bounds_lon['longitude'].tolist()}"
+    )
 
 
 def run_pipeline(
@@ -82,6 +118,17 @@ def run_pipeline(
                 else:
                     filtered_pages.append(r)
             maizar_pages = filtered_pages
+
+        # Sort chronologically (oldest first) so backfilling with limits works perfectly
+        def get_date(r):
+            if r.get("date"):
+                try:
+                    return datetime.strptime(r["date"], "%d/%m/%Y")
+                except:
+                    pass
+            return datetime.min
+
+        maizar_pages.sort(key=get_date)
 
         # Determine how many reports to process
         if test_mode and limit_reports is None:
@@ -128,35 +175,40 @@ def run_pipeline(
             logger.info("Parsing PDF text and converting to structured data...")
             try:
                 maizar_records = parse_maizar_pdf(pdf_path, report_date)
-            except Exception as e:
-                logger.error(f"Failed to parse PDF {pdf_path}: {e}. Skipping report.")
-                continue
                 
-            # Trim the records BEFORE geocoding to prevent excessive API queries in test/limit mode
-            if test_mode and maizar_records:
-                logger.info(f"Test mode: trimming MAIZAR records from {len(maizar_records)} to 3.")
-                maizar_records = maizar_records[:3]
-            elif limit_records and maizar_records:
-                logger.info(f"Limiting MAIZAR records from {len(maizar_records)} to {limit_records}.")
-                maizar_records = maizar_records[:limit_records]
-                
-            # Geo-reference the locations using cached SpatialGeocoder
-            logger.info(f"Applying spatial geocoding to {len(maizar_records)} records...")
-            for idx, rec in enumerate(maizar_records):
-                lat, lon = geocoder.geocode(rec.locality, rec.province)
-                rec.latitude = lat
-                rec.longitude = lon
-                
-            # Ingest MAIZAR biological data for this report immediately
-            if maizar_records:
-                logger.info(f"Ingesting {len(maizar_records)} normalized records into postgres...")
-                try:
+                # Trim the records BEFORE geocoding to prevent excessive API queries in test/limit mode
+                if test_mode and maizar_records:
+                    logger.info(f"Test mode: trimming MAIZAR records from {len(maizar_records)} to 3.")
+                    maizar_records = maizar_records[:3]
+                elif limit_records and maizar_records:
+                    logger.info(f"Limiting MAIZAR records from {len(maizar_records)} to {limit_records}.")
+                    maizar_records = maizar_records[:limit_records]
+                    
+                # Geo-reference the locations using cached SpatialGeocoder
+                logger.info(f"Applying spatial geocoding to {len(maizar_records)} records...")
+                for idx, rec in enumerate(maizar_records):
+                    lat, lon = geocoder.geocode(rec.locality, rec.province)
+                    rec.latitude = lat
+                    rec.longitude = lon
+
+                # Run ETL Data Quality assertions
+                if maizar_records:
+                    df_maizar = pd.DataFrame([r.dict() for r in maizar_records])
+                    validate_pest_records_dataframe(df_maizar)
+                    
+                    # Ingest MAIZAR biological data for this report immediately
+                    logger.info(f"Ingesting {len(maizar_records)} normalized records into postgres...")
                     ingest_pest_records(maizar_records)
                     all_maizar_records.extend(maizar_records)
                     if report_date and (latest_report_date is None or report_date > latest_report_date):
                         latest_report_date = report_date
-                except Exception as e:
-                    logger.error(f"Failed to ingest MAIZAR pest records: {e}")
+                else:
+                    logger.warning(f"No records found in PDF: {pdf_path}")
+            except Exception as e:
+                logger.error(f"Data Quality validation or ingestion failed for PDF {pdf_path}: {e}")
+                from loaders.db import quarantine_failed_file
+                quarantine_failed_file(pdf_path, str(e))
+                continue
 
         if latest_report_date:
             update_etl_watermark("MAIZAR", latest_report_date)
@@ -191,10 +243,16 @@ def run_pipeline(
                     if gbif_watermark:
                         pest_gbif_recs = [r for r in pest_gbif_recs if r.occurrence_date.replace(tzinfo=None) > gbif_watermark.replace(tzinfo=None)]
                     if pest_gbif_recs:
+                        # Quality Gate Check
+                        df_gbif = pd.DataFrame([r.dict() for r in pest_gbif_recs])
+                        validate_pest_records_dataframe(df_gbif)
+                        
                         ingest_pest_records(pest_gbif_recs)
                         gbif_records.extend(pest_gbif_recs)
             except Exception as ex:
-                logger.error(f"Failed to fetch GBIF occurrences for '{pest}': {ex}")
+                logger.error(f"Failed to fetch/load GBIF occurrences for '{pest}': {ex}")
+                from loaders.db import quarantine_failed_file
+                quarantine_failed_file(f"GBIF_API_{pest}", str(ex))
                 
         if gbif_records:
             latest_gbif_date = max(r.occurrence_date for r in gbif_records)
@@ -214,12 +272,18 @@ def run_pipeline(
             if sinavimo_watermark:
                 fetched_sinavimo = [r for r in fetched_sinavimo if r.occurrence_date.replace(tzinfo=None) > sinavimo_watermark.replace(tzinfo=None)]
             if fetched_sinavimo:
+                # Quality Gate Check
+                df_sinavimo = pd.DataFrame([r.dict() for r in fetched_sinavimo])
+                validate_pest_records_dataframe(df_sinavimo)
+                
                 ingest_pest_records(fetched_sinavimo)
                 sinavimo_records.extend(fetched_sinavimo)
                 latest_sinavimo_date = max(r.occurrence_date for r in fetched_sinavimo)
                 update_etl_watermark("SINAVIMO", latest_sinavimo_date)
     except Exception as e:
         logger.error(f"Failed to fetch/load SINAVIMO official alerts: {e}")
+        from loaders.db import quarantine_failed_file
+        quarantine_failed_file("SINAVIMO_API", str(e))
 
     # 3C. AAPRESID insect map records
     aapresid_records = []
@@ -237,12 +301,18 @@ def run_pipeline(
             if aapresid_watermark:
                 fetched_aapresid = [r for r in fetched_aapresid if r.occurrence_date.replace(tzinfo=None) > aapresid_watermark.replace(tzinfo=None)]
             if fetched_aapresid:
+                # Quality Gate Check
+                df_aapresid = pd.DataFrame([r.dict() for r in fetched_aapresid])
+                validate_pest_records_dataframe(df_aapresid)
+                
                 ingest_pest_records(fetched_aapresid)
                 aapresid_records.extend(fetched_aapresid)
                 latest_aapresid_date = max(r.occurrence_date for r in fetched_aapresid)
                 update_etl_watermark("AAPRESID", latest_aapresid_date)
     except Exception as e:
         logger.error(f"Failed to fetch/load AAPRESID map data: {e}")
+        from loaders.db import quarantine_failed_file
+        quarantine_failed_file("AAPRESID_API", str(e))
 
     # 3D. PowerBI dashboard records
     pbi_records = []
@@ -258,12 +328,18 @@ def run_pipeline(
             if pbi_watermark:
                 fetched_pbi = [r for r in fetched_pbi if r.occurrence_date.replace(tzinfo=None) > pbi_watermark.replace(tzinfo=None)]
             if fetched_pbi:
+                # Quality Gate Check
+                df_pbi = pd.DataFrame([r.dict() for r in fetched_pbi])
+                validate_pest_records_dataframe(df_pbi)
+                
                 ingest_pest_records(fetched_pbi)
                 pbi_records.extend(fetched_pbi)
                 latest_pbi_date = max(r.occurrence_date for r in fetched_pbi)
                 update_etl_watermark("PowerBI", latest_pbi_date)
     except Exception as e:
         logger.error(f"Failed to fetch/load PowerBI dashboard data: {e}")
+        from loaders.db import quarantine_failed_file
+        quarantine_failed_file("PowerBI_API", str(e))
 
     # 3E. AAPPCE Red MIP/TDF PDF reports
     aappce_records = []
@@ -278,12 +354,18 @@ def run_pipeline(
             if aappce_watermark:
                 fetched_aappce = [r for r in fetched_aappce if r.occurrence_date.replace(tzinfo=None) > aappce_watermark.replace(tzinfo=None)]
             if fetched_aappce:
+                # Quality Gate Check
+                df_aappce = pd.DataFrame([r.dict() for r in fetched_aappce])
+                validate_pest_records_dataframe(df_aappce)
+                
                 ingest_pest_records(fetched_aappce)
                 aappce_records.extend(fetched_aappce)
                 latest_aappce_date = max(r.occurrence_date for r in fetched_aappce)
                 update_etl_watermark("AAPPCE", latest_aappce_date)
     except Exception as e:
         logger.error(f"Failed to fetch/load AAPPCE report data: {e}")
+        from loaders.db import quarantine_failed_file
+        quarantine_failed_file("AAPPCE_API", str(e))
 
     # Combine all biological records for unified climate harvesting
     all_pest_records = all_maizar_records + gbif_records + sinavimo_records + aapresid_records + pbi_records + aappce_records
@@ -383,14 +465,14 @@ def run_pipeline(
                 recs = future.result()
                 if recs:
                     climate_records.extend(recs)
-                
+                    
                 # Report progress
                 if (idx + 1) % 10 == 0 or (idx + 1) == len(tasks):
                     logger.info(f"Progress: [{idx+1}/{len(tasks)}] weather location ranges processed.")
-                
-                # Ingest in chunks of ~2000 weather metrics to keep transaction sizes healthy
-                if len(climate_records) >= 2000:
-                    logger.info(f"Ingesting {len(climate_records)} weather metrics into climate_telemetry hypertable...")
+                    
+                # Ingest in smaller chunks of ~500 weather metrics to prevent Postgres OOM connection drops
+                if len(climate_records) >= 500:
+                    logger.info(f"Ingesting {len(climate_records)} weather metrics into climate_telemetry table...")
                     try:
                         ingest_climate_telemetry(climate_records, fast=True)
                         climate_records = []

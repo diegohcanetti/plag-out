@@ -104,8 +104,27 @@ def run_full_ml_pipeline(test_mode: bool = False):
                 
             metrics = wl1.train(X, y)
             metrics_report[pest_name] = metrics
+            
+            # Performance quality gate check:
+            acc = metrics.get("accuracy", 0.0)
+            f1 = metrics.get("f1_score", 0.0)
+            threshold = 0.75
+            
+            logger.info(f"Model performance validation gate: Accuracy = {acc:.4f}, F1-Score = {f1:.4f} (threshold: {threshold})")
+            if acc < threshold or f1 < threshold:
+                if not test_mode:
+                    raise RuntimeError(
+                        f"Model performance degraded below threshold ({threshold}) for {pest_name}! "
+                        f"Accuracy: {acc:.4f}, F1-Score: {f1:.4f}. Aborting pipeline to prevent poisoning predictions."
+                    )
+                else:
+                    logger.warning(
+                        f"⚠️ Model performance ({acc:.4f} Accuracy, {f1:.4f} F1) is below {threshold}, "
+                        f"but proceeding because test_mode=True."
+                    )
         except Exception as e:
-            logger.error(f"Failed to train Warning Level 1 model for {pest_name}: {e}")
+            logger.error(f"Failed to train or validate Warning Level 1 model for {pest_name}: {e}")
+            raise
         finally:
             # Free up XGBoost model memory to prevent OOM
             if 'wl1' in locals():
@@ -121,8 +140,8 @@ def run_full_ml_pipeline(test_mode: bool = False):
     # --------------------------------------------------------------------------
     logger.info("\n--- STEP 4: Warning Level 2 Biological Thermodynamic Tracking ---")
     
-    # Track the active state of all cohorts as of "today" (May 23, 2026)
-    evaluation_date = datetime(2026, 5, 23)
+    # Track the active state of all cohorts dynamically as of "today"
+    evaluation_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
     logger.info(f"Evaluating active cohort biological stages and GDD windows as of {evaluation_date.strftime('%Y-%m-%d')}...")
     
     active_alerts = []
@@ -204,7 +223,15 @@ def run_full_ml_pipeline(test_mode: bool = False):
     # Draw GDD accumulation curves
     for cohort in rep_cohorts:
         try:
-            weather_df = cp.get_weather(cohort.latitude, cohort.longitude, cohort.biofix_date, evaluation_date)
+            # Ensure both dates are tz-naive for consistent Pandas processing and API calls
+            b_date = cohort.biofix_date.replace(tzinfo=None) if cohort.biofix_date.tzinfo else cohort.biofix_date
+            e_date = evaluation_date.replace(tzinfo=None) if evaluation_date.tzinfo else evaluation_date
+            
+            # Ensure start date is strictly before or equal to end date to prevent NASA POWER 422 errors
+            start_dt = min(b_date, e_date)
+            end_dt = max(b_date, e_date)
+            
+            weather_df = cp.get_weather(cohort.latitude, cohort.longitude, start_dt, end_dt)
             tbase = PEST_BIOLOGY[cohort.species]["tbase"]
             tupper = PEST_BIOLOGY[cohort.species]["tupper"]
             

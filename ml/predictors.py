@@ -17,7 +17,7 @@ import numpy as np
 
 from xgboost import XGBClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, roc_auc_score
+from sklearn.metrics import classification_report, roc_auc_score, f1_score
 
 from ml.climate import ClimateProvider, GDDCalculator
 
@@ -216,7 +216,7 @@ class WarningLevel1Model:
             logger.warning("Training set has only one class. Training simplified dummy model.")
             self.model = XGBClassifier(n_estimators=5, max_depth=2, random_state=42)
             self.model.fit(X, y)
-            return {"accuracy": 1.0, "auc": 1.0}
+            return {"accuracy": 1.0, "auc": 1.0, "f1_score": 1.0}
             
         self.model = XGBClassifier(
             n_estimators=100,
@@ -238,8 +238,12 @@ class WarningLevel1Model:
             auc = float(roc_auc_score(y_test, y_proba))
         except Exception:
             auc = 0.5
+        try:
+            f1 = float(f1_score(y_test, y_pred, average="binary" if len(np.unique(y)) == 2 else "macro"))
+        except Exception:
+            f1 = 0.0
             
-        logger.info(f"Model trained successfully. Test Accuracy: {acc:.4f}, ROC-AUC: {auc:.4f}")
+        logger.info(f"Model trained successfully. Test Accuracy: {acc:.4f}, ROC-AUC: {auc:.4f}, F1-Score: {f1:.4f}")
         
         # Save model
         model_path = os.path.join(self.model_dir, "warning_level1_xgboost.joblib")
@@ -248,7 +252,8 @@ class WarningLevel1Model:
         
         return {
             "accuracy": acc,
-            "auc": auc
+            "auc": auc,
+            "f1_score": f1
         }
 
     def predict_risk(self, features: Dict[str, float]) -> float:

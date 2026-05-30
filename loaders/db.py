@@ -102,7 +102,7 @@ def execute_migration_queries():
         "CREATE INDEX IF NOT EXISTS climate_telemetry_lookup_idx ON climate_telemetry(time, location_id);",
         "CREATE TABLE IF NOT EXISTS etl_watermarks (source_name TEXT PRIMARY KEY, last_run_timestamp TIMESTAMPTZ NOT NULL);",
         "CREATE TABLE IF NOT EXISTS etl_quarantine (id SERIAL PRIMARY KEY, file_path TEXT NOT NULL, error_message TEXT, quarantined_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP);",
-        "CREATE INDEX IF NOT EXISTS idx_pest_alerts_geom ON pest_alerts USING GIST (ST_SetSRID(ST_MakePoint(longitude, latitude), 4326)::geography);"
+        "CREATE INDEX IF NOT EXISTS idx_pest_alerts_geom ON pest_alerts USING GIST ((ST_SetSRID(ST_MakePoint(longitude, latitude), 4326)::geography));"
     ]
     
     with engine.begin() as conn:
